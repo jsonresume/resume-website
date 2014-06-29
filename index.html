@@ -46,10 +46,37 @@
   <div class="row">
 
 
-       <div class="col-lg-12">
+       <div class="col-lg-5">
+       <h2>Overview</h2>
+       <p>Below is our current standard version 0.0.9 of the draft, based of <a>json-schema.org</a> draft 0.4. The project attempts to tackel many problems at once.</p> 
+       <ul>
+       	<li>This should be an easy project, make a point here</li>
+       	<li>If I had another point I would make it here</li>
+       </ul>
+       <h3>Why JSON?</h3>
+       <p>We feel the JSON is mature enough for doing schematics, which YAML doesn't throughly support yet(though you can easily convert your resume between yaml and json anyway).
+       <h3>Versioning</h3>
+       <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
+       <h3>Open Source</h3>
+       <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the HR ecosystem.</p>
+       <hr />
+       <h2>Getting Started</h2>
+       <p>We have built a CLI(command line interface) which currently is supported on OS/Linux/Windows via NPM. To start creating your own resume, install the resume-cli via NPM.</p>
+       <p><code>sudo npm install -g resume-cli</code></p>
+       <p>Excellent! Now initialize your first resume.js</p>
+       <p><code>resume init</code></p>
+       <h3>Exporting</h3>
+       <p>The command line tool, uses an ecosytem of modules we have open sourced to convert your resume.</p>
+       <p><code>resume export resume.pdf</code></p>
+       <p><code>resume export resume.html</code></p>
+       <p><code>resume export resume.txt</code></p>
+       <h3>Publishing</h3>
+       <p>We have also built in hosted support into the command line app. Much like NPM's registry, you can register an account and publish to our servers. We also allow you to password protect and/or publish your resume anonymously. To get started simply type;</p>
+       <p><code>resume publish</code></p>
+       </div>
+       <div class="col-lg-7">
 
 
-       <p>Below is our current standard version 0.0.9 of the draft, based of json-schema.org draft 0.4. The project attempts to tackel many problems at once.</p> 
 
 
  <style>
