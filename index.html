@@ -52,17 +52,17 @@ layout: default
 
        <div class="col-lg-5">
        <h2>Overview</h2>
-       <p>Below is our current standard version 0.0.9 of the draft, based of <a>json-schema.org</a> draft 0.4. The project attempts to tackel many problems at once.</p> 
+       <p>There is no reason why there can't be a common standard for writing a resume, that can be extended with an ecosystem of open source tools. This project will attempt to;</p> 
        <ul>
-        <li>This should be an easy project, make a point here</li>
-        <li>If I had another point I would make it here</li>
+        <li>Build a community open source movement where everyone can take advantage of the tools</li>
+        <li>Make themeing, exporting, storing and editing resumes super easy</li>
        </ul>
        <h3>Why JSON?</h3>
-       <p>We feel the JSON is mature enough for doing schematics, which YAML doesn't throughly support yet(though you can easily convert your resume between yaml and json anyway).
+       <p>We feel that <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet(though you can easily convert your resume between YAML and JSON anyway).
        <h3>Versioning</h3>
        <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
        <h3>Open Source</h3>
-       <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the HR ecosystem.</p>
+       <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the JSON resume ecosystem.</p>
        <hr />
        <h2>Getting Started</h2>
        <p>We have built a CLI(command line interface) which currently is supported on OS/Linux/Windows via NPM. To start creating your own resume, install the resume-cli via NPM.</p>
@@ -77,22 +77,43 @@ layout: default
        <h3>Publishing</h3>
        <p>We have also built in hosted support into the command line app. Much like NPM's registry, you can register an account and publish to our servers. We also allow you to password protect and/or publish your resume anonymously. To get started simply type;</p>
        <p><code>resume publish</code></p>
-       <p>Our hosted versions will have much goodies built for it, you can check out the <a>roadmap</a>. Make sure you register if you want to save a vanity url.</p>
+       <p>Our hosted solution will have new features and benefits rolled out quite frequently. Make sure you register if you want to save a vanity url.</p>
        <p><code>resume register</code></p>
-       <p>Great! You should now have your own url like <a>http://registry.jsonresume.org/thomasdavis</a>.</p><hr />
+       <p>Great! You should now have your own url like; <br /><a href="http://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a>
+       </p>
+       <p>You can also access exported versions of your resume;
+       <br />
+       <a href="http://registry.jsonresume.org/thomasdavis.pdf">http://registry.jsonresume.org/thomasdavis.pdf</a><br />
+       <a href="http://registry.jsonresume.org/thomasdavis.txt">http://registry.jsonresume.org/thomasdavis.txt</a>
+       </p>
+       <h3>Themes</h3>
+       Our themeing system is still in development for now you can get a preview of them; <br />
+
+       <a href="http://registry.jsonresume.org/thomasdavis?theme=traditional">http://registry.jsonresume.org/thomasdavis?theme=traditional</a><br />
+       <a href="http://registry.jsonresume.org/thomasdavis?theme=modern">http://registry.jsonresume.org/thomasdavis?theme=modern</a>
+       <hr />
        <h2>Contributing</h2>
-       <p>As mentioned above, the entire project is open sourced and split up amongst a number of modules which are hosted on Github.</p>
+       <p>As mentioned above, the entire project is open sourced and split up amongst a number of modules which are hosted on Github. There are many areas of the project that need work</p>
+       <ul>
+        <li>We need anyone and everyone to start making themes</li>
+        <li>People who can offer advice on the standard</li>
+        <li>The standard should be able to export to any format under the sun</li>
+
+        </ul>
+        <p>All the code for the project can be found on our Github organization;<br />
+        <a href="https://github.com/jsonresume">https://github.com/jsonresume</a>
+        </p>
        </div>
        <div class="col-lg-7">
 
 
 <h2>Examples</h2>
       <a class="" href="http://registry.jsonresume.org/thomasdavis">
-        <img class="media-object pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
+        <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
       </a>
       
       <a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/rolandsharp">
-        <img class="media-object pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 1px;">
+        <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
       </a>
 <div style="clear: both;"></div>
 <h2>Specification</h2>
