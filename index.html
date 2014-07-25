@@ -1,165 +1,385 @@
+--- 
+layout: default 
 ---
-layout: default
----
 
-  <!--<div class="jumbotron text-center">
-    <h1>Take control of your resume</h1>
-    <p class="lead">The Bootstrap 3 grid is fluid only. This example shows how to use a custom container to create a fixed width layout.</p>
-    <div class="row">
-
-      <div class="btn-group btn-group-justified">
-      <a class="btn btn-default" role="button">Left</a>
-      <a class="btn btn-default" role="button">Middle</a>
-      <a class="btn btn-default" role="button">Right</a>
-    </div>
-
-       <div class="col-lg-4">
-       <div class="media">
-      <a class="pull-left" href="/thomasdavis">
-        <img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">thomasdavis</h4>
-      </div>
-    </div>
-        </div>
-       <div class="col-lg-4">
-       <div class="media">
-      <a class="pull-left" href="/rolandsharp">
-        <img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">rolandsharp</h4>
-      </div>
-    </div>
-        </div>
-       <div class="col-lg-4">
-       <div class="media" style="text-align: center;">
-      <a class="" href="/julian">
-        <img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/5b699ccf6128b2a19c5f3161be2da883?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-      </a>
-      <br />
-        <h4 class="media-heading">julian</h4>
-        </div>
-        </div>
+<div class="row">
 
 
-  </div>
-  </div>
-  -->
-  <div class="row">
-
-
-       <div class="col-lg-5">
-       <p><strong>Notice:</strong> Hey everybody, this project went viral today even though it's a work in progress. We would love if everybody leaves <a href="https://github.com/jsonresume/resume-schema/issues">Github issues</a> for things they think are wrong or need work in the specification draft.</p> 
-       <h2>Overview</h2>
-       <p>Json Résumé. is a community driven open source initiative to create a JSON based standard for résumés. There is no reason why there can't be a common standard for writing a résumé that can be extended with an ecosystem of open source tools. This project will attempt to;</p> 
-       <ul>
-        <li>Build a community open source movement where everyone can take advantage of the tools</li>
-        <li>Make themeing, exporting, storing and editing résumés super easy</li>
-       </ul>
-       <p>Join us on IRC - #jsonresume - Freenode</p>
-       <h3>Why JSON?</h3>
-       <p>We feel that <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet(though you can easily convert your résumé between YAML and JSON anyway).
-       <h3>Versioning</h3>
-       <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
-       <h3>Open Source</h3>
-       <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the JSON résumé ecosystem.</p>
-       <hr />
-       <h2>Getting Started</h2>
-       <p>We have built a CLI(command line interface) which currently is supported on OS/Linux/Windows via NPM. To start creating your own résumé, install the resume-cli via NPM.</p>
-       <p><code>sudo npm install -g resume-cli</code></p>
-       <p>Excellent! Now initialize your first resume.js</p>
-       <p><code>resume init</code></p>
-       <h3>Exporting</h3>
-       <p>The command line tool, uses an ecosytem of modules we have open sourced to convert your résumé.</p>
-       <p><code>resume export resume.pdf</code></p>
-       <p><code>resume export resume.html</code></p>
-       <h3>Publishing</h3>
-       <p>We have also built in hosted support into the command line app. Much like NPM's registry, you can register an account and publish to our servers. We also allow you to password protect and/or publish your résumé anonymously. To get started simply type;</p>
-       <p><code>resume publish</code></p>
-       <p>Our hosted solution will have new features and benefits rolled out quite frequently. Make sure you register if you want to save a vanity url.</p>
-       <p><code>resume register</code></p>
-       <p>Great! You should now have your own url like; <br /><a href="http://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a>
-       </p>
-       <p>You can also access exported versions of your résumé;
-       <br />
-       <a href="http://registry.jsonresume.org/thomasdavis.pdf">http://registry.jsonresume.org/thomasdavis.pdf</a> (still ugly)<br />
-       <a href="http://registry.jsonresume.org/thomasdavis.txt">http://registry.jsonresume.org/thomasdavis.txt</a>
-       </p>
-       <p>Users may also password protect their résumé;
-       <br />
-       <a href="http://registry.jsonresume.org/richardhendriks">http://registry.jsonresume.org/richardhendriks</a>
-       </p>
-       <h3>Themes</h3>
-       Our themeing system is still in development for now you can get a preview of them; <br />
-
-       <a href="http://registry.jsonresume.org/thomasdavis?theme=modern">http://registry.jsonresume.org/thomasdavis?theme=modern</a>
-       <br />
-       <a href="http://registry.jsonresume.org/thomasdavis?theme=flat">http://registry.jsonresume.org/thomasdavis?theme=flat</a>
-       <p>Update: <br />We changed the theme system so themes are just starting to be developed. Check back tomorrow or <a href="https://github.com/jsonresume/theme-manager">create a theme</a>.</p>
-       <h3>Internationalization</h3>
-       <p>The specification draft was started by Australian's so you will have to forgive our ignorance of the northern hermisphere. If you see any glaringly obvious problems with international properties, <a href="https://github.com/jsonresume/resume-schema/issues?state=open">create an issue</a></p>
-       <hr />
-       <h2>Contributing</h2>
-       <p>As mentioned above, the entire project is open sourced and split up amongst a number of modules which are hosted on Github. There are many areas of the project that need work</p>
-       <ul>
-        <li>We need anyone and everyone to start making themes</li>
-        <li>People who can offer advice on the standard</li>
-        <li>The standard should be able to export to any format under the sun</li>
-        <p>We want to create a standards board and also a public list of contributions to the specification.</p>
+    <div class="col-lg-5">
+        <h2>Overview</h2>
+        <p>Json Résumé is a community driven open source initiative to create a JSON based standard for résumés. There is no reason why there can't be a common standard for writing a résumé that can be extended with an ecosystem of open source tools. This project will attempt to;</p>
+        <ul>
+            <li>Build a community open source movement where everyone can take advantage of the tools</li>
+            <li>Make themeing, exporting, storing and editing résumés super easy</li>
         </ul>
-        <p>All the code for the project can be found on our Github organization;<br />
-        <a href="https://github.com/jsonresume">https://github.com/jsonresume</a>
-        </p>
-        <h3>Team</h3>
-        The project was started in late June by <a href="http://github.com/thomasdavis">Thomas Davis</a> and <a href="http://github.com/rolandnsharp">Roland Sharp</a>.
-       </div>
-       <div class="col-lg-7">
+        <p>We have researched the alternative standards, and they are a lot more mature but are lacking a modern and friendly ecosystem that empower individuals.</p>
+        <p>Our goal is to empower developers in every way possible, which means we will stick to a more casual development approach.
+        <p>Join us on IRC - #jsonresume - Freenode</p>
+
+        <h3>Why JSON?</h3>
+        <p>We feel that <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet(though you can easily convert your résumé between YAML and JSON anyway).
+            <h3>Versioning</h3>
+            <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
+            <h3>Open Source</h3>
+            <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the JSON résumé ecosystem.</p>
+            <hr />
+            <h2>Examples</h2>
+            <a class="" href="http://registry.jsonresume.org/thomasdavis">
+                <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
+            </a>
+
+            <a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/rolandsharp">
+                <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
+            </a>
+            <div style="clear: both;"></div>
+            <hr />
+            <p>We have built tools for you to initialize and publish your own JSON Resume.</p>
+            <a href="/getting-started" class="btn btn-success">Get Started!</a>
 
 
-<h2>Examples</h2>
-      <a class="" href="http://registry.jsonresume.org/thomasdavis">
-        <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-      </a>
-      
-      <a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/rolandsharp">
-        <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
-      </a>
-<div style="clear: both;"></div>
-<h2>Specification</h2>
-<p>The latest published draft is unversioned and is currently wanting feedback. We want to release a version 1.0.0 in late July that locks the standard down for at least a year.</p>
- <style>
-.property {  font-family: Verdana; padding: 10px 10px 10px 20px;
-}
-.type{
-}
-.name {
-color: #bcd42a;
 
-}
-.description { 
-  font-size: 11px; 
-  color: #7a7267;
-   -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
+    </div>
+    <div class="col-lg-7">
 
-   -ms-user-select: none;
-   user-select: none;
 
-}
-.json-schema {
-  background-color: #2b2a27;
-  color: #ede0ce;
-  border-radius: 6px;
-  margin-bottom: 30px;
 
-}
-</style><div class="json-schema"><div class="property"><span class="type">{</span><div class="property"><span class="name">bio</span>: <span class="type">{</span> <span class="description"></span><div class="property"><span class="name">firstName</span>: <span class="type">string</span>, <span class="description"></span></div><div class="property"><span class="name">lastName</span>: <span class="type">string</span>, <span class="description"></span></div><div class="property"><span class="name">email</span>: <span class="type">{</span> <span class="description"></span><div class="property"><span class="name">work</span>: <span class="type">string</span>, <span class="description">// e.g. thomas@facebook.com</span></div><div class="property"><span class="name">personal</span>: <span class="type">string</span> <span class="description">// thomas@gmail.com</span></div><span class="type">},</span></div><div class="property"><span class="name">phone</span>: <span class="type">{</span> <span class="description">// Phone numbers are stored as strings so use any format you like</span><div class="property"><span class="name">work</span>: <span class="type">string</span>, <span class="description">// e.g. 732-757-2923</span></div><div class="property"><span class="name">personal</span>: <span class="type">string</span> <span class="description">// e.g. 712-117-2923</span></div><span class="type">},</span></div><div class="property"><span class="name">summary</span>: <span class="type">string</span>, <span class="description">// Write a short 2-3 sentence biography about yourself</span></div><div class="property"><span class="name">location</span>: <span class="type">{</span> <span class="description"></span><div class="property"><span class="name">city</span>: <span class="type">string</span>, <span class="description"></span></div><div class="property"><span class="name">countryCode</span>: <span class="type">string</span>, <span class="description">// e.g. US, AU, IN</span></div><div class="property"><span class="name">region</span>: <span class="type">string</span>, <span class="description">// If you specify a region, you don't need a state e.g. Queensland</span></div><div class="property"><span class="name">state</span>: <span class="type">string</span> <span class="description">// If you specify a state, you don't need a region e.g. Texas</span></div><span class="type">},</span></div><div class="property"><span class="name">websites</span>: <span class="type">{</span> <span class="description">// The value you use as your key, will generally become the label</span><div class="property"><span class="name">blog</span>: <span class="type">string</span> <span class="description">// e.g. http://blog.joebloggs.com</span></div><span class="type">},</span></div><div class="property"><span class="name">profiles</span>: <span class="type">{</span> <span class="description">// Specify any number of social networks that you participate in</span><div class="property"><span class="name">twitter</span>: <span class="type">string</span>, <span class="description">// e.g. neutralthoughts</span></div><div class="property"><span class="name">github</span>: <span class="type">string</span> <span class="description">// e.g. thomasdavis</span></div><span class="type">}</span></div><span class="type">},</span></div><div class="property"><span class="name">work</span>: <span class="type">[{</span> <span class="description"></span><div class="property"><span class="name">company</span>: <span class="type">string</span>, <span class="description">// e.g. Facebook</span></div><div class="property"><span class="name">position</span>: <span class="type">string</span>, <span class="description">// e.g. Software Engineer</span></div><div class="property"><span class="name">website</span>: <span class="type">string</span>, <span class="description">// e.g. http://facebook.com</span></div><div class="property"><span class="name">startDate</span>: <span class="type">string</span>, <span class="description">// resume.json uses the ISO 8601 date standard e.g. 2014-06-29</span></div><div class="property"><span class="name">endDate</span>: <span class="type">string</span>, <span class="description">// e.g. 2012-06-29</span></div><div class="property"><span class="name">summary</span>: <span class="type">string</span>, <span class="description">// Give an overview of your responsibilities at the company</span></div><div class="property"><span class="name">highlights</span>: <span class="type">[</span> <span class="description">// Specify multiple accomplishments</span><div class="property"><span class="type">string</span> <span class="description">// e.g. Increased profits by 20% from 2011-2012 through viral advertising</span></div><span class="type">]</span></div><span class="type">}],</span></div><div class="property"><span class="name">education</span>: <span class="type">[{</span> <span class="description"></span><div class="property"><span class="name">institution</span>: <span class="type">string</span>, <span class="description">// e.g. Massachusetts Institute of Technology</span></div><div class="property"><span class="name">area</span>: <span class="type">string</span>, <span class="description">// e.g. Arts</span></div><div class="property"><span class="name">studyType</span>: <span class="type">string</span>, <span class="description">// e.g. Bachelor</span></div><div class="property"><span class="name">startDate</span>: <span class="type">string</span>, <span class="description">// e.g. 2014-06-29</span></div><div class="property"><span class="name">endDate</span>: <span class="type">string</span>, <span class="description">// e.g. 2012-06-29</span></div><div class="property"><span class="name">courses</span>: <span class="type">[</span> <span class="description">// List an notable courses/subjects</span><div class="property"><span class="type">string</span> <span class="description">// e.g. H1302 - Introduction to American history</span></div><span class="type">]</span></div><span class="type">}],</span></div><div class="property"><span class="name">awards</span>: <span class="type">[{</span> <span class="description">// Specify any awards you have received throughout your professional career</span><div class="property"><span class="name">title</span>: <span class="type">string</span>, <span class="description">// e.g. One of the 100 greatest minds of the century</span></div><div class="property"><span class="name">awardDate</span>: <span class="type">string</span>, <span class="description">// e.g. 1989-06-12</span></div><div class="property"><span class="name">awarder</span>: <span class="type">string</span> <span class="description">// e.g. Time Magazine</span></div><span class="type">}],</span></div><div class="property"><span class="name">publications</span>: <span class="type">[{</span> <span class="description">// Specify your publications through your career</span><div class="property"><span class="name">name</span>: <span class="type">string</span>, <span class="description">// e.g. The World Wide Web</span></div><div class="property"><span class="name">publisher</span>: <span class="type">string</span>, <span class="description">// e.g. IEEE, Computer Magazine</span></div><div class="property"><span class="name">releaseDate</span>: <span class="type">string</span>, <span class="description">// e.g. 1990-08-01</span></div><div class="property"><span class="name">website</span>: <span class="type">string</span> <span class="description">// e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html</span></div><span class="type">}],</span></div><div class="property"><span class="name">skills</span>: <span class="type">[{</span> <span class="description">// List out your professional skill-set</span><div class="property"><span class="name">name</span>: <span class="type">string</span>, <span class="description">// e.g. Web Development</span></div><div class="property"><span class="name">level</span>: <span class="type">string</span>, <span class="description">// e.g. Master</span></div><div class="property"><span class="name">keywords</span>: <span class="type">[</span> <span class="description">// List some keywords pertaining to this skill</span><div class="property"><span class="type">string</span> <span class="description">// e.g. HTML</span></div><span class="type">]</span></div><span class="type">}],</span></div><div class="property"><span class="name">hobbies</span>: <span class="type">[{</span> <span class="description"></span><div class="property"><span class="name">name</span>: <span class="type">string</span>, <span class="description">// e.g. Philosophy</span></div><div class="property"><span class="name">keywords</span>: <span class="type">[</span> <span class="description"></span><div class="property"><span class="type">string</span> <span class="description">// e.g. Friedrich Nietzsche</span></div><span class="type">]</span></div><span class="type">}],</span></div><div class="property"><span class="name">references</span>: <span class="type">[{</span> <span class="description">// List references you have received</span><div class="property"><span class="name">name</span>: <span class="type">string</span>, <span class="description">// e.g. Timothy Cook</span></div><div class="property"><span class="name">reference</span>: <span class="type">string</span> <span class="description">// e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing.</span></div><span class="type">}]</span></div><span class="type">}</span></div></div>
+        <div style="clear: both;"></div>
+        <h2>Specification</h2>
+        <p>The latest published draft is unversioned and is currently wanting feedback. We want to release a version 0.0.0 in late July.</p>
+        <style>
+        .property {
+            font-family: Verdana;
+            padding: 10px 10px 10px 20px;
+        }
+        .type {} .name {
+            color: #bcd42a;
+        }
+        .description {
+            font-size: 11px;
+            color: #7a7267;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .json-schema {
+            background-color: #2b2a27;
+            color: #ede0ce;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        </style>
+        <div class="json-schema">
+            <div class="property">
+                <span class="type">{</span>
+                <div class="property">
+                    <span class="name">bio</span>:
+                    <span class="type">{</span>
+                    <span class="description"></span>
+                    <div class="property">
+                        <span class="name">firstName</span>:
+                        <span class="type">string</span>,
+                        <span class="description"></span>
+                    </div>
+                    <div class="property">
+                        <span class="name">lastName</span>:
+                        <span class="type">string</span>,
+                        <span class="description"></span>
+                    </div>
+                    <div class="property">
+                        <span class="name">email</span>:
+                        <span class="type">{</span>
+                        <span class="description"></span>
+                        <div class="property">
+                            <span class="name">work</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// e.g. thomas@facebook.com</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">personal</span>:
+                            <span class="type">string</span>
+                            <span class="description">// thomas@gmail.com</span>
+                        </div>
+                        <span class="type">},</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">phone</span>:
+                        <span class="type">{</span>
+                        <span class="description">// Phone numbers are stored as strings so use any format you like</span>
+                        <div class="property">
+                            <span class="name">work</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// e.g. 732-757-2923</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">personal</span>:
+                            <span class="type">string</span>
+                            <span class="description">// e.g. 712-117-2923</span>
+                        </div>
+                        <span class="type">},</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">summary</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// Write a short 2-3 sentence biography about yourself</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">location</span>:
+                        <span class="type">{</span>
+                        <span class="description"></span>
+                        <div class="property">
+                            <span class="name">city</span>:
+                            <span class="type">string</span>,
+                            <span class="description"></span>
+                        </div>
+                        <div class="property">
+                            <span class="name">countryCode</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// e.g. US, AU, IN</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">region</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// If you specify a region, you don't need a state e.g. Queensland</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">state</span>:
+                            <span class="type">string</span>
+                            <span class="description">// If you specify a state, you don't need a region e.g. Texas</span>
+                        </div>
+                        <span class="type">},</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">websites</span>:
+                        <span class="type">{</span>
+                        <span class="description">// The value you use as your key, will generally become the label</span>
+                        <div class="property">
+                            <span class="name">blog</span>:
+                            <span class="type">string</span>
+                            <span class="description">// e.g. http://blog.joebloggs.com</span>
+                        </div>
+                        <span class="type">},</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">profiles</span>:
+                        <span class="type">{</span>
+                        <span class="description">// Specify any number of social networks that you participate in</span>
+                        <div class="property">
+                            <span class="name">twitter</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// e.g. neutralthoughts</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">github</span>:
+                            <span class="type">string</span>
+                            <span class="description">// e.g. thomasdavis</span>
+                        </div>
+                        <span class="type">}</span>
+                    </div>
+                    <span class="type">},</span>
+                </div>
+                <div class="property">
+                    <span class="name">work</span>:
+                    <span class="type">[{</span>
+                    <span class="description"></span>
+                    <div class="property">
+                        <span class="name">company</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Facebook</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">position</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Software Engineer</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">website</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. http://facebook.com</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">startDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// resume.json uses the ISO 8601 date standard e.g. 2014-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">endDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 2012-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">summary</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// Give an overview of your responsibilities at the company</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">highlights</span>:
+                        <span class="type">[</span>
+                        <span class="description">// Specify multiple accomplishments</span>
+                        <div class="property">
+                            <span class="type">string</span>
+                            <span class="description">// e.g. Increased profits by 20% from 2011-2012 through viral advertising</span>
+                        </div>
+                        <span class="type">]</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">education</span>:
+                    <span class="type">[{</span>
+                    <span class="description"></span>
+                    <div class="property">
+                        <span class="name">institution</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Massachusetts Institute of Technology</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">area</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Arts</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">studyType</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Bachelor</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">startDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 2014-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">endDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 2012-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">courses</span>:
+                        <span class="type">[</span>
+                        <span class="description">// List an notable courses/subjects</span>
+                        <div class="property">
+                            <span class="type">string</span>
+                            <span class="description">// e.g. H1302 - Introduction to American history</span>
+                        </div>
+                        <span class="type">]</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">awards</span>:
+                    <span class="type">[{</span>
+                    <span class="description">// Specify any awards you have received throughout your professional career</span>
+                    <div class="property">
+                        <span class="name">title</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. One of the 100 greatest minds of the century</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">awardDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 1989-06-12</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">awarder</span>:
+                        <span class="type">string</span>
+                        <span class="description">// e.g. Time Magazine</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">publications</span>:
+                    <span class="type">[{</span>
+                    <span class="description">// Specify your publications through your career</span>
+                    <div class="property">
+                        <span class="name">name</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. The World Wide Web</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">publisher</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. IEEE, Computer Magazine</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">releaseDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 1990-08-01</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">website</span>:
+                        <span class="type">string</span>
+                        <span class="description">// e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">skills</span>:
+                    <span class="type">[{</span>
+                    <span class="description">// List out your professional skill-set</span>
+                    <div class="property">
+                        <span class="name">name</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Web Development</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">level</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Master</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">keywords</span>:
+                        <span class="type">[</span>
+                        <span class="description">// List some keywords pertaining to this skill</span>
+                        <div class="property">
+                            <span class="type">string</span>
+                            <span class="description">// e.g. HTML</span>
+                        </div>
+                        <span class="type">]</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">hobbies</span>:
+                    <span class="type">[{</span>
+                    <span class="description"></span>
+                    <div class="property">
+                        <span class="name">name</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Philosophy</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">keywords</span>:
+                        <span class="type">[</span>
+                        <span class="description"></span>
+                        <div class="property">
+                            <span class="type">string</span>
+                            <span class="description">// e.g. Friedrich Nietzsche</span>
+                        </div>
+                        <span class="type">]</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">references</span>:
+                    <span class="type">[{</span>
+                    <span class="description">// List references you have received</span>
+                    <div class="property">
+                        <span class="name">name</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Timothy Cook</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">reference</span>:
+                        <span class="type">string</span>
+                        <span class="description">// e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing.</span>
+                    </div>
+                    <span class="type">}]</span>
+                </div>
+                <span class="type">}</span>
+            </div>
         </div>
+    </div>
 
 
-  </div>
-
-
+</div>
