@@ -45,3 +45,5 @@ After long discussions about the specification in the Github issues, we have com
 
 To garantee the **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
 
+Please leave your feedback and ideas below! Also, please join the movement!
+
