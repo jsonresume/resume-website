@@ -4,3 +4,8 @@ html {
 body {
 	padding-top: 60px;
 }
+.post-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
