@@ -57,27 +57,27 @@
         </ul>
         <p>We have researched the alternative standards, and they are a lot more mature but are lacking a modern and friendly ecosystem that empower individuals.</p>
         <p>Our goal is to empower developers in every way possible, which means we will stick to a more casual development approach.
-        <p>Join us on IRC - #jsonresume - Freenode</p>
+            <p>Join us on IRC - #jsonresume - Freenode</p>
 
-        <h3>Why JSON?</h3>
-        <p>We feel that <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet(though you can easily convert your résumé between YAML and JSON anyway).
-            <h3>Versioning</h3>
-            <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
-            <h3>Open Source</h3>
-            <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the JSON résumé ecosystem.</p>
-            <hr />
-            <h2>Examples</h2>
-            <a class="" href="http://registry.jsonresume.org/thomasdavis">
-                <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-            </a>
+            <h3>Why JSON?</h3>
+            <p>We feel that <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet(though you can easily convert your résumé between YAML and JSON anyway).
+                <h3>Versioning</h3>
+                <p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard</p>
+                <h3>Open Source</h3>
+                <p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the JSON résumé ecosystem.</p>
+                <hr />
+                <h2>Examples</h2>
+                <a class="" href="http://registry.jsonresume.org/thomasdavis">
+                    <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
+                </a>
 
-            <a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/rolandsharp">
-                <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
-            </a>
-            <div style="clear: both;"></div>
-            <hr />
-            <p>We have built tools for you to initialize and publish your own JSON Resume.</p>
-            <a href="/getting-started" class="btn btn-success">Get Started!</a>
+                <a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/rolandsharp">
+                    <img class="media-object img-circle pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
+                </a>
+                <div style="clear: both;"></div>
+                <hr />
+                <p>We have built tools for you to initialize and publish your own JSON Resume.</p>
+                <a href="/getting-started" class="btn btn-success">Get Started!</a>
 
 
 
@@ -87,8 +87,8 @@
 
 
         <div style="clear: both;"></div>
-        <h2>Specification</h2>
-        <p>The latest published draft is unversioned and is currently wanting feedback. We want to release a version 0.0.0 in late July.</p>
+        <h2>Specification - Version 0.0.0</h2>
+        <p>The JSON resume ecosystem only revolves around major version changes e.g. 0.0.0, 1.0.0, 2.0.0. The smaller changes will be implemented overtime but only major version changes will the ecosystem be expected to follow completely.</p>
         <style>
         .property {
             font-family: Verdana;
@@ -117,50 +117,38 @@
             <div class="property">
                 <span class="type">{</span>
                 <div class="property">
-                    <span class="name">bio</span>:
+                    <span class="name">basics</span>:
                     <span class="type">{</span>
                     <span class="description"></span>
                     <div class="property">
-                        <span class="name">firstName</span>:
+                        <span class="name">name</span>:
                         <span class="type">string</span>,
                         <span class="description"></span>
                     </div>
                     <div class="property">
-                        <span class="name">lastName</span>:
+                        <span class="name">label</span>:
                         <span class="type">string</span>,
-                        <span class="description"></span>
+                        <span class="description">// e.g. Web Developer</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">picture</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// URL (as per RFC 3986) to a picture in JPEG or PNG format</span>
                     </div>
                     <div class="property">
                         <span class="name">email</span>:
-                        <span class="type">{</span>
-                        <span class="description"></span>
-                        <div class="property">
-                            <span class="name">work</span>:
-                            <span class="type">string</span>,
-                            <span class="description">// e.g. thomas@facebook.com</span>
-                        </div>
-                        <div class="property">
-                            <span class="name">personal</span>:
-                            <span class="type">string</span>
-                            <span class="description">// thomas@gmail.com</span>
-                        </div>
-                        <span class="type">},</span>
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. thomas@gmail.com</span>
                     </div>
                     <div class="property">
                         <span class="name">phone</span>:
-                        <span class="type">{</span>
-                        <span class="description">// Phone numbers are stored as strings so use any format you like</span>
-                        <div class="property">
-                            <span class="name">work</span>:
-                            <span class="type">string</span>,
-                            <span class="description">// e.g. 732-757-2923</span>
-                        </div>
-                        <div class="property">
-                            <span class="name">personal</span>:
-                            <span class="type">string</span>
-                            <span class="description">// e.g. 712-117-2923</span>
-                        </div>
-                        <span class="type">},</span>
+                        <span class="type">string</span>,
+                        <span class="description">// Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">website</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// URL (as per RFC 3986) to your website, e.g. personal homepage</span>
                     </div>
                     <div class="property">
                         <span class="name">summary</span>:
@@ -172,6 +160,16 @@
                         <span class="type">{</span>
                         <span class="description"></span>
                         <div class="property">
+                            <span class="name">address</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// To add multiple address lines, use. For example, 1234 Glücklichkeit Straße Hinterhaus 5. Etage li.</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">postalCode</span>:
+                            <span class="type">string</span>,
+                            <span class="description"></span>
+                        </div>
+                        <div class="property">
                             <span class="name">city</span>:
                             <span class="type">string</span>,
                             <span class="description"></span>
@@ -179,46 +177,35 @@
                         <div class="property">
                             <span class="name">countryCode</span>:
                             <span class="type">string</span>,
-                            <span class="description">// e.g. US, AU, IN</span>
+                            <span class="description">// code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN</span>
                         </div>
                         <div class="property">
                             <span class="name">region</span>:
-                            <span class="type">string</span>,
-                            <span class="description">// If you specify a region, you don't need a state e.g. Queensland</span>
-                        </div>
-                        <div class="property">
-                            <span class="name">state</span>:
                             <span class="type">string</span>
-                            <span class="description">// If you specify a state, you don't need a region e.g. Texas</span>
-                        </div>
-                        <span class="type">},</span>
-                    </div>
-                    <div class="property">
-                        <span class="name">websites</span>:
-                        <span class="type">{</span>
-                        <span class="description">// The value you use as your key, will generally become the label</span>
-                        <div class="property">
-                            <span class="name">blog</span>:
-                            <span class="type">string</span>
-                            <span class="description">// e.g. http://blog.joebloggs.com</span>
+                            <span class="description">// The general region where you live. Can be a US state, or a province, for instance.</span>
                         </div>
                         <span class="type">},</span>
                     </div>
                     <div class="property">
                         <span class="name">profiles</span>:
-                        <span class="type">{</span>
+                        <span class="type">[{</span>
                         <span class="description">// Specify any number of social networks that you participate in</span>
                         <div class="property">
-                            <span class="name">twitter</span>:
+                            <span class="name">network</span>:
+                            <span class="type">string</span>,
+                            <span class="description">// e.g. Facebook or Twitter</span>
+                        </div>
+                        <div class="property">
+                            <span class="name">username</span>:
                             <span class="type">string</span>,
                             <span class="description">// e.g. neutralthoughts</span>
                         </div>
                         <div class="property">
-                            <span class="name">github</span>:
+                            <span class="name">url</span>:
                             <span class="type">string</span>
-                            <span class="description">// e.g. thomasdavis</span>
+                            <span class="description">// e.g. http://twitter.com/neutralthoughts</span>
                         </div>
-                        <span class="type">}</span>
+                        <span class="type">}]</span>
                     </div>
                     <span class="type">},</span>
                 </div>
@@ -228,6 +215,52 @@
                     <span class="description"></span>
                     <div class="property">
                         <span class="name">company</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Facebook</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">position</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. Software Engineer</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">website</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. http://facebook.com</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">startDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// resume.json uses the ISO 8601 date standard e.g. 2014-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">endDate</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. 2012-06-29</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">summary</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// Give an overview of your responsibilities at the company</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">highlights</span>:
+                        <span class="type">[</span>
+                        <span class="description">// Specify multiple accomplishments</span>
+                        <div class="property">
+                            <span class="type">string</span>
+                            <span class="description">// e.g. Increased profits by 20% from 2011-2012 through viral advertising</span>
+                        </div>
+                        <span class="type">]</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">volunteer</span>:
+                    <span class="type">[{</span>
+                    <span class="description"></span>
+                    <div class="property">
+                        <span class="name">organization</span>:
                         <span class="type">string</span>,
                         <span class="description">// e.g. Facebook</span>
                     </div>
@@ -298,9 +331,14 @@
                         <span class="description">// e.g. 2012-06-29</span>
                     </div>
                     <div class="property">
+                        <span class="name">gpa</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// grade point average, e.g. 3.67/4.0</span>
+                    </div>
+                    <div class="property">
                         <span class="name">courses</span>:
                         <span class="type">[</span>
-                        <span class="description">// List an notable courses/subjects</span>
+                        <span class="description">// List notable courses/subjects</span>
                         <div class="property">
                             <span class="type">string</span>
                             <span class="description">// e.g. H1302 - Introduction to American history</span>
@@ -319,14 +357,19 @@
                         <span class="description">// e.g. One of the 100 greatest minds of the century</span>
                     </div>
                     <div class="property">
-                        <span class="name">awardDate</span>:
+                        <span class="name">date</span>:
                         <span class="type">string</span>,
                         <span class="description">// e.g. 1989-06-12</span>
                     </div>
                     <div class="property">
                         <span class="name">awarder</span>:
-                        <span class="type">string</span>
+                        <span class="type">string</span>,
                         <span class="description">// e.g. Time Magazine</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">summary</span>:
+                        <span class="type">string</span>
+                        <span class="description">// e.g. Received for my work with Quantum Physics</span>
                     </div>
                     <span class="type">}],</span>
                 </div>
@@ -351,8 +394,13 @@
                     </div>
                     <div class="property">
                         <span class="name">website</span>:
-                        <span class="type">string</span>
+                        <span class="type">string</span>,
                         <span class="description">// e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">summary</span>:
+                        <span class="type">string</span>
+                        <span class="description">// Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML.</span>
                     </div>
                     <span class="type">}],</span>
                 </div>
@@ -383,7 +431,23 @@
                     <span class="type">}],</span>
                 </div>
                 <div class="property">
-                    <span class="name">hobbies</span>:
+                    <span class="name">languages</span>:
+                    <span class="type">[{</span>
+                    <span class="description">// List any other languages you speak</span>
+                    <div class="property">
+                        <span class="name">language</span>:
+                        <span class="type">string</span>,
+                        <span class="description">// e.g. English, Spanish</span>
+                    </div>
+                    <div class="property">
+                        <span class="name">fluency</span>:
+                        <span class="type">string</span>
+                        <span class="description">// e.g. Fluent, Beginner</span>
+                    </div>
+                    <span class="type">}],</span>
+                </div>
+                <div class="property">
+                    <span class="name">interests</span>:
                     <span class="type">[{</span>
                     <span class="description"></span>
                     <div class="property">
