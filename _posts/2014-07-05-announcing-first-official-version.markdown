@@ -43,4 +43,5 @@ After long discussions about the specification in the Github issues, we have com
 * Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.
 * The specification is not to be the perfect description of a person but instead a description of a resume where only things relevant in the context of hiring will be allowed in.
 
-To garantee **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
+To garantee the **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
+
