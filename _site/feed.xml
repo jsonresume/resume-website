@@ -5,44 +5,55 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://jsonresume.org/</link>
     <atom:link href="http://jsonresume.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 31 Jul 2014 21:51:22 +1000</pubDate>
-    <lastBuildDate>Thu, 31 Jul 2014 21:51:22 +1000</lastBuildDate>
+    <pubDate>Thu, 31 Jul 2014 23:00:36 +1000</pubDate>
+    <lastBuildDate>Thu, 31 Jul 2014 23:00:36 +1000</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>First Official Release</title>
-        <description>&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-md-8&quot;&gt;
-You&#39;ll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+        <description>&lt;p&gt;It has been just over three weeks since JSON resume first went public, and we are proud to announce the first official version of the specification. After much consideration we decided to launch the first version as &lt;strong&gt;0.0.0&lt;/strong&gt;, which assumes everything up until this point was conceptual and thus no backwards compatibility has been built out.&lt;/p&gt;
 
-Jekyll also offers powerful support for code snippets:
+&lt;p&gt;Unfortunately this means that if you created a resume before this release, most parts of the ecosystem will not work for you. Though there weren’t too many changes so visit the &lt;a href=&quot;/specification&quot;&gt;specification page&lt;/a&gt; and update your &lt;code&gt;resume.json&lt;/code&gt; accordingly.&lt;/p&gt;
 
+&lt;p&gt;Make sure you reinstall the latest version of the CLI tool by typing &lt;code&gt;sudo npm install -g resume-cli&lt;/code&gt; into terminal. Once installed, you can also take advantage of the &lt;code&gt;resume test&lt;/code&gt; command to test if your &lt;code&gt;resume.json&lt;/code&gt; is compatiable with version &lt;strong&gt;0.0.0&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For a full list of changes, view the &lt;a href=&quot;https://github.com/jsonresume/resume-schema#change-log&quot;&gt;README&lt;/a&gt; for the resume schema &lt;a href=&quot;https://github.com/jsonresume/resume-schema&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;Just because this is an official release of the specification, it doesn’t garantee that the ecosystem is stable. We actually had to wait for this official release before we could lock down parts of the ecosystem.&lt;/p&gt;
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll&#39;s GitHub repo][jekyll-gh].
+&lt;h3 id=&quot;how-are-we-doing&quot;&gt;How are we doing?&lt;/h3&gt;
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+&lt;p&gt;When JSON resume first went public, it was actually unexpected and the project wasn’t quite as mature as we would have liked it to have been. In the days following the leak, the homepage received over 50,000 visitors and &lt;strong&gt;a lot&lt;/strong&gt; of people reached out offering support. We worked overtime to get people hacking away at different areas of the project.&lt;/p&gt;
 
-&lt;/div&gt;
-&lt;div class=&quot;col-md-4&quot;&gt;
-&lt;a class=&quot;twitter-timeline&quot; href=&quot;https://twitter.com/jsonresume&quot; data-widget-id=&quot;494812472109322240&quot;&gt;Tweets by @jsonresume&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&quot;://platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+&lt;p&gt;Some accomplishments so far&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Over 1400 stars on the &lt;a href=&quot;https://github.com/jsonresume/resume-cli&quot;&gt;resume CLI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;97 issues created for the specification, &lt;a href=&quot;https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed&quot;&gt;52 closed&lt;/a&gt;	&lt;/li&gt;
+  &lt;li&gt;Built a &lt;a href=&quot;https://github.com/jsonresume/theme-manager&quot;&gt;modular theme system&lt;/a&gt; leveraging NPM for version management&lt;/li&gt;
+  &lt;li&gt;Active &lt;a href=&quot;http://node-modules.com/search?q=jsonresume-theme-*&quot;&gt;theme development&lt;/a&gt; underway&lt;/li&gt;
+  &lt;li&gt;Progress made on &lt;a href=&quot;http://node-modules.com/search?q=jsonresume-theme-*&quot;&gt;LinkedIn export&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Build your &lt;code&gt;resume.json&lt;/code&gt; with a GUI, coming in the next few days(&lt;a href=&quot;http://i.imgur.com/RYqIdUp.png&quot;&gt;screenshot&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Organized a &lt;a href=&quot;/team&quot;&gt;standards committee&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Multiple HR related services are looking at supporting and potentially sponsoring the JSON resume project&lt;/li&gt;
+  &lt;li&gt;Officially listed JSON schema on &lt;a href=&quot;http://schemastore.org/&quot;&gt;schemastore.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;p&gt;An obligitory thank you to everybody who has participated up to this point. And a very special thanks to &lt;a href=&quot;https://github.com/erming&quot;&gt;Mattias Erming&lt;/a&gt; who has put a lot of hard work into developing and brain storming the future of JSON resume.&lt;/p&gt;
 
+&lt;h3 id=&quot;where-are-we-heading&quot;&gt;Where are we heading?&lt;/h3&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;After long discussions about the specification in the Github issues, we have come to settle on a few points. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JSON resume exist to empower individuals to manage their job seeking profiles and this is our highest priority. &lt;/li&gt;
+  &lt;li&gt;Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.&lt;/li&gt;
+  &lt;li&gt;The specification is not to be the perfect description of a person but instead a description of a resume where only things relevant in the context of hiring will be allowed in.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To garantee &lt;strong&gt;success&lt;/strong&gt; of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 06 Jul 2014 00:18:05 +1000</pubDate>
+        <pubDate>Fri, 01 Aug 2014 00:18:05 +1000</pubDate>
         <link>http://jsonresume.org/blog/first-official-release</link>
         <guid isPermaLink="true">http://jsonresume.org/blog/first-official-release</guid>
         

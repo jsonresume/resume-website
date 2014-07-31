@@ -1,38 +1,46 @@
 ---
 layout: post
 title:  "First Official Release"
-date:   2014-07-05 14:18:05
+date:   2014-07-31 14:18:05
 permalink: /blog/first-official-release
 author: Thomas Davis
 ---
 
-<div class="row">
-<div class="col-md-8">
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-Jekyll also offers powerful support for code snippets:
+It has been just over three weeks since JSON resume first went public, and we are proud to announce the first official version of the specification. After much consideration we decided to launch the first version as **0.0.0**, which assumes everything up until this point was conceptual and thus no backwards compatibility has been built out.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Unfortunately this means that if you created a resume before this release, most parts of the ecosystem will not work for you. Though there weren't too many changes so visit the [specification page](/specification) and update your `resume.json` accordingly.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+Make sure you reinstall the latest version of the CLI tool by typing `sudo npm install -g resume-cli` into terminal. Once installed, you can also take advantage of the `resume test` command to test if your `resume.json` is compatiable with version **0.0.0**.
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+For a full list of changes, view the [README](https://github.com/jsonresume/resume-schema#change-log) for the resume schema [repo](https://github.com/jsonresume/resume-schema).
 
-</div>
-<div class="col-md-4">
-<a class="twitter-timeline" href="https://twitter.com/jsonresume" data-widget-id="494812472109322240">Tweets by @jsonresume</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+Just because this is an official release of the specification, it doesn't garantee that the ecosystem is stable. We actually had to wait for this official release before we could lock down parts of the ecosystem.
 
+### How are we doing?
 
+When JSON resume first went public, it was actually unexpected and the project wasn't quite as mature as we would have liked it to have been. In the days following the leak, the homepage received over 50,000 visitors and **a lot** of people reached out offering support. We worked overtime to get people hacking away at different areas of the project.
 
+Some accomplishments so far
 
-</div>
-</div>
+* Over 1400 stars on the [resume CLI](https://github.com/jsonresume/resume-cli)
+* 97 issues created for the specification, [52 closed](https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed)	
+* Built a [modular theme system](https://github.com/jsonresume/theme-manager) leveraging NPM for version management
+* Active [theme development](http://node-modules.com/search?q=jsonresume-theme-*) underway
+* Progress made on [LinkedIn export](http://node-modules.com/search?q=jsonresume-theme-*)
+* Build your `resume.json` with a GUI, coming in the next few days([screenshot](http://i.imgur.com/RYqIdUp.png))
+* Organized a [standards committee](/team)
+* Multiple HR related services are looking at supporting and potentially sponsoring the JSON resume project
+* Officially listed JSON schema on [schemastore.org](http://schemastore.org/)
+
+An obligitory thank you to everybody who has participated up to this point. And a very special thanks to [Mattias Erming](https://github.com/erming) who has put a lot of hard work into developing and brain storming the future of JSON resume.
+
+### Where are we heading?
+
+After long discussions about the specification in the Github issues, we have come to settle on a few points. 
+
+* JSON resume exist to empower individuals to manage their job seeking profiles and this is our highest priority. 
+* Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.
+* The specification is not to be the perfect description of a person but instead a description of a resume where only things relevant in the context of hiring will be allowed in.
+
+To garantee **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
