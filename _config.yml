@@ -10,3 +10,5 @@ github_username:  jsonresume
 # Build settings
 markdown: kramdown
 permalink: pretty
+sass:
+    sass_dir: css/_sass
