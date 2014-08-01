@@ -27,8 +27,8 @@
 $(document).on('ready', function() {
 
     var chart = $('#barChart').epoch({
-        type: 'time.area',
-        data: [{values:[{time: new Date().getTime(), y: 1}]}],
+        type: 'time.bar',
+        data: [{values:[{time: new Date().getTime(), y: 0}]}],
         axes: [ 'bottom', 'right']
     });
 
