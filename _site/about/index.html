@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet">
     <link href="/css/base.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/epoch/0.5.2/epoch.min.css" rel="stylesheet" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,7 +21,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="canonical" href="http://jsonresume.org/about/">
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=thomasdavis"></script>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=thomasdavis"></script>
+    <script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+    
+
     <!-- Custom CSS -->
 </head>
 
@@ -78,11 +83,38 @@
 
 </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/epoch/0.5.2/epoch.min.js"></script>
 <script src="//static.getclicky.com/js" type="text/javascript"></script>
 <script type="text/javascript">try{ clicky.init(100751242); }catch(e){}</script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100751242ns.gif" /></p></noscript>
+
+<script>
+
+$(document).on('ready', function() {
+
+    var chart = $('#barChart').epoch({
+        type: 'time.bar',
+        data: [{values:[{time: new Date().getTime(), y: 1}]}],
+        axes: [ 'bottom', 'right']
+    });
+
+        Pusher.log = function(message) {
+          if (window.console && window.console.log) {
+            window.console.log(message);
+          }
+        };
+
+        var pusher = new Pusher('30c6be5ae705d6b4af61');
+        var channel = pusher.subscribe('test_channel');
+        channel.bind('my_event', function(data) {
+          chart.push(data.points);
+        });
+
+
+});
+</script>
 
     </body>
 </html>
