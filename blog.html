@@ -2,26 +2,19 @@
 layout: default
 title: Blog
 ---
-<h2>Blog</h2>
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-8 col-md-offset-2">
+<h2>Blog</h2>
+
 <p>All major updates and new feature launches will receive a blog post</p>
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <p>{{post.excerpt}}</p>
-      <p>By {{post.author}}</p>
     </li>
   {% endfor %}
 </ul>
 </div>
-<div class="col-md-4">
-<a class="twitter-timeline" href="https://twitter.com/jsonresume" data-widget-id="494812472109322240">Tweets by @jsonresume</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-
-
-</div>
 </div>
