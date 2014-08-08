@@ -1,4 +1,46 @@
-homepage
-========
+# JSON Resume Homepage
 
-A homepage for the spec
+Visit the website at http://jsonresume.org/
+
+## Development
+
+If you want run the website locally, follow these instructions:
+
+
+### Clone repository
+
+You know the drill.
+
+```
+git clone http://github.com/jsonresume/homepage
+```
+
+### Install Jekyll
+
+Lets install Ruby:
+
+```
+sudo apt-get install ruby1.9.3
+```
+
+`ruby` and `gem` should now have been installed on your computer.
+
+Now go ahead and install Jekyll:
+
+```
+sudo gem install jekyll
+```
+
+### Run local server
+
+Step into the `homepage/` folder and run:
+
+```
+jekyll serve --watch
+```
+
+This will run the Jekyll server and watch for any file changes.
+
+## License
+
+Available under [the MIT license](http://mths.be/mit).
