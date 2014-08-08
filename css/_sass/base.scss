@@ -35,9 +35,9 @@ h3 {
 }
 .stats h4 {
 	line-height: 62px;
-font-size: 24px;
-padding: 0;
-margin: 0;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
 }
 .counter {
 	font-size: 30px;
@@ -47,4 +47,28 @@ margin: 0;
 	text-align: center;
 	background-color: #2b2a27;
 	padding: 10px 20px;
+}
+
+.json-schema {
+  background-color: #222;
+  color: #fff;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  .property {
+    font-family: Verdana;
+    padding: 1px 20px;
+  }
+  .type {} .name {
+    color: $brand-color;
+  }
+  .description {
+    font-size: 11px;
+    color: #7a7267;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
