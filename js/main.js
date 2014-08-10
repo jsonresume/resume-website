@@ -1,6 +1,17 @@
 jQuery(function($) {
+	highlight();
 	renderStats();
 });
+
+function highlight() {
+	$("#nav a").each(function() {
+		var self = $(this);
+		if (window.location.pathname.indexOf(self.attr("href")) !== -1) {
+			self.addClass("active");
+			self.siblings().removeClass("active");
+		}
+	});
+}
 
 function renderStats() {
 	var stats = $("#stats");

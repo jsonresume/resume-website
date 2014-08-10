@@ -3,17 +3,19 @@ layout: default
 title: Blog
 ---
 
-<div class="row">
-	<div class="col-md-8 col-md-offset-2">
-		<h2>Blog</h2>
-		<p>All major updates and new feature launches will receive a blog post</p>
-		<ul class="post-list">
-		{% for post in site.posts %}
-			<li>
-				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-				<p>{{post.excerpt}}</p>
-			</li>
-		{% endfor %}
-		</ul>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h2>Blog</h2>
+			<p>All major updates and new feature launches will receive a blog post</p>
+			<ul class="post-list">
+			{% for post in site.posts %}
+				<li>
+					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					<p>{{post.excerpt}}</p>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
 	</div>
 </div>

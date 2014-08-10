@@ -2,38 +2,40 @@
 layout: default
 ---
 
-<div class="post row">
-	<div class="col-md-8 col-md-offset-2">
-		<header class="post-header">
-			<h2>{{ page.title }}</h2>
-			<p class="meta">
-				{{ page.date | date: "%b %-d, %Y" }}
+<div class="container">
+	<div class="post row">
+		<div class="col-md-8 col-md-offset-2">
+			<header class="post-header">
+				<h2>{{ page.title }}</h2>
+				<p class="meta">
+					{{ page.date | date: "%b %-d, %Y" }}
+				</p>
+			</header>
+			<article class="post-content">
+				{{ content }}
+			</article>
+			<p>
+				By <a href="http://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
+				and <a href="http://registry.jsonresume.org/rolandsharp">Roland Sharp</a>
 			</p>
-		</header>
-		<article class="post-content">
-			{{ content }}
-		</article>
-		<p>
-			By <a href="http://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
-			and <a href="http://registry.jsonresume.org/rolandsharp">Roland Sharp</a>
-		</p>
-		<hr />
-		<div class="addthis_jumbo_share"></div>
-		<hr />
-		<div id="disqus_thread"></div>
-		<script>
-		var disqus_shortname = 'jsonresume';
-		var disqus_url = 'http://jsonresume.org{{page.url}}';
-		var disqus_identifier = '{{page.url}}';
-		var disqus_title = '{{page.title}}';
-		(function() {
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-		</script>
-		<noscript>
-			Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-		</noscript>
+			<hr />
+			<div class="addthis_jumbo_share"></div>
+			<hr />
+			<div id="disqus_thread"></div>
+			<script>
+			var disqus_shortname = 'jsonresume';
+			var disqus_url = 'http://jsonresume.org{{page.url}}';
+			var disqus_identifier = '{{page.url}}';
+			var disqus_title = '{{page.title}}';
+			(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+			</noscript>
+		</div>
 	</div>
 </div>

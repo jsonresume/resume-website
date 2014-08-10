@@ -2,22 +2,23 @@ html {
 	overflow-y: scroll;
 }
 body {
-	padding-top: 60px;
-	font-family: 'Ubuntu';
-	font-size: 16px;
+	font: 16px Ubuntu;
+	margin: 0;
 }
+/*
 body .navbar-brand {
 	padding: 0;
 }
 .navbar-default .navbar-nav > li > a {
 	font-size: 16px;
 }
+*/
 .post-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-
+/*
 h2 {
 	font-size: 30px;
 	border-bottom: 4px solid $brand-color;
@@ -26,6 +27,7 @@ h2 {
 	clear: both;
 	padding: 0 20px 5px 0;
 }
+*/
 h3 {
 	border-bottom: 2px solid $brand-color;
 	display: inline-block;
@@ -35,9 +37,9 @@ h3 {
 }
 .stats h4 {
 	line-height: 62px;
-  font-size: 24px;
-  padding: 0;
-  margin: 0;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
 }
 .counter {
 	font-size: 30px;
@@ -48,27 +50,161 @@ h3 {
 	background-color: #2b2a27;
 	padding: 10px 20px;
 }
-
 .json-schema {
-  background-color: #222;
-  color: #fff;
-  border-radius: 2px;
-  margin-bottom: 30px;
-  padding: 20px 0;
-  .property {
-    font-family: Verdana;
-    padding: 1px 20px;
-  }
-  .type {} .name {
-    color: $brand-color;
-  }
-  .description {
-    font-size: 11px;
-    color: #7a7267;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+	background-color: #222;
+	color: #fff;
+	border-radius: 2px;
+	margin-bottom: 30px;
+	padding: 20px 0;
+}
+.json-schema .property {
+	font-family: Verdana;
+	padding: 1px 20px;
+}
+.json-schema .type {} .name {
+	color: $brand-color;
+}
+.json-schema .description {
+	font-size: 11px;
+	color: #7a7267;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.container {
+	transition: width .2s;
+}
+.button {
+	background-color: #ececec;
+	background-image: linear-gradient(#f4f4f4, #ececec);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+	border: 1px solid #ddd;
+	border-bottom-color: #ccc;
+	color: #333;
+	cursor: pointer;
+	line-height: 18px;
+	outline: 0;
+	padding: 8px 20px;
+}
+#nav {
+	background: #faf07b;
+	font-size: 14px;
+}
+#nav button {
+	margin-left: 10px;
+}
+#nav a {
+	display: inline-block;
+	color: #000;
+	padding: 20px 20px;
+}
+#nav a:hover {
+	opacity: .6;
+	text-decoration: none;
+}
+#nav a.active {
+	font-weight: 700;
+}
+#nav .pull-right {
+	height: 45px;
+	line-height: 46px;
+	margin: 5px 0;
+}
+#nav .button {
+	padding: 8px 20px;
+}
+#nav #logo {
+	color: #000;
+	display: inline-block;
+	font: 700 16px Ubuntu;
+	margin-right: 20px;
+}
+#header {
+	background: #f9f9f9;
+	overflow: hidden;
+	padding: 60px 0;
+}
+#search {}
+#search:before {
+	color: #ccc;
+	content: "\f002";
+	cursor: text;
+	font: 24px FontAwesome;
+	position: absolute;
+	top: 64px;
+	right: 34px;
+}
+#search input {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	font-size: 20px;
+	padding: 16px 20px;
+	outline: 0;
+	width: 100%;
+}
+#docs {}
+#docs section {
+	margin-top: 60px;
+}
+#docs h2 {
+	margin-bottom: 30px;
+}
+#docs .desc {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+#docs .item {
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	color: #666;
+	display: block;
+	min-height: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+#docs .item:hover {
+	color: #000;
+	text-decoration: none;
+}
+#footer {
+	color: #ddd;
+	font-size: 12px;
+	line-height: 1em;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#footer a {
+	color: inherit;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #f3ef81;
+}
+
+@media (max-width: 992px) {
+	#nav {
+		text-align: center;
+	}
+	#nav .pull-right {
+		display: none;
+	}
+	#nav #logo {
+		display: block;
+		margin-top: 20px;
+	}
 }
