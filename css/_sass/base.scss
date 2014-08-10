@@ -28,6 +28,7 @@ h2 {
 	padding: 0 20px 5px 0;
 }
 */
+/*
 h3 {
 	border-bottom: 2px solid $brand-color;
 	display: inline-block;
@@ -35,6 +36,7 @@ h3 {
 	clear: both;
 	padding: 0 20px 5px 0;
 }
+*/
 .stats h4 {
 	line-height: 62px;
 	font-size: 24px;
@@ -61,7 +63,7 @@ h3 {
 	font-family: Verdana;
 	padding: 1px 20px;
 }
-.json-schema .type {} .name {
+.json-schema .name {
 	color: $brand-color;
 }
 .json-schema .description {
@@ -93,9 +95,16 @@ h3 {
 	border-bottom-color: #ccc;
 	color: #333;
 	cursor: pointer;
+	display: inline-block;
 	line-height: 18px;
 	outline: 0;
 	padding: 8px 20px;
+	text-align: center;
+}
+.button:hover {
+	border-color: #ccc;
+	color: inherit;
+	text-decoration: none;
 }
 #nav {
 	background: #faf07b;
@@ -110,7 +119,6 @@ h3 {
 	padding: 20px 20px;
 }
 #nav a:hover {
-	opacity: .6;
 	text-decoration: none;
 }
 #nav a.active {
@@ -126,9 +134,9 @@ h3 {
 }
 #nav #logo {
 	color: #000;
-	display: inline-block;
 	font: 700 16px Ubuntu;
 	margin-right: 20px;
+	padding: 10px 0;
 }
 #header {
 	background: #f9f9f9;
@@ -178,6 +186,41 @@ h3 {
 #docs .item:hover {
 	color: #000;
 	text-decoration: none;
+}
+#themes {
+	margin-top: 60px;
+}
+#themes .theme {
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	color: #000;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+#themes .theme img {
+	border: 1px solid #eee;
+	width: 100%;
+}
+#themes .theme img:hover {
+	border-color: #ccc;
+}
+#themes .theme .button {
+	display: block;
+	margin-top: 20px;
+}
+#themes .meta {
+	margin-top: 10px;
+	line-height: 1.4;
+}
+#themes .meta .name {
+	font-size: 18px;
+	font-weight: 700;
+}
+#themes .meta .rating {
+	margin-top: 5px;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 #footer {
 	color: #ddd;
