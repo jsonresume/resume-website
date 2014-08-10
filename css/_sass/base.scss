@@ -83,7 +83,7 @@ h3 {
 	margin-bottom: 10px;
 }
 .container {
-	transition: width .2s;
+	max-width: 970px;
 }
 .button {
 	background-color: #ececec;
@@ -167,11 +167,13 @@ h3 {
 }
 #docs h2 {
 	margin-bottom: 30px;
+	line-height: 1.2;
 }
 #docs .desc {
+	color: #aaa;
 	display: block;
 	font-size: 12px;
-	margin-top: 5px;
+	margin-top: 8px;
 }
 #docs .item {
 	background: #f9f9f9;
@@ -240,14 +242,7 @@ h3 {
 }
 
 @media (max-width: 992px) {
-	#nav {
-		text-align: center;
-	}
 	#nav .pull-right {
 		display: none;
-	}
-	#nav #logo {
-		display: block;
-		margin-top: 20px;
 	}
 }
