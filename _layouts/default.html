@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>JSON Resume - {{page.title}}</title>
+	<title>
+		JSON Resume {% if page.title %} — {{page.title}} {% endif %}
+	</title>
 
 	<link rel="shortcut icon" href="/favicon.png">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,500,700">
@@ -40,7 +42,7 @@
 			<a href="/team/">Team</a>
 			<a href="/blog/">Blog</a>
 			<div class="pull-right">
-				<a class="button" href="http://github.com/jsonresume/">
+				<a class="github button" href="http://github.com/jsonresume/">
 					View on GitHub
 				</a>
 			</div>

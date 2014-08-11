@@ -161,6 +161,13 @@ td {
 	margin-top: 10px;
 	padding: 8px 20px;
 }
+#nav .github:before {
+	float: left;
+	font: 16px FontAwesome;
+	content: "\f09b";
+	margin-right: 8px;
+	margin-top: 1px;
+}
 #nav #logo {
 	color: #000;
 	font: 700 16px Ubuntu;
