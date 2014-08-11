@@ -43,6 +43,7 @@ h3 {
 	padding: 0;
 	margin: 0;
 }
+/*
 .counter {
 	font-size: 30px;
 	color: $brand-color;
@@ -52,6 +53,7 @@ h3 {
 	background-color: #2b2a27;
 	padding: 10px 20px;
 }
+*/
 .json-schema {
 	background-color: #222;
 	color: #fff;
@@ -97,15 +99,15 @@ h3 {
 	font-size: 20px;
 	margin: 1.5em 0 .8em;
 }
+p {
+	margin: 1em 0;
+}
 p,
 li {
 	line-height: 1.4;
 }
-code {
-	background: rgba(0, 0, 0, .04);
-	border-radius: 3px;
-	color: #000;
-	font-family: monospace;
+td {
+	border: 0;
 }
 .container {
 	max-width: 970px;
@@ -215,6 +217,35 @@ code {
 #docs .item:hover {
 	color: #000;
 	text-decoration: none;
+}
+#getting-started {
+	margin-top: 20px;
+}
+#getting-started h2 {
+	margin-top: 40px;
+}
+#getting-started section + section {
+	margin-top: 2em;
+}
+#stats {
+	margin-top: 20px;
+}
+#stats h4 {
+	line-height: 28px;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px 0;
+}
+#stats .row {
+	margin-top: 10px;
+}
+#stats .counter {
+	background: rgba(0, 0, 0, 0.04);
+	font-size: 24px;
+	font-weight: 400;
+	padding: 10px;
+	text-align: center;
 }
 #themes {
 	margin-top: 60px;

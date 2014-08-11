@@ -3,6 +3,104 @@ layout: default
 title: Getting Started
 ---
 
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Getting Started</h1>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="getting-started" class="container">
+<div class="row">
+	<div class="col-sm-6">
+		<section>
+			<h2>Command Line Tool</h2>
+			<p>We've built a CLI (Command Line Interface) which is supported by OSX, Linux and Windows. To create your own resume, install <code>resume-cli</code> from <b>npm</b>:</p>
+			<p><code>sudo npm install -g resume-cli</code></p>
+			<h3>Exporting</h3>
+			<p>The command line tool uses an ecosystem of modules that we've open sourced to convert your resume to different formats:</p>
+			<p><code>resume export resume.pdf</code></p>
+			<p><code>resume export resume.html</code></p>
+			<h3>Publishing</h3>
+			<p>We have also built in hosted support into the command line tool. Much like npm's registry, you can register an account and publish to our servers. We also allow you to password protect and/or publush your resume anonymously. To get started, simply type:</p>
+			<p><code>resume publish</code></p>
+			<p>Our hosted solution will have new features and benefits rolled out quite frequently. Make sure you register if you want to save a vanity url:</p>
+			<p><code>resume register</code></p>
+			<p>
+				Great! Your should now have your own url, like this:
+				<br><a href="http://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a>
+			</p>
+			<p>
+				You can also access exported version of your resume:
+				<br><a href="http://registry.jsonresume.org/thomasdavis.pdf">http://registry.jsonresume.org/thomasdavis.pdf</a>
+				<br><a href="http://registry.jsonresume.org/thomasdavis.txt">http://registry.jsonresume.org/thomasdavis.txt</a>
+			</p>
+			<p>
+				Users may also password protect their resume:
+				<br><a href="http://registry.jsonresume.org/richardhendriks">http://registry.jsonresume.org/richardhendriks</a>
+			</p>
+		</section>
+	</div>
+	<div class="col-sm-6">
+		<section>
+			<h2>Resume Editor</h2>
+			<p>We're currently developing a graphical interface for editing your resume (<a href="http://github.com/erming/resume-editor">repository</a>). Feel free to try it today:</a>
+			<p><a class="button" href="http://registry.jsonresume.org/">Try Resume Builder</a></p>
+		</section>
+		<section>
+			<h2>Statistics</h2>
+			<p>The statistics for our official hosting service, so far:</p>
+			<div id="stats">
+				<div class="row">
+					<div class="col-xs-6">
+						<h4>Resume views</h4>
+					</div>
+					<div class="col-xs-6">
+						<div id="myTargetElement" class="counter"></div>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-6">
+						<h4>Resumes hosted</h4>
+					</div>
+					<div class="col-xs-6">
+						<div id="myTargetElementh" class="counter"></div>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-6">
+						<h4>Users</h4>
+					</div>
+					<div class="col-xs-6">
+						<div id="myTargetElementu" class="counter"></div>
+					</div>
+				</div>
+			</div>
+			<!--
+			<table id="stats" class="table stats">
+			<tr>
+				<td><h4>Resume Views</h4></td>
+				<td><div id="myTargetElement" class="counter" style=""></div></td>
+			</tr>
+			<tr>
+				<td><h4>Resumes Hosted</h4></td>
+				<td><div id="myTargetElementh" class="counter"></div></td>
+			</tr>
+			<tr>
+				<td><h4>Users</h4></td>
+				<td><div id="myTargetElementu" class="counter"></div></td>
+			</tr>
+			</table>
+			-->
+		</section>
+	</div>
+</div>
+
+<!--
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
@@ -69,3 +167,4 @@ title: Getting Started
 		</div>
 	</div>
 </div>
+-->
