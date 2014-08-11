@@ -87,13 +87,15 @@ h3 {
 h2 {
 	font-weight: 400;
 	font-size: 24px;
+	margin-bottom: .5em;
 }
 h3 {
 	font-weight: 700;
 	font-size: 20px;
-	margin: 1.5em 0 .5em;
+	margin: 1.5em 0 .8em;
 }
-p {
+p,
+li {
 	line-height: 1.4;
 }
 .container {
@@ -253,6 +255,64 @@ p {
 	color: #999;
 	margin-top: 5px;
 }
+#team {
+	margin-top: 40px;
+}
+#team .contributing {
+	margin-bottom: 40px;
+}
+#team .tile {
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	color: #666;
+	display: block;
+	font-size: 13px;
+	min-height: 20px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+#team .avatar {
+	border-radius: 2px;
+	float: left;
+	margin-right: 16px;
+}
+#team .person {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+#team .person .name {
+	margin: 5px 0 3px;
+}
+#team .person a {
+	color: #999;
+	font-size: 13px;
+}
+#team .person a + a {
+	margin-left: 6px;
+}
+#team .person a:hover,
+#team .person a:hover:before {
+	color: #d14;
+}
+#team .person .github:before {
+	color: #ccc;
+	font: 14px FontAwesome;
+	content: "\f09b";
+	margin-right: 6px;
+}
+#team .person .twitter:before {
+	color: #ddd;
+	font: 14px FontAwesome;
+	content: "\f099";
+	margin-right: 6px;
+}
+/*
+#team .person a + a {
+	margin-left: 10px;
+}
+*/
 #footer {
 	color: #ddd;
 	font-size: 12px;
