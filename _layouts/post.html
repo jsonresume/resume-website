@@ -2,22 +2,29 @@
 layout: default
 ---
 
-<div class="container">
-	<div class="post row">
-		<div class="col-md-8 col-md-offset-2">
-			<header class="post-header">
-				<h2>{{ page.title }}</h2>
-				<p class="meta">
-					{{ page.date | date: "%b %-d, %Y" }}
-				</p>
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>News, features and releases</h1>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="blog" class="container">
+	<article class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<header>
+				<h2>
+					{{ page.title }}
+				</h2>
+				<div class="date">
+					posted {{ page.date | date: "%B %d, %Y" }}
+				</div>
 			</header>
-			<article class="post-content">
-				{{ content }}
-			</article>
-			<p>
-				By <a href="http://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
-				and <a href="http://registry.jsonresume.org/rolandsharp">Roland Sharp</a>
-			</p>
+			<div class="content">
+				<p>{{ content }}</p>
+			</div>
 			<hr />
 			<div class="addthis_jumbo_share"></div>
 			<hr />
@@ -37,5 +44,5 @@ layout: default
 				Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 			</noscript>
 		</div>
-	</div>
+	</article>
 </div>

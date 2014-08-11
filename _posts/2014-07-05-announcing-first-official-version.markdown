@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "First Official Release"
-date:   2014-07-31 14:18:05
+title: "First Official Release"
+date: 2014-07-31 14:18:05
 permalink: /blog/first-official-release
 author: Thomas Davis
 ---
-
 
 It has been just over three weeks since JSON resume first went public, and we are proud to announce the first official version of the specification. After much consideration we decided to launch the first version as **0.0.0**, which assumes everything up until this point was conceptual and thus no backwards compatibility has been built out.
 
@@ -47,3 +46,5 @@ To garantee the **success** of JSON resume, we will be aiming to integrate as an
 
 Please leave your feedback and ideas below! Also, please join the movement!
 
+By <a href="http://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
+and <a href="http://registry.jsonresume.org/rolandsharp">Roland Sharp</a>

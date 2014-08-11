@@ -76,11 +76,25 @@ h3 {
 	user-select: none;
 }
 
+a:hover {
+	text-decoration: none;
+}
 h1,
 h2,
 h3 {
 	margin: 0;
-	margin-bottom: 10px;
+}
+h2 {
+	font-weight: 400;
+	font-size: 24px;
+}
+h3 {
+	font-weight: 700;
+	font-size: 20px;
+	margin: 1.5em 0 .5em;
+}
+p {
+	line-height: 1.4;
 }
 .container {
 	max-width: 970px;
@@ -150,13 +164,14 @@ h3 {
 	cursor: text;
 	font: 24px FontAwesome;
 	position: absolute;
-	top: 64px;
+	top: 74px;
 	right: 34px;
 }
 #search input {
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	font-size: 20px;
+	margin-top: 20px;
 	padding: 16px 20px;
 	outline: 0;
 	width: 100%;
@@ -201,7 +216,7 @@ h3 {
 	padding: 20px;
 }
 #themes .theme img {
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	width: 100%;
 }
 #themes .theme img:hover {
@@ -223,6 +238,20 @@ h3 {
 	margin-top: 5px;
 	font-size: 12px;
 	letter-spacing: 1px;
+}
+#blog {}
+#blog h2 {
+	margin-top: 10px;
+}
+#blog article {
+	margin-top: 40px;
+}
+#blog header {
+	margin-bottom: 1.5em;
+}
+#blog .date {
+	color: #999;
+	margin-top: 5px;
 }
 #footer {
 	color: #ddd;

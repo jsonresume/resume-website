@@ -3,19 +3,32 @@ layout: default
 title: Blog
 ---
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<h2>Blog</h2>
-			<p>All major updates and new feature launches will receive a blog post</p>
-			<ul class="post-list">
-			{% for post in site.posts %}
-				<li>
-					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-					<p>{{post.excerpt}}</p>
-				</li>
-			{% endfor %}
-			</ul>
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>News, features and releases</h1>
+			</div>
 		</div>
 	</div>
+</header>
+<div id="blog" class="container">
+	{% for post in site.posts %}
+	<article class="row">
+		<div class="col-sm-4">
+			<h2>
+				<a href="{{ post.url }}">
+					{{ post.title }}
+				</a>
+			</h2>
+			<div class="date">
+				posted {{ post.date | date: "%B %d, %Y" }}
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<p>{{ post.excerpt }}</p>
+			<p><a href="{{ post.url }}">Read more...</a></p>
+		</div>
+	</article>
+	{% endfor %}
 </div>
