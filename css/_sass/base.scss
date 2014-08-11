@@ -76,7 +76,10 @@ h3 {
 	user-select: none;
 }
 
+a {
+}
 a:hover {
+	color: #999;
 	text-decoration: none;
 }
 h1,
@@ -97,6 +100,12 @@ h3 {
 p,
 li {
 	line-height: 1.4;
+}
+code {
+	background: rgba(0, 0, 0, .04);
+	border-radius: 3px;
+	color: #000;
+	font-family: monospace;
 }
 .container {
 	max-width: 970px;
@@ -124,6 +133,7 @@ li {
 }
 #nav {
 	background: #faf07b;
+	border-bottom: 1px solid #faf07b * .97;
 	font-size: 14px;
 }
 #nav button {
@@ -132,7 +142,7 @@ li {
 #nav a {
 	display: inline-block;
 	color: #000;
-	padding: 20px 20px;
+	padding: 25px 20px 24px;
 }
 #nav a:hover {
 	text-decoration: none;
@@ -146,6 +156,7 @@ li {
 	margin: 5px 0;
 }
 #nav .button {
+	margin-top: 10px;
 	padding: 8px 20px;
 }
 #nav #logo {
@@ -156,10 +167,10 @@ li {
 }
 #header {
 	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
 	overflow: hidden;
 	padding: 60px 0;
 }
-#search {}
 #search:before {
 	color: #ccc;
 	content: "\f002";
@@ -178,7 +189,6 @@ li {
 	outline: 0;
 	width: 100%;
 }
-#docs {}
 #docs section {
 	margin-top: 60px;
 }
@@ -241,7 +251,6 @@ li {
 	font-size: 12px;
 	letter-spacing: 1px;
 }
-#blog {}
 #blog h2 {
 	margin-top: 10px;
 }
@@ -308,11 +317,6 @@ li {
 	content: "\f099";
 	margin-right: 6px;
 }
-/*
-#team .person a + a {
-	margin-left: 10px;
-}
-*/
 #footer {
 	color: #ddd;
 	font-size: 12px;
