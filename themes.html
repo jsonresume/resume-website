@@ -14,24 +14,24 @@ title: Themes
 </header>
 <div id="themes" class="container">
 	<div class="row">
-		{% for num in (1...6) %}
+		{% for theme in site.data.themes %}
 		<div class="col-sm-4 col-md-3">
 			<div class="theme">
 				<div class="row">
 					<div class="col-sm-12 col-xs-6">
-						<a href="">
-							<img src="http://immediatenet.com/t/l?Size=1024x768&amp;URL=http://registry.jsonresume.org/thomasdavis?theme=flat">
+						<a href="http://themes.jsonresume.org/theme/{{ theme.slug }}">
+							<img style="height: 129px;" src="http://immediatenet.com/t/l?Size=1024x768&amp;URL=http://registry.jsonresume.org/thomasdavis?theme={{ theme.slug }}">
 						</a>
 					</div>
 					<div class="col-sm-12 col-xs-6 meta">
-						<div class="name">Flat</div>
-						<div class="author">by Mattias Erming</div>
-						<div class="rating">4.6/5</div>
+						<div class="name">{{ theme.name }}</div>
+						<div class="author">by {{ theme.author }}</div>
+						<!--<div class="rating">4.6/5</div>-->
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<a href="" class="button">Preview</a>
+						<a href="http://themes.jsonresume.org/theme/{{ theme.slug }}" class="button">Preview</a>
 					</div>
 				</div>
 			</div>

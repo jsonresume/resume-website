@@ -1,0 +1,19 @@
+- name: Flat
+  slug: flat
+  github: erming
+  author: Mattias Erming
+
+- name: Modern
+  slug: modern
+  github: thomasdavis
+  author: Thomas Davis
+
+- name: Elegant
+  slug: elegant
+  github: mudassir0909
+  author: Mudassir
+
+- name: Classy
+  slug: classy
+  github: JaredCubilla
+  author: Jared Cubilla
