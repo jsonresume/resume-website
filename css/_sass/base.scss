@@ -1,6 +1,10 @@
 html {
 	overflow-y: scroll;
 }
+html,
+body {
+	height: 100%;
+}
 body {
 	font: 16px Ubuntu;
 	margin: 0;
@@ -108,6 +112,7 @@ li {
 }
 .container {
 	max-width: 970px;
+	padding: 0 30px;
 }
 .button {
 	background-color: #ececec;
@@ -129,6 +134,35 @@ li {
 	border-color: #ccc;
 	color: inherit;
 	text-decoration: none;
+}
+#wrap {
+	height: 100%;
+	overflow: hidden;
+}
+#viewport {
+	height: 100%;
+	transition: all .4s;
+	-webkit-transform: translateZ(0);
+	        transform: translateZ(0);
+	-webkit-perspective: 1000;
+	        perspective: 1000;
+}
+#sidebar {
+	background: #f9f9f9;
+	border-right: 1px solid #eee;
+	bottom: 0;
+	left: -220px;
+	position: absolute;
+	padding-top: 19px;
+	top: 0;
+	width: 220px;
+}
+#sidebar a {
+	display: block;
+	padding: 15px 30px;
+}
+#sidebar a + a {
+	border-top: 1px solid #eee;
 }
 #nav {
 	background: #faf07b;
@@ -164,6 +198,14 @@ li {
 	content: "\f09b";
 	margin-right: 8px;
 	margin-top: 1px;
+}
+#nav #sidebar-toggle {
+	display: none;
+	position: absolute;
+	outline: 0;
+	margin-left: -20px;
+	text-decoration: none;
+	top: 1px;
 }
 #nav #logo {
 	color: #000;
@@ -401,6 +443,28 @@ li {
 	color: #f3ef81;
 }
 
+@media (max-width: 768px) {
+	#nav a {
+		display: none;
+	}
+	#nav #logo,
+	#nav #sidebar-toggle {
+		display: block;
+	}
+	#nav #logo {
+		margin: 0;
+		padding: 25px 0 24px;
+		text-align: center;
+	}
+	#sidebar-toggle:before {
+		font: 18px FontAwesome;
+		content: "\f0c9";
+	}
+	#viewport.lt {
+		-webkit-transform: translate3d(220px, 0, 0);
+		        transform: translate3d(220px, 0, 0);
+	}	
+}
 @media (max-width: 992px) {
 	#nav .pull-right {
 		display: none;
