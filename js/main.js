@@ -1,6 +1,14 @@
 jQuery(function($) {
 	highlight();
 	renderStats();
+
+	var viewport = $("#viewport");
+	var toggle = $("#sidebar-toggle");
+
+	toggle.on("click", function(e) {
+		e.preventDefault();
+		viewport.toggleClass("lt");
+	})
 });
 
 function highlight() {
