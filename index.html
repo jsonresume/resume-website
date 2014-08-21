@@ -33,14 +33,21 @@ layout: default
 			<p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the resume ecosystem.</p>
 			<div style="clear: both;"></div>
 			<h3>Examples</h3>
-			<div class="examples">
-				<a class="" href="http://registry.jsonresume.org/thomasdavis">
-					<img class="media-object pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;">
-				</a>
-				<a class="" style="margin-left: 1px;" href="http://registry.jsonresume.org/richardhendriks">
-					<img class="media-object pull-left" data-src="holder.js/64x64" alt="64x64" src="http://www.gravatar.com/avatar/c0c4a05d2a972ead4d3fd348d7fd38fd?s=80&amp;r=pg&amp;d=404" style="width: 64px; height: 64px;margin-left: 10px;">
-				</a>
-			</div>
+      <div class="row">
+    {% for example in site.data.examples %}
+    <div class="col-sm-12 col-md-6">
+      <div class="theme">
+        <div class="row">
+          <div class="col-sm-12 col-xs-6">
+            <a href="http://themes.jsonresume.org/theme/{{ example.theme }}">
+              <img style="height: 129px;border: 1px solid #eee;border-radius: 2px;" src="http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ example.theme }}">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 			<hr />
 			<p>We have built tools for you to initialize and publish your own JSON Resume:</p>
 			<a href="/getting-started" class="button">Get Started!</a>
