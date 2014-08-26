@@ -2,23 +2,29 @@
   slug: flat
   github: erming
   author: Mattias Erming
+  link: http://github.com/erming
 
 - name: Modern
   slug: modern
   github: thomasdavis
   author: Thomas Davis
+  link: http://registry.jsonresume.org/thomasdavis
 
 - name: Elegant
   slug: elegant
   github: mudassir0909
   author: Mudassir
+  link: https://github.com/mudassir0909
 
 - name: Classy
   slug: classy
   github: JaredCubilla
   author: Jared Cubilla
+  link: https://github.com/JaredCubilla
 
 - name: Kendall
   slug: kendall
   github: LinuxBozo
   author: M. Adam Kendall
+  link: http://registry.jsonresume.org/linuxbozo
+
