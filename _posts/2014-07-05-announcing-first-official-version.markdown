@@ -14,7 +14,7 @@ Make sure you reinstall the latest version of the CLI tool by typing `sudo npm i
 
 For a full list of changes, view the [README](https://github.com/jsonresume/resume-schema#change-log) for the resume schema [repo](https://github.com/jsonresume/resume-schema).
 
-Just because this is an official release of the specification, it doesn't garantee that the ecosystem is stable. We actually had to wait for this official release before we could lock down parts of the ecosystem.
+Just because this is an official release of the specification, it doesn't guarantee that the ecosystem is stable. We actually had to wait for this official release before we could lock down parts of the ecosystem.
 
 ### How are we doing?
 
@@ -26,7 +26,7 @@ Some accomplishments so far
 * 97 issues created for the specification, [52 closed](https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed)	
 * Built a [modular theme system](https://github.com/jsonresume/theme-manager) leveraging NPM for version management
 * Active [theme development](http://node-modules.com/search?q=jsonresume-theme-*) underway
-* Progress made on [LinkedIn export](http://node-modules.com/search?q=jsonresume-theme-*)
+* Progress made on [LinkedIn export](http://jmperezperez.com/linkedin-to-json-resume/)
 * Build your `resume.json` with a GUI, coming in the next few days([screenshot](http://i.imgur.com/RYqIdUp.png))
 * Organized a [standards committee](/team)
 * Multiple HR related services are looking at supporting and potentially sponsoring the JSON resume project
@@ -42,7 +42,7 @@ After long discussions about the specification in the Github issues, we have com
 * Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.
 * The specification is not to be the perfect description of a person but instead a description of a resume where only things relevant in the context of hiring will be allowed in.
 
-To garantee the **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
+To guarantee the **success** of JSON resume, we will be aiming to integrate as an import/export option where ever possible. We want a thriving theme ecosystem and as many tools as possible.
 
 Please leave your feedback and ideas below! Also, please join the movement!
 
