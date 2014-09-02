@@ -1,18 +1,32 @@
 ---
-layout: default
+layout: master
 ---
 
-<!--
-<header id="header" class="yellow">
+<header id="header" class="yellow promo">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				Hello
+		<div id="promo" class="row">
+			<div class="col-sm-6">
+				<h1>Work smart, not hard</h1>
+				<p>A community-driven open source initiative to create a JSON based standard for resumes.</p>
+				<a href="/" class="btn">Take the tour</a>
+			</div>
+			<div class="col-sm-6 image-wrapper">
+				<img class="image" src="/img/resume.svg">
 			</div>
 		</div>
 	</div>
 </header>
--->
+<div id="start" class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			Left
+		</div>
+		<div class="col-sm-6">
+			Right
+		</div>
+	</div>
+</div>
+<!--
 <div id="start" class="container">
 	<div class="row">
 		<div class="col-sm-5">
@@ -33,21 +47,21 @@ layout: default
 			<p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the resume ecosystem.</p>
 			<div style="clear: both;"></div>
 			<h3>Examples</h3>
-      <div class="row">
-    {% for example in site.data.examples %}
-    <div class="col-sm-12 col-md-6">
-      <div class="theme">
-        <div class="row">
-          <div class="col-sm-12 col-xs-6">
-            <a href="http://themes.jsonresume.org/theme/{{ example.theme }}">
-              <img style="height: 129px;border: 1px solid #eee;border-radius: 2px;" src="http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ example.theme }}">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+			<div class="row">
+			{% for example in site.data.examples %}
+			<div class="col-sm-12 col-md-6">
+				<div class="theme">
+					<div class="row">
+						<div class="col-sm-12 col-xs-6">
+							<a href="http://themes.jsonresume.org/theme/{{ example.theme }}">
+								<img style="height: 129px;border: 1px solid #eee;border-radius: 2px;" src="http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ example.theme }}">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			</div>
 			<hr />
 			<p>We have built tools for you to initialize and publish your own JSON Resume:</p>
 			<a href="/getting-started" class="button">Get Started!</a>
@@ -60,99 +74,8 @@ layout: default
 					<div class="pull-right version">version 0.0.0</div>
 					resume.json
 				</div>
-<pre>
-{
-  "basics": {
-    "name": "",
-    "label": "",
-    "picture": "",
-    "email": "",
-    "phone": "",
-    "website": "",
-    "summary": "",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
-    },
-    "profiles": [{
-      "network": "",
-      "username": "",
-      "url": ""
-    }]
-  },
-  "work": [{
-    "company": "",
-    "position": "",
-    "website": "",
-    "startDate": "",
-    "endDate": "",
-    "summary": "",
-    "highlights": [
-		""
-    ]
-  }],
-  "volunteer": [{
-    "organization": "",
-    "position": "",
-    "website": "",
-    "startDate": "",
-    "endDate": "",
-    "summary": "",
-    "highlights": [
-      ""
-    ]
-  }],
-  "education": [{
-    "institution": "",
-    "area": "",
-    "studyType": "",
-    "startDate": "",
-    "endDate": "",
-    "gpa": "",
-    "courses": [
-      ""
-    ]
-  }],
-  "awards": [{
-    "title": "",
-    "date": "",
-    "awarder": "",
-    "summary": ""
-  }],
-  "publications": [{
-    "name": "",
-    "publisher": "",
-    "releaseDate": "",
-    "website": "",
-    "summary": ""
-  }],
-  "skills": [{
-    "name": "",
-    "level": "",
-    "keywords": [
-      ""
-    ]
-  }],
-  "languages": [{
-    "language": "",
-    "fluency": ""
-  }],
-  "interests": [{
-    "name": "",
-    "keywords": [
-      ""
-    ]
-  }],
-  "references": [{
-    "name": "",
-    "reference": ""
-  }]
-}
-</pre>
 			</div>
 		</div>
 	</div>
 </div>
+-->

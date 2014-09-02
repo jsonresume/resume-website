@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+
 html {
 	overflow-y: scroll;
 }
@@ -6,29 +8,16 @@ body {
 	height: 100%;
 }
 body {
-	font: 16px Ubuntu;
+	color: #222;
+	font: 15px "Open Sans";
 	margin: 0;
-}
-a {
 }
 a:hover {
-	color: #999;
 	text-decoration: none;
 }
-h1,
-h2,
-h3 {
+h1 {
+	font: 300 36px "Open Sans";
 	margin: 0;
-}
-h2 {
-	font-weight: 400;
-	font-size: 28px;
-	margin-bottom: .5em;
-}
-h3 {
-	font-weight: 700;
-	font-size: 20px;
-	margin: 1.5em 0 .8em;
 }
 p {
 	margin: 1em 0;
@@ -39,7 +28,25 @@ li {
 }
 .container {
 	max-width: 970px;
+	min-width: 768px;
 	padding: 0 30px;
+}
+.btn {
+	background: #df4848;
+	border: 2px solid #df4848;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	transition: background .1s, color .1s;
+	word-spacing: 3px;
+}
+.btn:hover {
+	color: #fff;
 }
 .button {
 	background-color: #ececec;
@@ -104,8 +111,8 @@ li {
 }
 #nav {
 	background: #faf07b;
-	border-bottom: 1px solid #faf07b * .97;
-	font-size: 14px;
+	font: 600 15px "Open Sans";
+	overflow: hidden;
 }
 #nav button {
 	margin-left: 10px;
@@ -113,29 +120,13 @@ li {
 #nav a {
 	display: inline-block;
 	color: #000;
-	padding: 25px 20px 24px;
+	padding: 25px 0;
+}
+#nav a + a {
+	margin-left: 25px;
 }
 #nav a:hover {
 	text-decoration: none;
-}
-#nav a.active {
-	font-weight: 700;
-}
-#nav .pull-right {
-	height: 45px;
-	line-height: 46px;
-	margin: 5px 0;
-}
-#nav .button {
-	margin-top: 10px;
-	padding: 8px 20px;
-}
-#nav .github:before {
-	float: left;
-	font: 16px FontAwesome;
-	content: "\f09b";
-	margin-right: 8px;
-	margin-top: 1px;
 }
 #nav #sidebar-toggle {
 	display: none;
@@ -153,25 +144,30 @@ li {
 }
 #header {
 	background: #f9f9f9;
-	border-bottom: 1px solid #eee;
-	overflow: hidden;
 	padding: 60px 0;
+	margin-bottom: 50px;
 }
-#start {
-	margin-top: 25px;
+#header.yellow {
+	background: #faf07b;
 }
-#start h2 {
-	margin-top: 16px;
-}
-#start .examples {
-	margin-bottom: 40px;
+#promo {
 	overflow: hidden;
+	padding: 50px 0;
 }
-#start .media-object {
-	border-radius: 2px;
+#promo .btn {
+	margin-top: 12px;
+}
+#promo .image-wrapper {
+	text-align: right;
+}
+#promo .image {
+	margin-top: -20px;
+	margin-right: 30px;
+	width: 320px;
 }
 #schema {
-	border: 1px solid #eee;
+	background: #fff;
+	border: 1px solid #ddd;
 	border-radius: 2px;
 }
 #schema pre {
@@ -366,7 +362,7 @@ li {
 }
 #footer {
 	color: #ddd;
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 1em;
 	margin-top: 40px;
 	margin-bottom: 60px;
@@ -378,33 +374,5 @@ li {
 	text-decoration: none;
 }
 #footer a:hover {
-	color: #f3ef81;
-}
-
-@media (max-width: 768px) {
-	#nav a {
-		display: none;
-	}
-	#nav #logo,
-	#nav #sidebar-toggle {
-		display: block;
-	}
-	#nav #logo {
-		margin: 0;
-		padding: 25px 0 24px;
-		text-align: center;
-	}
-	#sidebar-toggle:before {
-		font: 18px FontAwesome;
-		content: "\f0c9";
-	}
-	#viewport.lt {
-		-webkit-transform: translate3d(220px, 0, 0);
-		        transform: translate3d(220px, 0, 0);
-	}	
-}
-@media (max-width: 992px) {
-	#nav .pull-right {
-		display: none;
-	}
+	color: #000;
 }

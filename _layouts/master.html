@@ -5,13 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="{{site.description}}">
 
 	<title>
-		JSON Resume {% if page.title %} — {{page.title}} {% endif %}
+		{{site.title}} {% if page.title %} — {{page.title}} {% endif %}
 	</title>
 
 	<link rel="shortcut icon" href="/favicon.png">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,500,700">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -35,28 +37,19 @@
 	<div id="main">
 	<div id="viewport">
 		<aside id="sidebar">
-			<a href="/">Home</a>
-			<a href="/getting-started/">Getting Started</a>
-			<a href="/themes/">Themes</a>
-			<!--<a href="/documentation/">Documentation</a>-->
-			<a href="/team/">Team</a>
-			<a href="/blog/">Blog</a>
+			<!--
+			Empty for now..
+			-->
 		</aside>
 		<nav id="nav">
 			<div class="container">
-				<a id="sidebar-toggle" href=""></a>
-				<a id="logo" href="/">
-					JSON Resume
-				</a>
-				<a href="/getting-started/">Getting Started</a>
-				<a href="/themes/">Themes</a>
-				<!--<a href="/documentation/">Documentation</a>-->
-				<a href="/team/">Team</a>
-				<a href="/blog/">Blog</a>
+				<a href="/">JSON Resume</a>
 				<div class="pull-right">
-					<a class="github button" href="http://github.com/jsonresume/">
-						View on GitHub
-					</a>
+					<a href="/getting-started/">Getting Started</a>
+					<a href="/documentation/">Docs</a>
+					<a href="/themes/">Themes</a>
+					<a href="/blog/">Blog</a>
+					<a href="http://github.com/jsonresume/resume-cli">GitHub</a>
 				</div>
 			</div>
 		</nav>
