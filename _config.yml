@@ -1,14 +1,4 @@
-# Site settings
 title: JSON Resume
-email: admin@jsonresume.org
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://jsonresume.org"
-twitter_username: jsonresume
-github_username:  jsonresume
-
-# Build settings
-markdown: kramdown
+description: "JSON Resume is a community driven open source initiative to create a JSON based standard for resumes."
+markdown: redcarpet
 permalink: pretty
-sass:
-    sass_dir: css/_sass
