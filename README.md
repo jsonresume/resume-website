@@ -6,21 +6,18 @@ Visit the website at http://jsonresume.org/
 
 If you want run the website locally, follow these instructions:
 
-
-### Clone repository
-
-You know the drill.
+### 1. Clone repository
 
 ```
 git clone http://github.com/jsonresume/homepage
 ```
 
-### Install Jekyll
+### 2. Install Jekyll
 
-Lets install Ruby:
+Start by installing this stuff:
 
 ```
-sudo apt-get install ruby1.9.3
+sudo apt-get install ruby1.9.3 build-essential nodejs-legacy
 ```
 
 `ruby` and `gem` should now have been installed on your computer.
@@ -31,9 +28,7 @@ Now go ahead and install Jekyll:
 sudo gem install jekyll
 ```
 
-_If the install fails due to `make` not found, install `build-essential` via apt-get and try again._
-
-### Run local server
+### 3. Run Jekyll
 
 Step into the `homepage/` folder and run:
 
