@@ -31,6 +31,8 @@ Now go ahead and install Jekyll:
 sudo gem install jekyll
 ```
 
+_If the install fails due to `make` not found, install `build-essential` via apt-get and try again._
+
 ### Run local server
 
 Step into the `homepage/` folder and run:
