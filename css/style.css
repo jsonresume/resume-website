@@ -19,6 +19,11 @@ h1 {
 	font: 300 36px "Open Sans";
 	margin: 0;
 }
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
 p {
 	margin: 1em 0;
 }
@@ -44,14 +49,17 @@ li {
 	word-spacing: 3px;
 }
 .btn:hover {
-	background: #ccc;
-	border-color: #ccc;
-	color: #fff;
+	border-color: #aaa;
+	color: #666;
 }
-.btn-red,
-.btn-red:hover {
+.btn-red {
 	background: #df4848;
 	border: 2px solid #df4848;
+	color: #fff;
+}
+.btn-red:hover {
+	background: #ce2424;
+	border: 2px solid #ce2424;
 	color: #fff;
 }
 .btn-big {
@@ -159,27 +167,23 @@ li {
 #header {
 	background: #f9f9f9;
 	padding: 50px 0 60px;
-	margin-bottom: 50px;
 }
 #header.yellow {
 	background: #faf07b;
 }
-#promo {
-	overflow: hidden;
-	padding: 30px 0;
-}
-#promo .btn {
-	margin-top: 12px;
-}
-#promo .hidden-xs {
+#header.promo {
+	padding: 80px 0 120px;
 	text-align: center;
 }
-#promo .image {
-	margin-top: -20px;
-	width: 320px;
+#header .btn {
+	margin-top: 10px;
+}
+#start {
+	background: #f9f9f9;
+	padding: 60px 0;
 }
 #start .feature {
-		text-align: center;
+	text-align: center;
 }
 #start .feature .btn {
 	margin-top: 10px;
@@ -397,14 +401,12 @@ li {
 }
 
 @media (max-width: 768px) {
-	#nav,
-	#promo {
-		padding-top: 10px;
+	#nav {
 		text-align: center;
 	}
-	#header {
-		padding-top: 0;
-		padding-bottom: 40px;
+	#header.promo {
+		padding-top: 20px;
+		padding-bottom: 60px;
 	}
 	#start .feature + .feature {
 		margin-top: 50px;

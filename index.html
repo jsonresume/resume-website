@@ -4,87 +4,33 @@ layout: default
 
 <header id="header" class="yellow promo">
 	<div class="container">
-		<div id="promo" class="row">
-			<div class="col-sm-6">
+		<div class="row">
+			<div class="col-sm-12">
 				<h1>Work smart, not hard</h1>
 				<p>An open source initiative to create a JSON based standard for resumes.</p>
-				<a href="/" class="btn btn-red btn-big">Take the tour</a>
-			</div>
-			<div class="col-sm-6 hidden-xs">
-				<img class="image" src="/img/resume.svg">
+				<a href="/" class="btn btn-red btn-big">Get Started</a>
 			</div>
 		</div>
 	</div>
 </header>
-<div id="start" class="container">
-	<div class="row">
-		<div class="feature col-sm-4">
-				<h2>JSON Schema</h2>
-				<p>JSON Resume is a standard created to empower developers.</p>
-				<a href="/docs/" class="btn">Read more</a>
-		</div>
-		<div class="feature col-sm-4">
-				<h2>Themes</h2>
-				<p>Browse our gallery of resume themes made by the community.</p>
-				<a href="/themes/" class="btn">View themes</a>
-		</div>
-		<div class="feature col-sm-4">
-				<h2>Open Source</h2>
-				<p>Every part of JSON Resume is open source on GitHub.</p>
-				<a href="https://github.com/jsonresume" target="_blank" class="btn">View on GitHub</a>
-		</div>
-	</div>
-</div>
-<!--
-<div id="start" class="container">
-	<div class="row">
-		<div class="col-sm-5">
-			<h2>What is JSON Resume?</h2>
-			<p><strong>JSON Resume</strong> is a community driven open source initiative to create a JSON based standard for resumes. There is no reason why there can't be a common standard for writing a resume that can be extended with an ecosystem of open source tools. This project will attempt to:</p>
-			<ul>
-				<li>Build a community open source movement where everyone can take advantage of the tools</li>
-				<li>Make themeing, exporting, storing and editing resumes super easy</li>
-			</ul>
-			<p>We have researched the alternative standards, and they are a lot more mature but are lacking a modern and friendly ecosystem that empower individuals.</p>
-			<p>Our goal is to empower developers in every way possible, which means we will stick to a more casual development approach.</p>
-			<p>Join us on IRC: <strong>#jsonresume</strong> on Freenode</p>
-			<h3>Why JSON?</h3>
-			<p>The <a href="http://json-schema.org">JSON Schema</a> is now mature enough for writing usable schematics. YAML doesn't throughly offer schematic standards yet (though you can easily convert your resume between YAML and JSON anyway).</p>
-			<h3>Versioning</h3>
-			<p>We will generally do 2 year cycles of revisions to the specification. Though upon release the lifecycle will be short for 3 months whilst last minute revisions are made to the standard.</p>
-			<h3>Open Source</h3>
-			<p>Everything on the jsonresume.org domain name is opened source under a MIT license. This is meant to be a community effort to better the resume ecosystem.</p>
-			<div style="clear: both;"></div>
-			<h3>Examples</h3>
-			<div class="row">
-			{% for example in site.data.examples %}
-			<div class="col-sm-12 col-md-6">
-				<div class="theme">
-					<div class="row">
-						<div class="col-sm-12 col-xs-6">
-							<a href="http://themes.jsonresume.org/theme/{{ example.theme }}">
-								<img style="height: 129px;border: 1px solid #eee;border-radius: 2px;" src="http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ example.theme }}">
-							</a>
-						</div>
-					</div>
-				</div>
+<div id="start">
+	<div class="container">
+		<div class="row">
+			<div class="feature col-sm-4">
+					<h2>What is this?</h2>
+					<p>JSON Resume is a standard created to empower developers.</p>
+					<a href="/docs/" class="btn">Read more</a>
 			</div>
-			{% endfor %}
+			<div class="feature col-sm-4">
+					<h2>Themes</h2>
+					<p>Browse our gallery of resume themes made by the community.</p>
+					<a href="/themes/" class="btn">View themes</a>
 			</div>
-			<hr />
-			<p>We have built tools for you to initialize and publish your own JSON Resume:</p>
-			<a href="/getting-started" class="button">Get Started!</a>
-		</div>
-		<div class="col-sm-7">
-			<h2>Specification</h2>
-			<p>The JSON Resume ecosystem only revolves around major version changes e.g. 0.0.0, 1.0.0, 2.0.0. The smaller changes will be implemented overtime but only major version changes will the ecosystem be expected to follow completely.</p>
-			<div id="schema">
-				<div class="header">
-					<div class="pull-right version">version 0.0.0</div>
-					resume.json
-				</div>
+			<div class="feature col-sm-4">
+					<h2>Open Source</h2>
+					<p>Every part of JSON Resume is open source on GitHub.</p>
+					<a href="https://github.com/jsonresume" target="_blank" class="btn">View on GitHub</a>
 			</div>
 		</div>
 	</div>
 </div>
--->
