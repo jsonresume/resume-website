@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Service Integration"
+title: "Announcing our first service integration"
 date: 2014-09-09 14:18:05
 permalink: /blog/first-service-integration
 author: Thomas Davis
