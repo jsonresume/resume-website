@@ -139,16 +139,17 @@ li {
 #nav a {
 	display: inline-block;
 	color: #000;
-	padding: 25px 0;
-}
-#nav a + a {
-	margin-left: 25px;
+	padding: 25px 15px;
 }
 #nav a:hover {
 	text-decoration: none;
 }
+#nav .col-sm-3 {
+	padding-left: 0;
+}
 #nav .col-sm-9 {
 	text-align: right;
+	padding-right: 0;
 }
 #nav #sidebar-toggle {
 	display: none;
@@ -403,6 +404,9 @@ li {
 @media (max-width: 768px) {
 	#nav {
 		text-align: center;
+	}
+	#nav .col-sm-3 {
+		padding-left: 15px;
 	}
 	#header.promo {
 		padding-top: 20px;

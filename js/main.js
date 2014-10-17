@@ -1,14 +1,7 @@
 jQuery(function($) {
 	highlight();
+	equalizeFeatureHeight();
 	renderStats();
-
-	var viewport = $("#viewport");
-	var toggle = $("#sidebar-toggle");
-
-	toggle.on("click", function(e) {
-		e.preventDefault();
-		viewport.toggleClass("lt");
-	})
 });
 
 function highlight() {
@@ -19,6 +12,33 @@ function highlight() {
 			self.siblings().removeClass("active");
 		}
 	});
+}
+
+function equalizeFeatureHeight() {
+	var start = $("#start");
+	if (!start.length) {
+		return;	
+	}
+	
+	var width = 0;
+	var page = $(window);
+	
+	setInterval(function() {
+		if (page.width() == width) {
+			return;
+		}
+		var max = 0;
+		var p = start.find(".feature p");
+		p.css("height", "auto");
+		p.each(function() {
+			var h = p.height();
+			if (h > max) {
+				max = h;
+			}
+		});
+		p.height(max);
+		width = page.width();
+	}, 250);
 }
 
 function renderStats() {
