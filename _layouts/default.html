@@ -8,7 +8,7 @@
 	<meta name="description" content="{{site.description}}">
 
 	<title>
-		{{site.title}} {% if page.title %} — {{page.title}} {% endif %}
+		{% if page.title %} {{page.title}} — {% endif %} {{site.title}}
 	</title>
 
 	<link rel="shortcut icon" href="/favicon.png">
@@ -49,9 +49,10 @@
 					</div>
 					<div class="col-sm-9 hidden-xs">
 						<a href="/getting-started/">Getting Started</a>
+						<a href="/specification/">Specification</a>
 						<a href="/themes/">Themes</a>
 						<a href="/blog/">Blog</a>
-						<a target="_blank" href="http://github.com/jsonresume/resume-docs/wiki">Docs</a>
+						<a target="_blank" href="http://github.com/jsonresume/resume-docs/wiki" class="hidden">Docs</a>
 						<a target="_blank" href="http://github.com/jsonresume/resume-cli">GitHub</a>
 					</div>
 				</div>

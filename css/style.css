@@ -189,6 +189,9 @@ li {
 #start .feature .btn {
 	margin-top: 10px;
 }
+#twitter {
+	padding: 40px 0;
+}
 #schema {
 	background: #fff;
 	border: 1px solid #ddd;
@@ -385,7 +388,7 @@ li {
 	margin-right: 6px;
 }
 #footer {
-	color: #ddd;
+	color: #bbb;
 	font-size: 11px;
 	line-height: 1em;
 	margin-top: 40px;
