@@ -317,11 +317,7 @@ pre {
 
 */
 #spec {
-	margin-top: 60px;
-}
-#spec h3 {
-	font-size: 20px;
-	margin-top: -4px;
+	margin-top: 40px;
 }
 #spec hr {
 	border-top: 1px solid #000;
@@ -357,7 +353,7 @@ pre {
 	padding-bottom: 10px;
 }
 #themes {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 #themes .theme {
 	background: #f9f9f9;
