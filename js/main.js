@@ -8,7 +8,47 @@ jQuery(function($) {
 	toggle.on("click", function(e) {
 		e.preventDefault();
 		viewport.toggleClass("lt");
-	})
+	});
+	if(window.location.pathname.indexOf('themes') !== -1) {
+		$.ajax('http://registry.jsonresume.org/competition', {
+			success: function (data) {
+				console.log(data);
+				var tbody = $('.leaderboard tbody');
+
+				var leaderboard = data.leaderboard;
+
+
+				themes = _.filter(themes, function(theme){
+					if(theme) {
+						return true;
+					} else {
+						return false;
+					}
+				});
+				themes = _.map(themes, function(theme){
+					theme.votes = leaderboard[theme.slug] || 0;
+					return theme;
+				});
+				themes = _.sortBy(themes, function(theme){
+					return -theme.votes;
+				});
+				console.log(themes);
+				var rank = 1;
+				_.each(themes, function(theme){
+					var row = $('<tr/>');
+					row.append($('<td/>').text(rank));
+					row.append($('<td/>').text(theme.name));
+					row.append($('<td/>').text(theme.author));
+					row.append($('<td/>').text('#' + theme.slug));
+					row.append($('<td/>').text(theme.votes));
+					row.append($('<td/>').text('Tweets'));
+					tbody.append(row);
+					rank++;
+				});
+			}
+		});
+	};
+
 });
 
 function highlight() {
@@ -58,4 +98,8 @@ function renderStats() {
 		demo.start();
 		previous = data.views*1;
 	});
+
+
+	
+
 }

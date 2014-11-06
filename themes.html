@@ -38,6 +38,24 @@ title: Themes
 		</div>
 		{% endfor %}
 	</div>
+	<hr />
+	<h2>Competition Leaderboard</h2>
+	<p>For November</p>
+	<table class="leaderboard table table-striped">
+		<thead>
+			<th>Rank</th>
+			<th>Theme</th>
+			<th>Author</th>
+			<th>Hashtag</th>
+			<th>Votes</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td><td>Golden</td><td>Thomas Davis</td><td>#golden</td><td>130</td><td><a>Tweet your vote</a></td></tr>
+		</tbody>
+	</table>
+	<hr />
 	<h2>Want to develop your own?</h2>
 	<p>Our theming system was released just recently and new themes have already started popping up. If you would like to develop a theme for the community please visit the <a href="http://github.com/jsonresume/theme-manager">theme-manager repo</a>.</p>
 <h3>Getting started</h3>
@@ -46,3 +64,17 @@ title: Themes
 <p>Or you can set the default theme for your resume on the registry by using the <code>--theme</code> option in the CLI tool e.g.</p>
 <code>resume publish --theme flat</code>
 </div>
+
+<script>
+  var themes = {
+		{% for theme in site.data.themes %}
+			"{{theme.slug}}": {
+				"name": "{{theme.name}}",
+				"slug": "{{theme.slug}}",
+				"author": "{{theme.author}}",
+				"author_link": "{{theme.link}}"
+			},
+		{% endfor %}
+		thiscodesucks: null
+  } 
+</script>
