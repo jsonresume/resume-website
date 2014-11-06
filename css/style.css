@@ -1,8 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
 
-html {
-	overflow-y: scroll;
-}
 html,
 body {
 	height: 100%;
@@ -11,12 +8,13 @@ body {
 	color: #222;
 	font: 15px "Open Sans";
 	margin: 0;
+	overflow-x: hidden;
 }
 a:hover {
 	text-decoration: none;
 }
 h1 {
-	font: 300 36px "Open Sans";
+	font: 300 40px "Open Sans";
 	margin: 0;
 }
 h1,
@@ -119,17 +117,18 @@ pre {
 	        perspective: 1000;
 }
 #sidebar {
-	background: #f9f9f9;
-	border-right: 1px solid #eee;
+	background: #f2f2f2;
 	bottom: 0;
-	left: -220px;
+	left: -225px;
 	position: absolute;
 	padding-top: 19px;
 	top: 0;
-	width: 220px;
+	width: 225px;
 }
 #sidebar a {
 	display: block;
+	color: #000;
+	font: 600 15px "Open Sans";
 	padding: 15px 30px;
 }
 #sidebar a + a {
@@ -150,6 +149,14 @@ pre {
 }
 #nav a:hover {
 	text-decoration: none;
+}
+#nav .lt {
+	display: none;
+	position: absolute;
+	left: 10px;
+	margin-top: -2px;
+	outline: none;
+	z-index: 2;
 }
 #nav .col-sm-3 {
 	padding-left: 0;
@@ -471,6 +478,15 @@ pre {
 }
 
 @media (max-width: 768px) {
+	#nav .lt {
+		display: block;
+	}
+	#viewport.open {
+		-webkit-transform: translate3d(225px, 0, 0);
+		   -moz-transform: translate3d(225px, 0, 0);
+		    -ms-transform: translate3d(225px, 0, 0);
+		        transform: translate3d(225px, 0, 0);
+	}
 	#nav {
 		text-align: center;
 	}

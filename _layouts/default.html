@@ -37,23 +37,20 @@
 	<div id="main">
 	<div id="viewport">
 		<aside id="sidebar">
-			<!--
-			Empty for now..
-			-->
+			{% include menu.html %}
 		</aside>
+		<div class="inner">
 		<nav id="nav">
+			<a href="#" class="lt">
+				<img src="/img/hamburger.png">
+			</a>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
 						<a href="/">JSON Resume</a>
 					</div>
 					<div class="col-sm-9 hidden-xs">
-						<a href="/getting-started/">Getting Started</a>
-						<a href="/specification/">Specification</a>
-						<a href="/themes/">Themes</a>
-						<a href="/blog/">Blog</a>
-						<a target="_blank" href="http://github.com/jsonresume/resume-docs/wiki" class="hidden">Docs</a>
-						<a target="_blank" href="http://github.com/jsonresume/resume-cli">GitHub</a>
+						{% include menu.html %}
 					</div>
 				</div>
 			</div>
@@ -73,6 +70,7 @@
 				</div>
 			</div>
 		</footer>
+		</div>
 	</div>
 	</div>
 

@@ -2,6 +2,7 @@ jQuery(function($) {
 	highlight();
 	equalizeFeatureHeight();
 	renderStats();
+	enableSidebar();
 });
 
 function highlight() {
@@ -77,5 +78,20 @@ function renderStats() {
 		var demo = new countUp("myTargetElement", previous*1, data.views*1, 0, 2, options);
 		demo.start();
 		previous = data.views*1;
+	});
+}
+
+function enableSidebar() {
+	var viewport = $("#viewport");
+	$(".lt").on("touchstart click", function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		viewport.toggleClass("open");
+	});
+	$(".inner").on("touchstart click", function(e) {
+		if (viewport.hasClass("open")) {
+			e.stopPropagation();
+			viewport.removeClass("open");
+		}
 	});
 }
