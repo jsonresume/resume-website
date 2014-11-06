@@ -41,7 +41,7 @@ jQuery(function($) {
 					row.append($('<td/>').text(theme.author));
 					row.append($('<td/>').text('#' + theme.slug));
 					row.append($('<td/>').text(theme.votes));
-					row.append($('<td/>').text('Tweets'));
+					row.append($('<td/>').html('<a target="_blank" href="https://twitter.com/intent/tweet?related=jsonresume&text=I%20vote%20for%20the%20%23flat%20resume%20theme%20to%20win%20this%20months%20%24250%20prize%20at%20jsonresume.org%2Fthemes">Tweet your vote</a>'));
 					tbody.append(row);
 					rank++;
 				});
