@@ -19,28 +19,20 @@ function highlight() {
 function equalizeFeatureHeight() {
 	var start = $("#start");
 	if (!start.length) {
-		return;	
+		return;
 	}
-	
-	var width = 0;
 	var page = $(window);
-	
 	setInterval(function() {
-		if (page.width() == width) {
-			return;
-		}
 		var max = 0;
-		var p = start.find(".feature p");
-		p.css("height", "auto");
-		p.each(function() {
-			var h = p.height();
+		var items = start.find(".feature p");
+		items.css("height", "auto").each(function() {
+			var h = $(this).height();
 			if (h > max) {
 				max = h;
 			}
 		});
-		p.height(max);
-		width = page.width();
-	}, 250);
+		items.height(max);
+	}, 240);
 }
 
 function renderStats() {

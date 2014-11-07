@@ -104,6 +104,9 @@ pre {
 	padding: 0;
 	margin: 0;
 }
+.float-right {
+	float: right;
+}
 #wrap {
 	height: 100%;
 	overflow: hidden;
@@ -477,7 +480,12 @@ pre {
 	color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+	#nav a {
+		padding: 25px 10px;
+	}
+}
+@media (max-width: 767px) {
 	#nav .lt {
 		display: block;
 	}
@@ -496,6 +504,10 @@ pre {
 	#header.promo {
 		padding-top: 20px;
 		padding-bottom: 60px;
+	}
+	#start .feature {
+		margin: 0 auto;
+		max-width: 314px;
 	}
 	#start .feature + .feature {
 		margin-top: 50px;
