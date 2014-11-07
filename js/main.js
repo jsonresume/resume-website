@@ -1,53 +1,9 @@
 jQuery(function($) {
 	highlight();
+	equalizeFeatureHeight();
 	renderStats();
-
-	var viewport = $("#viewport");
-	var toggle = $("#sidebar-toggle");
-
-	toggle.on("click", function(e) {
-		e.preventDefault();
-		viewport.toggleClass("lt");
-	});
-	if(window.location.pathname.indexOf('themes') !== -1) {
-		$.ajax('https://registry.jsonresume.org/competition', {
-			success: function (data) {
-				console.log(data);
-				var tbody = $('.leaderboard tbody');
-
-				var leaderboard = data.leaderboard;
-
-
-				themes = _.filter(themes, function(theme){
-					if(theme) {
-						return true;
-					} else {
-						return false;
-					}
-				});
-				themes = _.map(themes, function(theme){
-					theme.votes = leaderboard[theme.slug] || 0;
-					return theme;
-				});
-				themes = _.sortBy(themes, function(theme){
-					return -theme.votes;
-				});
-				console.log(themes);
-				var rank = 1;
-				_.each(themes, function(theme){
-					var row = $('<tr/>');
-					row.append($('<td/>').text(rank));
-					row.append($('<td/>').text(theme.name));
-					row.append($('<td/>').text('#' + theme.slug));
-					row.append($('<td/>').text(theme.votes));
-					row.append($('<td/>').html('<a target="_blank" href="https://twitter.com/intent/tweet?related=jsonresume,neutralthoughts,mattiaserming&text=I%20vote%20for%20the%20%23'+theme.slug+'%20resume%20theme%20to%20win%20this%20months%20%24250%20prize%20at%20jsonresume.org%2Fthemes">Tweet your vote</a>'));
-					tbody.append(row);
-					rank++;
-				});
-			}
-		});
-	};
-
+	enableSidebar();
+	competition();
 });
 
 function highlight() {
@@ -58,6 +14,33 @@ function highlight() {
 			self.siblings().removeClass("active");
 		}
 	});
+}
+
+function equalizeFeatureHeight() {
+	var start = $("#start");
+	if (!start.length) {
+		return;	
+	}
+	
+	var width = 0;
+	var page = $(window);
+	
+	setInterval(function() {
+		if (page.width() == width) {
+			return;
+		}
+		var max = 0;
+		var p = start.find(".feature p");
+		p.css("height", "auto");
+		p.each(function() {
+			var h = p.height();
+			if (h > max) {
+				max = h;
+			}
+		});
+		p.height(max);
+		width = page.width();
+	}, 250);
 }
 
 function renderStats() {
@@ -101,4 +84,62 @@ function renderStats() {
 
 	
 
+}
+
+function enableSidebar() {
+	var viewport = $("#viewport");
+	$(".lt").on("touchstart click", function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		viewport.toggleClass("open");
+	});
+	$(".inner").on("touchstart click", function(e) {
+		if (viewport.hasClass("open")) {
+			e.stopPropagation();
+			viewport.removeClass("open");
+		}
+	});
+}
+
+function competition() {
+	var viewport = $("#viewport");
+	var toggle = $("#sidebar-toggle");
+
+	toggle.on("click", function(e) {
+		e.preventDefault();
+		viewport.toggleClass("lt");
+	});
+	if(window.location.pathname.indexOf('themes') !== -1) {
+		$.ajax('https://registry.jsonresume.org/competition', {
+			success: function (data) {
+				var tbody = $('.leaderboard tbody');
+				var leaderboard = data.leaderboard;
+				themes = _.filter(themes, function(theme){
+					if(theme) {
+						return true;
+					} else {
+						return false;
+					}
+				});
+				themes = _.map(themes, function(theme){
+					theme.votes = leaderboard[theme.slug] || 0;
+					return theme;
+				});
+				themes = _.sortBy(themes, function(theme){
+					return -theme.votes;
+				});
+				var rank = 1;
+				_.each(themes, function(theme){
+					var row = $('<tr/>');
+					row.append($('<td/>').text(rank));
+					row.append($('<td/>').text(theme.name));
+					row.append($('<td/>').text('#' + theme.slug));
+					row.append($('<td/>').text(theme.votes));
+					row.append($('<td/>').html('<a target="_blank" href="https://twitter.com/intent/tweet?related=jsonresume,neutralthoughts,mattiaserming&text=I%20vote%20for%20the%20%23'+theme.slug+'%20resume%20theme%20to%20win%20this%20months%20%24250%20prize%20at%20jsonresume.org%2Fthemes">Tweet your vote</a>'));
+					tbody.append(row);
+					rank++;
+				});
+			}
+		});
+	};
 }
