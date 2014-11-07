@@ -10,7 +10,7 @@ jQuery(function($) {
 		viewport.toggleClass("lt");
 	});
 	if(window.location.pathname.indexOf('themes') !== -1) {
-		$.ajax('http://registry.jsonresume.org/competition', {
+		$.ajax('https://registry.jsonresume.org/competition', {
 			success: function (data) {
 				console.log(data);
 				var tbody = $('.leaderboard tbody');
