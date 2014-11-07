@@ -6,7 +6,7 @@ body {
 }
 body {
 	color: #222;
-	font: 15px "Open Sans";
+	font: 13px "Open Sans";
 	margin: 0;
 	overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ p {
 }
 p,
 li {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 pre {
 	background: none;
@@ -184,7 +184,7 @@ pre {
 }
 #header {
 	background: #f9f9f9;
-	padding: 50px 0 60px;
+	padding: 50px 0 50px;
 }
 #header.yellow {
 	background: #faf07b;
@@ -192,6 +192,9 @@ pre {
 #header.promo {
 	padding: 80px 0 120px;
 	text-align: center;
+}
+#header.promo p {
+	font-size: 15px;
 }
 #header .btn {
 	margin-top: 10px;
@@ -303,29 +306,6 @@ pre {
 	padding: 10px;
 	text-align: center;
 }
-/*
-#schema {
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 2px;
-}
-#schema pre {
-	background: none;
-	border: 0;
-	font-family: monospace;
-	padding: 10px;
-	padding-bottom: 0;
-}
-#schema .header {
-	background: #f9f9f9;
-	color: #666;
-	padding: 14px 18px;
-	line-height: 19px;
-	text-transform: uppercase;
-	font-size: 12px;
-}
-
-*/
 #spec {
 	margin-top: 40px;
 }
