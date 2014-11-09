@@ -112,7 +112,8 @@ pre {
 	overflow: hidden;
 }
 #viewport {
-	height: 100%;
+	min-height: 100%;
+	width: 100%;
 	transition: all .4s;
 	-webkit-transform: translateZ(0);
 	        transform: translateZ(0);
