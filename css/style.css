@@ -363,7 +363,9 @@ pre {
 }
 #themes .theme img {
 	border: 1px solid #ddd;
-	width: 100%;
+	max-width: 100%;
+	margin: 0 auto !important;
+	display: block;
 }
 #themes .theme img:hover {
 	border-color: #ccc;
