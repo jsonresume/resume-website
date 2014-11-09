@@ -6,7 +6,7 @@ body {
 }
 body {
 	color: #222;
-	font: 13px "Open Sans";
+	font: 14px "Open Sans";
 	margin: 0;
 	overflow-x: hidden;
 }
@@ -212,10 +212,12 @@ pre {
 #twitter {
 	padding: 40px 0;
 }
+/*
 #schema {
 	background: #fff;
 	border: 1px solid #ddd;
 	border-radius: 2px;
+	font-size: 13px;
 }
 #schema pre {
 	background: none;
@@ -235,6 +237,7 @@ pre {
 #schema .header .version {
 	color: #ccc;
 }
+*/
 #search:before {
 	color: #ccc;
 	content: "\f002";
@@ -306,21 +309,22 @@ pre {
 	padding: 10px;
 	text-align: center;
 }
-#spec {
+#schema {
 	margin-top: 40px;
+	font-size: 13px;
 }
-#spec hr {
+#schema hr {
 	border-top: 1px solid #000;
 	position: absolute;
 	margin: 0;
 	margin-top: 8px;
 }
-#spec pre {
+#schema pre {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	padding: 0 10px;
 }
-#spec .header {
+#schema .header {
 	background: #f9f9f9;
 	border: 1px solid #ddd;
 	border-bottom: 0;
@@ -331,16 +335,20 @@ pre {
 	text-transform: uppercase;
 	font-size: 12px;
 }
-#spec .version {
+#schema .version {
 	color: #ccc;
 }
-#spec .top {
+#schema .top {
 	padding-top: 10px;
 }
-#spec .bottom {
+#schema .bottom {
 	border-bottom: 1px solid #ddd;
 	border-radius: 0 0 2px 2px;
 	padding-bottom: 10px;
+}
+#schema .integration p {
+	margin-top: 0;
+	margin-bottom: .5em;
 }
 #themes {
 	margin-top: 40px;
