@@ -207,6 +207,10 @@ pre {
 #start .feature {
 	text-align: center;
 }
+#start .feature img {
+	margin-bottom: 20px;
+	opacity: .3;
+}
 #start .feature .btn {
 	margin-top: 10px;
 }
