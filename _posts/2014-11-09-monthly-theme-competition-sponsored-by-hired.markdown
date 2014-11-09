@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Theme Competition - Sponsored by Hired.com"
+title: "Theme Competition - Sponsored by Hired"
 date: 2014-11-09 14:18:05
 permalink: /blog/monthly-theme-competition-sponsored-by-hired
 author: Thomas Davis
