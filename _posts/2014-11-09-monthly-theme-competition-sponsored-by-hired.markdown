@@ -78,6 +78,6 @@ Hired connects talented technical job seekers like you with top tech companies--
 
 Visit the themes page to vote for your favorite.
 
-If you would like to create your own theme, visit the theme documentation to get started, there you can find instructions and boilerplate templates to get started.
+If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> to get started, there you can find instructions and boilerplate templates to get started.
 
 The JSON Resume Team
