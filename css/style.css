@@ -112,7 +112,8 @@ pre {
 	overflow: hidden;
 }
 #viewport {
-	height: 100%;
+	min-height: 100%;
+	width: 100%;
 	transition: all .4s;
 	-webkit-transform: translateZ(0);
 	        transform: translateZ(0);
@@ -135,7 +136,7 @@ pre {
 	padding: 15px 30px;
 }
 #sidebar a + a {
-	border-top: 1px solid #eee;
+	border-top: 1px solid #e3e3e3;
 }
 #nav {
 	background: #faf07b;
@@ -206,38 +207,16 @@ pre {
 #start .feature {
 	text-align: center;
 }
+#start .feature img {
+	margin-bottom: 20px;
+	opacity: .3;
+}
 #start .feature .btn {
 	margin-top: 10px;
 }
 #twitter {
 	padding: 40px 0;
 }
-/*
-#schema {
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 2px;
-	font-size: 13px;
-}
-#schema pre {
-	background: none;
-	border: 0;
-	font-family: monospace;
-	padding: 10px;
-	padding-bottom: 0;
-}
-#schema .header {
-	background: #f9f9f9;
-	color: #666;
-	padding: 14px 18px;
-	line-height: 19px;
-	text-transform: uppercase;
-	font-size: 12px;
-}
-#schema .header .version {
-	color: #ccc;
-}
-*/
 #search:before {
 	color: #ccc;
 	content: "\f002";
