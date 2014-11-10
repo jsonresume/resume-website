@@ -62,22 +62,22 @@ Changing the style of your resume can be done easily in a few seconds because al
 </div>
 
 
-Thanks to some talented developers, we already have a variety of great themes. But we would love to see more, so we are announcing a monthly competition with a $250 prize. The winner will be decided by votes.
+Thanks to some talented developers, we already have a variety of great themes. But we would love to see more, so we are announcing a monthly competition with a **$250 prize**. The winner will be decided by votes.
 
-When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. Their mission statement is closely aligned with our goal of empowering job seekers:
+When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. We are proud to have them as our sponsors, and believe they are at the frontier of modern hiring practises. They not only allow developers to have more of a say in the hiring process but also dramatically expand the total number of possible opportunities. 
 
 <div class="well" style="display: table-cell; vertical-align: middle;">
 
 <a href="https://hired.com" target="_blank" style="float: left; width: 100px; margin-right: 15px;"><img style=" width: 100px; margin-right: 15px; border: 1px solid #ccc;" src="https://dmrxx81gnj0ct.cloudfront.net/assets/hired-square-b21c3bb015f0de89a42ecdbb8f2a994a.png" /></a>
 
-Hired connects talented technical job seekers like you with top tech companies---everything from large public companies to early stage startups. Join to get transparent, upfront job offers and find an opportunity you love. 
+<em>Hired connects talented technical job seekers like you with top tech companies—everything from large public companies to early stage startups. Join to get transparent, upfront job offers and find an opportunity you love.</em>
 
 <div style="clear: both;"></div>
 
 </div>
 
-Visit the themes page to vote for your favorite.
+Visit the [themes](/themes) page to vote for your favorite. Votes are cast by tweeting the theme hashtag and a link back to the site, they automatically scraped from the Twitter API and shown on the [leaderboard.](/themes)
 
-If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> to get started, there you can find instructions and boilerplate templates to get started.
+If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> to get started, there you can find instructions and [boilerplate templates](https://github.com/jsonresume/jsonresume-theme-boilerplate) to get started.
 
 The JSON Resume Team
