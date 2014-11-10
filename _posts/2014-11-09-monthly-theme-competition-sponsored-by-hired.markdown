@@ -64,7 +64,7 @@ Changing the style of your resume can be done easily in a few seconds because al
 
 Thanks to some talented developers, we already have a variety of great themes. But we would love to see more, so we are announcing a monthly competition with a **$250 prize**. The winner will be decided by votes.
 
-When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. We are proud to have them as our sponsors, and believe they are at the frontier of modern hiring practises. They not only allow developers to have more of a say in the hiring process but also dramatically expand the total number of possible opportunities. 
+When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. We are proud to have them as our sponsors, and believe they are at the frontier of modern hiring practices. They not only allow developers to have more of a say in the hiring process but also dramatically expand the total number of possible opportunities. 
 
 <div class="well" style="display: table-cell; vertical-align: middle;">
 
@@ -76,8 +76,8 @@ When we launched JSON Resume, many companies reached out to offer their support.
 
 </div>
 
-Visit the [themes](/themes) page to vote for your favorite. Votes are cast by tweeting the theme hashtag and a link back to the site, they automatically scraped from the Twitter API and shown on the [leaderboard.](/themes)
+Visit the [themes](/themes) page to vote for your favorite. Votes are cast by Tweeting the theme hashtag and a link back to the site, then automatically scraped from the Twitter API and shown on the [leaderboard.](/themes)
 
-If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> to get started, there you can find instructions and [boilerplate templates](https://github.com/jsonresume/jsonresume-theme-boilerplate) to get started.
+If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> where you can find instructions and [boilerplate templates](https://github.com/jsonresume/jsonresume-theme-boilerplate) to get started.
 
 The JSON Resume Team
