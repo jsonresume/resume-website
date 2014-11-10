@@ -1,3 +1,21 @@
+- name: Elegant
+  slug: elegant
+  github: mudassir0909
+  author: Mudassir
+  link: https://github.com/mudassir0909
+
+- name: Paper
+  slug: paper
+  github: TimDaub
+  author: Tim Daubenschütz
+  link: https://twitter.com/TimDaub
+
+- name: Kendall
+  slug: kendall
+  github: LinuxBozo
+  author: M. Adam Kendall
+  link: http://registry.jsonresume.org/linuxbozo
+
 - name: Flat
   slug: flat
   github: erming
@@ -10,11 +28,6 @@
   author: Thomas Davis
   link: http://registry.jsonresume.org/thomasdavis
 
-- name: Elegant
-  slug: elegant
-  github: mudassir0909
-  author: Mudassir
-  link: https://github.com/mudassir0909
 
 - name: Classy
   slug: classy
@@ -22,11 +35,6 @@
   author: Jared Cubilla
   link: https://github.com/JaredCubilla
 
-- name: Kendall
-  slug: kendall
-  github: LinuxBozo
-  author: M. Adam Kendall
-  link: http://registry.jsonresume.org/linuxbozo
 
 - name: Class
   slug: class
@@ -34,8 +42,3 @@
   author: Charlotte Spencer
   link: http://www.twitter.com/charlotteis
 
-- name: Paper
-  slug: paper
-  github: TimDaub
-  author: Tim Daubenschütz
-  link: https://twitter.com/TimDaub
