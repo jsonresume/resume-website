@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Theme Competition - Sponsored by Hired"
+title: "Theme Competition - Sponsored by Hired.com"
 date: 2014-11-09 14:18:05
 permalink: /blog/monthly-theme-competition-sponsored-by-hired
 author: Thomas Davis
@@ -17,7 +17,7 @@ Changing the style of your resume can be done easily in a few seconds because al
       <div class="row">
         <div class="col-sm-12 col-xs-6">
           <a href="http://themes.jsonresume.org/theme/elegant">
-            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="http://api.screenshotmachine.com/?key=afd4d4&amp;size=N&amp;url=http://themes.jsonresume.org/theme/elegant">
+            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="/img/themes/elegant.jpeg">
           </a>
         </div>
         <div class="col-sm-12 col-xs-6 meta">
@@ -32,7 +32,7 @@ Changing the style of your resume can be done easily in a few seconds because al
       <div class="row">
         <div class="col-sm-12 col-xs-6">
           <a href="http://themes.jsonresume.org/theme/kendall">
-            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="http://api.screenshotmachine.com/?key=afd4d4&amp;size=N&amp;url=http://themes.jsonresume.org/theme/kendall">
+            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="/img/themes/kendall.jpeg">
           </a>
         </div>
         <div class="col-sm-12 col-xs-6 meta">
@@ -49,7 +49,7 @@ Changing the style of your resume can be done easily in a few seconds because al
       <div class="row">
         <div class="col-sm-12 col-xs-6">
           <a href="http://themes.jsonresume.org/theme/paper">
-            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="http://api.screenshotmachine.com/?key=afd4d4&amp;size=N&amp;url=http://themes.jsonresume.org/theme/paper">
+            <img style="border: 1px solid #ebebeb; border-radius: 4px; height: 129px;" src="/img/themes/paper.jpeg">
           </a>
         </div>
         <div class="col-sm-12 col-xs-6 meta">
@@ -62,22 +62,22 @@ Changing the style of your resume can be done easily in a few seconds because al
 </div>
 
 
-Thanks to some talented developers, we already have a variety of great themes. But we would love to see more, so we are announcing a monthly competition with a **$250 prize**. The winner will be decided by votes.
+Thanks to some talented developers, we already have a variety of great themes. But we would love to see more, so we are announcing a monthly competition with a $250 prize. The winner will be decided by votes.
 
-When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. We are proud to have them as our sponsors, and believe they are at the frontier of modern hiring practices. They not only allow developers to have more of a say in the hiring process but also dramatically expand the total number of possible opportunities. 
+When we launched JSON Resume, many companies reached out to offer their support. One of these companies, <a href="https://hired.com">Hired.com</a>, loved the idea of a portable resume format. Their mission statement is closely aligned with our goal of empowering job seekers:
 
 <div class="well" style="display: table-cell; vertical-align: middle;">
 
 <a href="https://hired.com" target="_blank" style="float: left; width: 100px; margin-right: 15px;"><img style=" width: 100px; margin-right: 15px; border: 1px solid #ccc;" src="https://dmrxx81gnj0ct.cloudfront.net/assets/hired-square-b21c3bb015f0de89a42ecdbb8f2a994a.png" /></a>
 
-<em>Hired connects talented technical job seekers like you with top tech companies—everything from large public companies to early stage startups. Join to get transparent, upfront job offers and find an opportunity you love.</em>
+Hired connects talented technical job seekers like you with top tech companies---everything from large public companies to early stage startups. Join to get transparent, upfront job offers and find an opportunity you love. 
 
 <div style="clear: both;"></div>
 
 </div>
 
-Visit the [themes](/themes) page to vote for your favorite. Votes are cast by Tweeting the theme hashtag and a link back to the site, then automatically scraped from the Twitter API and shown on the [leaderboard.](/themes)
+Visit the themes page to vote for your favorite.
 
-If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> where you can find instructions and [boilerplate templates](https://github.com/jsonresume/jsonresume-theme-boilerplate) to get started.
+If you would like to create your own theme, visit the <a target="_blank" href="https://github.com/jsonresume/theme-manager">theme documentation</a> to get started, there you can find instructions and boilerplate templates to get started.
 
 The JSON Resume Team
