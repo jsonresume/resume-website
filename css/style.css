@@ -333,15 +333,14 @@ pre {
 	margin-top: 40px;
 }
 #themes .theme {
-	background: #f9f9f9;
-	border: 1px solid #eee;
+	/*background: #f9f9f9;*/
+	border: 1px solid #ddd;
 	border-radius: 2px;
 	color: #000;
 	margin-bottom: 30px;
 	padding: 20px;
 }
 #themes .theme img {
-	border: 1px solid #ddd;
 	max-width: 100%;
 	margin: 0 auto !important;
 	display: block;
@@ -349,10 +348,15 @@ pre {
 #themes .theme img:hover {
 	border-color: #ccc;
 }
-#themes .theme .button {
+#themes .theme .name {
+	margin-top: 10px;
+}
+#themes .theme .btn {
 	display: block;
 	margin-top: 20px;
+	text-align: center;
 }
+#themes
 #themes .meta {
 	margin-top: 10px;
 	line-height: 1.4;
