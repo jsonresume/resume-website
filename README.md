@@ -4,7 +4,7 @@ Visit the website at http://jsonresume.org/
 
 ## Development
 
-If you want run this Jekyll website locally, follow these instructions (from http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/):
+If you want run this Jekyll website locally, follow these instructions:
 
 ### 1. Clone repository
 
@@ -37,6 +37,11 @@ jekyll serve --watch
 ```
 
 This will run the Jekyll server and watch for any file changes.
+
+## Resources
+
+Installing Jekyll on Ubuntu:  
+http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/
 
 ## License
 
