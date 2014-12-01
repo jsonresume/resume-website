@@ -139,7 +139,7 @@ pre {
 	border-top: 1px solid #e3e3e3;
 }
 #nav {
-	background: #faf07b;
+	background: #fff688;
 	font: 600 15px "Open Sans";
 	overflow: hidden;
 }
@@ -189,6 +189,7 @@ pre {
 }
 #header.yellow {
 	background: #faf07b;
+  background: #fff688;
 }
 #header.promo {
 	padding: 80px 0 120px;
@@ -196,6 +197,8 @@ pre {
 }
 #header.promo p {
 	font-size: 15px;
+  max-width: 520px;
+  margin: 25px auto;
 }
 #header .btn {
 	margin-top: 10px;
@@ -206,6 +209,9 @@ pre {
 }
 #start .feature {
 	text-align: center;
+}
+#start .feature h2 {
+  font-weight: 300;
 }
 #start .feature img {
 	margin-bottom: 20px;
