@@ -107,6 +107,12 @@ pre {
 .float-right {
 	float: right;
 }
+.atss {
+  top: 15% !important;
+}
+.atss .at-share-close-control {
+  display: none !important;
+}
 #wrap {
 	height: 100%;
 	overflow: hidden;
@@ -308,6 +314,10 @@ pre {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	padding: 0 10px;
+  overflow: hidden;
+}
+#schema pre span {
+  color: #bbb;
 }
 #schema .header {
 	background: #f9f9f9;
@@ -334,6 +344,9 @@ pre {
 #schema .integration p {
 	margin-top: 0;
 	margin-bottom: .5em;
+}
+#schema .row div[class^="col-sm-"] {
+	margin-bottom: 30px;
 }
 #themes {
 	margin-top: 40px;
