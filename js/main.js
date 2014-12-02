@@ -49,7 +49,7 @@ function renderStats() {
 		decimal : '.' 
 	}
 
-	$.ajax('http://registry.jsonresume.org/stats', {
+	$.ajax('https://registry.jsonresume.org/stats', {
 		success: function (data) {
 			previous = data.views;
 			var demo = new countUp("myTargetElement", 0, data.views*1, 0, 2, options);
