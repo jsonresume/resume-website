@@ -42,3 +42,21 @@
   author: Charlotte Spencer
   link: http://www.twitter.com/charlotteis
 
+- name: Short
+  slug: short
+  github: isnotahippy
+  author: Graeme Maciver
+  link: http://www.graememaciver.com/
+
+- name: Slick
+  slug: slick
+  github: dfmcphee
+  author: Dominic McPhee
+  link: http://dominicmcphee.com
+
+- name: Kwan
+  slug: kwan
+  github: icoloma
+  author: Nacho Coloma
+  link: http://icoloma.blogspot.com
+
