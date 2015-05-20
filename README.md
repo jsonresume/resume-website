@@ -66,7 +66,7 @@ Then open [http://localhost:4000/](http://localhost:4000/).
 
 The initial provision will take some time.
 
-**Note:** The `--watch` flag for Jekyll has issues inside the VM, see [Stack Overflow](https://stackoverflow.com/questions/19822319/jekyll-regeneration-doesnt-work-inside-vagrant) and jekyll/jekyll#1763.
+**Note:** The `--watch` flag for Jekyll has issues inside the VM, see [Stack Overflow](https://stackoverflow.com/questions/19822319/jekyll-regeneration-doesnt-work-inside-vagrant) and [jekyll/jekyll#1763](https://github.com/jekyll/jekyll/issues/1763).
 
 ## Resources
 
