@@ -6,7 +6,7 @@ body {
 }
 body {
 	color: #222;
-  background: #fff;
+	background: #fff;
 	font: 14px "Open Sans";
 	margin: 0;
 	overflow-x: hidden;
@@ -146,7 +146,7 @@ pre {
 	border-top: 1px solid #e3e3e3;
 }
 #nav {
-	background: #fff688;
+	background: #fff18f;
 	font: 600 15px "Open Sans";
 	overflow: hidden;
 }
@@ -195,8 +195,7 @@ pre {
 	padding: 50px 0 50px;
 }
 #header.yellow {
-	background: #faf07b;
-  background: #fff688;
+	background: #fff18f;
 }
 #header.promo {
 	padding: 80px 0 120px;
