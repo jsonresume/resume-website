@@ -17,7 +17,12 @@ title: Projects
 		<div class="col-sm-6 contributing">
 			<p>JSON Resume was built to inspire a new creative movement around resumes. This page will showcase some of those ideas...</p>
       <ul>
-        <li><a href="https://github.com/Jac21/SkillSet">SkillSet</a> - Intuitive job-candidate skill visualization, taking advantage of D3.js and JSONResume.</a></li>
+      		{% for project in site.data.projects %}
+            <li>
+              <a href="{{project.link}}">{{project.name}}</a> - {{project.description}}
+            </li>
+      		</div>
+      		{% endfor %}
       </ul>
 		</div>
 		<div class="col-sm-6 team">
