@@ -9,3 +9,7 @@
 - name: gulp-resume
   link: https://github.com/mattberther/gulp-resume
   description: gulp-resume is a gulp plugin to generate a resume using jsonresume.org.
+
+- name: ng-jsonresume
+  link: https://github.com/marko-knoebl/ng-jsonresume
+  description: ng-jsonresume lets you include a resume into a webpage by using an Angular directive and providing data in the standardized jsonresume format.
