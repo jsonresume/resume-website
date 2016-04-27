@@ -13,3 +13,7 @@
 - name: ng-jsonresume
   link: https://github.com/marko-knoebl/ng-jsonresume
   description: ng-jsonresume lets you include a resume into a webpage by using an Angular directive and providing data in the standardized jsonresume format.
+
+- name: jsonresume (haskell)
+  link: http://hackage.haskell.org/package/jsonresume
+  description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
