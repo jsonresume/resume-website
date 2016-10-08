@@ -13,6 +13,7 @@ body {
 }
 a:hover {
 	text-decoration: none;
+	transition: all .25s;
 }
 h1 {
 	font: 300 40px "Open Sans";
@@ -57,6 +58,7 @@ pre {
 .btn:hover {
 	border-color: #aaa;
 	color: #666;
+	transition: all .25s;
 }
 .btn-red {
 	background: #df4848;
@@ -67,6 +69,7 @@ pre {
 	background: #ce2424;
 	border: 2px solid #ce2424;
 	color: #fff;
+	transition: all .25s;
 }
 .btn-big {
 	font-size: 12px;
@@ -93,6 +96,7 @@ pre {
 	border-color: #ccc;
 	color: inherit;
 	text-decoration: none;
+	transition: all .25s;
 }
 .post-list {
 	margin: 0;
@@ -159,7 +163,9 @@ pre {
 	padding: 25px 15px;
 }
 #nav a:hover {
+	color: #fff;
 	text-decoration: none;
+    transition: all .25s;
 }
 #nav .lt {
 	display: none;
@@ -273,6 +279,7 @@ pre {
 #docs .item:hover {
 	color: #000;
 	text-decoration: none;
+	transition: all .25s;
 }
 #getting-started {
 	margin-top: 20px;
@@ -366,6 +373,7 @@ pre {
 }
 #themes .theme img:hover {
 	border-color: #ccc;
+	transition: all .25s;
 }
 #themes .theme .name {
 	margin-top: 10px;
@@ -442,6 +450,7 @@ pre {
 #team .person a:hover,
 #team .person a:hover:before {
 	color: #d14;
+	transition: all .25s;
 }
 #team .person .github:before {
 	color: #ccc;
@@ -470,6 +479,7 @@ pre {
 }
 #footer a:hover {
 	color: #000;
+	transition: all .25s;
 }
 
 @media (max-width: 991px) {
