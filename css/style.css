@@ -13,6 +13,8 @@ body {
 }
 a:hover {
 	text-decoration: none;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 h1 {
 	font: 300 40px "Open Sans";
@@ -51,12 +53,15 @@ pre {
 	letter-spacing: 1px;
 	padding: 8px 16px;
 	text-transform: uppercase;
+	-webkit-transition: background .1s, color .1s;
 	transition: background .1s, color .1s;
 	word-spacing: 3px;
 }
 .btn:hover {
 	border-color: #aaa;
 	color: #666;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 .btn-red {
 	background: #df4848;
@@ -67,6 +72,8 @@ pre {
 	background: #ce2424;
 	border: 2px solid #ce2424;
 	color: #fff;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 .btn-big {
 	font-size: 12px;
@@ -75,8 +82,8 @@ pre {
 }
 .button {
 	background-color: #ececec;
+	background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
 	background-image: linear-gradient(#f4f4f4, #ececec);
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	border: none;
 	border: 1px solid #ddd;
@@ -93,6 +100,8 @@ pre {
 	border-color: #ccc;
 	color: inherit;
 	text-decoration: none;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 .post-list {
 	margin: 0;
@@ -121,6 +130,7 @@ pre {
 #viewport {
 	min-height: 100%;
 	width: 100%;
+	-webkit-transition: all .4s;
 	transition: all .4s;
 	-webkit-transform: translateZ(0);
 	        transform: translateZ(0);
@@ -159,7 +169,10 @@ pre {
 	padding: 25px 15px;
 }
 #nav a:hover {
+	color: #fff;
 	text-decoration: none;
+    -webkit-transition: all .25s;
+    transition: all .25s;
 }
 #nav .lt {
 	display: none;
@@ -273,6 +286,8 @@ pre {
 #docs .item:hover {
 	color: #000;
 	text-decoration: none;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 #getting-started {
 	margin-top: 20px;
@@ -366,6 +381,8 @@ pre {
 }
 #themes .theme img:hover {
 	border-color: #ccc;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 #themes .theme .name {
 	margin-top: 10px;
@@ -442,6 +459,8 @@ pre {
 #team .person a:hover,
 #team .person a:hover:before {
 	color: #d14;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 #team .person .github:before {
 	color: #ccc;
@@ -470,6 +489,8 @@ pre {
 }
 #footer a:hover {
 	color: #000;
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
 
 @media (max-width: 991px) {
@@ -483,8 +504,6 @@ pre {
 	}
 	#viewport.open {
 		-webkit-transform: translate3d(225px, 0, 0);
-		   -moz-transform: translate3d(225px, 0, 0);
-		    -ms-transform: translate3d(225px, 0, 0);
 		        transform: translate3d(225px, 0, 0);
 	}
 	#nav {
