@@ -23,7 +23,7 @@ When JSON resume first went public, it was actually unexpected and the project w
 Some accomplishments so far
 
 * Over 1400 stars on the [resume CLI](https://github.com/jsonresume/resume-cli)
-* 97 issues created for the specification, [52 closed](https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed)	
+* 97 issues created for the specification, [52 closed](https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed)
 * Built a [modular theme system](https://github.com/jsonresume/theme-manager) leveraging NPM for version management
 * Active [theme development](http://node-modules.com/search?q=jsonresume-theme-*) underway
 * Progress made on [LinkedIn export](http://jmperezperez.com/linkedin-to-json-resume/)
@@ -36,9 +36,9 @@ An obligitory thank you to everybody who has participated up to this point. And 
 
 ### Where are we heading?
 
-After long discussions about the specification in the Github issues, we have come to settle on a few points. 
+After long discussions about the specification in the Github issues, we have come to settle on a few points.
 
-* JSON resume exist to empower individuals to manage their job seeking profiles and this is our highest priority. 
+* JSON resume exist to empower individuals to manage their job seeking profiles and this is our highest priority.
 * Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.
 * The specification is not to be the perfect description of a person but instead a description of a resume where only things relevant in the context of hiring will be allowed in.
 

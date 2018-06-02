@@ -43,10 +43,10 @@ function renderStats() {
 
 	var previous = 0;
 	var options = {
-		useEasing : true, 
-		useGrouping : true, 
-		separator : ',', 
-		decimal : '.' 
+		useEasing : true,
+		useGrouping : true,
+		separator : ',',
+		decimal : '.'
 	}
 
 	$.ajax('https://registry.jsonresume.org/stats', {
@@ -74,7 +74,7 @@ function renderStats() {
 	});
 
 
-	
+
 
 }
 
