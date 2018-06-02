@@ -6,22 +6,26 @@
 # echo "node: $(program_is_installed node)"
 function program_is_installed {
   # set to 1 initially
-  local return_=1
+  local return_
+  return_=1
   # set to 0 if not found
-  type $1 >/dev/null 2>&1 || { return 1; }
+  type "$1" >/dev/null 2>&1 || { return 1; }
   # return value
   return 0
 }
 
 function echo_heading {
-  local string=$1
-  local string_length=${#string}
+  local string
+  string=$1
+  local string_length
+  string_length=${#string}
 
-  local underline=""
+  local underline
+  underline=""
   for ((i=1;i<=string_length;i++)) ; do
-    underline=${underline}-
+    underline="${underline}-"
   done
 
-  echo -e "\n$string"
-  echo $underline
+  echo -e "\\n$string"
+  echo "$underline"
 }
