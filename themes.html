@@ -4,91 +4,91 @@ title: Themes
 ---
 
 <header id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Themes</h1>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Themes</h1>
+      </div>
+    </div>
+  </div>
 </header>
 <div id="themes" class="container">
-	<div class="row">
-		{% for theme in site.data.themes %}
-		<div class="col-sm-4 col-md-3">
-			<div class="theme">
-				<div class="row">
-					<div class="col-sm-12 col-xs-6">
-						<a href="http://themes.jsonresume.org/theme/{{ theme.slug }}">
-							<img style="height: 129px;" src="/img/themes/{{ theme.slug }}.jpeg">
-							<!-- http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ theme.slug }} -->
-						</a>
-					</div>
-					<div class="col-sm-12 col-xs-6 meta">
-						<div class="name">{{ theme.name }}</div>
-						<div class="author">by <a href="{{theme.link}}" target="_blank">{{ theme.author }}</a></div>
-						<!--<div class="rating">4.6/5</div>-->
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<a href="http://themes.jsonresume.org/theme/{{ theme.slug }}" class="btn">Preview theme</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-	<!--
-	<hr />
-	<h2>Monthly Competition - $250 prize</h2>
-	<p>Thanks to <a href="https://hired.com/?utm_source=sponsor&utm_medium=jsonresume" target="_blank">Hired.com</a>, we are now hosting monthly competitions where the author of the most voted theme gets $250. We hope to encourage the community to build and update their own themes. Scroll to the bottom of the page to find more details about how to get started with your own theme.</p>
-	<div class="row">
-	<div class="col-md-5">
-	<h3>Rules</h3>
-	<ul>
-		<li>You can only submit one vote per theme</li>
-		<li>Themes that win the monthly prize are excluded for the next 4 months</li>
-		<li>You can enter the competition at any time of the month</li>
-		<li>Votes are tallied on the last day of the month</li>
-		<li>Payments can be made over Paypal or Bitcoin (Let us know if you need another method)</li>
-	</ul>
-	</div>
-	<div class="col-md-7">
-	<h3>December Leaderboard</h3>
-	<table class="leaderboard table table-striped">
-		<thead>
-			<th>Rank</th>
-			<th>Theme</th>
-			<th>Hashtag</th>
-			<th>Votes</th>
-			<th></th>
-		</thead>
-		<tbody>
-		</tbody>
-	</table>
-	</div>
-	</div>
-	<div class="clear: both;"></div>
-	-->
+  <div class="row">
+    {% for theme in site.data.themes %}
+    <div class="col-sm-4 col-md-3">
+      <div class="theme">
+        <div class="row">
+          <div class="col-sm-12 col-xs-6">
+            <a href="http://themes.jsonresume.org/theme/{{ theme.slug }}">
+              <img style="height: 129px;" src="/img/themes/{{ theme.slug }}.jpeg">
+              <!-- http://api.screenshotmachine.com/?key=afd4d4&size=N&url=http://themes.jsonresume.org/theme/{{ theme.slug }} -->
+            </a>
+          </div>
+          <div class="col-sm-12 col-xs-6 meta">
+            <div class="name">{{ theme.name }}</div>
+            <div class="author">by <a href="{{theme.link}}" target="_blank">{{ theme.author }}</a></div>
+            <!--<div class="rating">4.6/5</div>-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="http://themes.jsonresume.org/theme/{{ theme.slug }}" class="btn">Preview theme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!--
+  <hr />
+  <h2>Monthly Competition - $250 prize</h2>
+  <p>Thanks to <a href="https://hired.com/?utm_source=sponsor&utm_medium=jsonresume" target="_blank">Hired.com</a>, we are now hosting monthly competitions where the author of the most voted theme gets $250. We hope to encourage the community to build and update their own themes. Scroll to the bottom of the page to find more details about how to get started with your own theme.</p>
+  <div class="row">
+  <div class="col-md-5">
+  <h3>Rules</h3>
+  <ul>
+    <li>You can only submit one vote per theme</li>
+    <li>Themes that win the monthly prize are excluded for the next 4 months</li>
+    <li>You can enter the competition at any time of the month</li>
+    <li>Votes are tallied on the last day of the month</li>
+    <li>Payments can be made over Paypal or Bitcoin (Let us know if you need another method)</li>
+  </ul>
+  </div>
+  <div class="col-md-7">
+  <h3>December Leaderboard</h3>
+  <table class="leaderboard table table-striped">
+    <thead>
+      <th>Rank</th>
+      <th>Theme</th>
+      <th>Hashtag</th>
+      <th>Votes</th>
+      <th></th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  <div class="clear: both;"></div>
+  -->
 
-		<div class="row">
-		<!--
-	<div class="col-md-5">
-	<h3>Previous Winners</h3>
-	<ul>
-		<li>November 2014 - <a href="https://themes.jsonresume.org/theme/elegant">Elegant</a></li>
-	</ul>
-	</div>
-	<div class="col-md-7">
+    <div class="row">
+    <!--
+  <div class="col-md-5">
+  <h3>Previous Winners</h3>
+  <ul>
+    <li>November 2014 - <a href="https://themes.jsonresume.org/theme/elegant">Elegant</a></li>
+  </ul>
+  </div>
+  <div class="col-md-7">
 
-	</div>
-	</div>
-	-->
-	<div class="clear: both;"></div>
-	<h2>Want to develop your own?</h2>
-	<p>Before you publish your theme to npm, you can work on it locally by putting the files beside your resume.json file. When you run `resume-cli serve`, it will look for a local index.js first.</p>
-	<p>Our theming system was released just recently and new themes have already started popping up. If you would like to develop a theme for the community please visit the <a href="http://github.com/jsonresume/theme-manager">theme-manager repo</a>.</p>
+  </div>
+  </div>
+  -->
+  <div class="clear: both;"></div>
+  <h2>Want to develop your own?</h2>
+  <p>Before you publish your theme to npm, you can work on it locally by putting the files beside your resume.json file. When you run `resume-cli serve`, it will look for a local index.js first.</p>
+  <p>Our theming system was released just recently and new themes have already started popping up. If you would like to develop a theme for the community please visit the <a href="http://github.com/jsonresume/theme-manager">theme-manager repo</a>.</p>
 <h3>Getting started</h3>
 <p>If you are using the registry to host your resume, you can easily test different themes by appending a query string e.g.</p>
 <a href="http://registry.jsonresume.org/thomasdavis?theme=flat">http://registry.jsonresume.org/thomasdavis?theme=flat</a>
@@ -98,15 +98,15 @@ title: Themes
 
 <script>
   var themes = {
-		{% for theme in site.data.themes %}
-			"{{theme.slug}}": {
-				"name": "{{theme.name}}",
-				"slug": "{{theme.slug}}",
-				"author": "{{theme.author}}",
-				"author_link": "{{theme.link}}"
-			},
-		{% endfor %}
-		thiscodesucks: null
+    {% for theme in site.data.themes %}
+      "{{theme.slug}}": {
+        "name": "{{theme.name}}",
+        "slug": "{{theme.slug}}",
+        "author": "{{theme.author}}",
+        "author_link": "{{theme.link}}"
+      },
+    {% endfor %}
+    thiscodesucks: null
   }
   delete themes.elegant;
 </script>

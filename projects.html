@@ -4,28 +4,28 @@ title: Projects
 ---
 
 <header id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Community Projects</h2>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Community Projects</h2>
+      </div>
+    </div>
+  </div>
 </header>
 <div id="team" class="container">
-	<div class="row">
-		<div class="col-sm-6 contributing">
-			<p>JSON Resume was built to inspire a new creative movement around resumes. This page will showcase some of those ideas...</p>
+  <div class="row">
+    <div class="col-sm-6 contributing">
+      <p>JSON Resume was built to inspire a new creative movement around resumes. This page will showcase some of those ideas...</p>
       <ul>
-      		{% for project in site.data.projects %}
+          {% for project in site.data.projects %}
             <li>
               <a href="{{project.link}}">{{project.name}}</a> - {{project.description}}
             </li>
-      		{% endfor %}
+          {% endfor %}
       </ul>
-		</div>
-		<div class="col-sm-6 team">
+    </div>
+    <div class="col-sm-6 team">
 
-		</div>
-	</div>
+    </div>
+  </div>
 </div>

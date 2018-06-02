@@ -3,46 +3,46 @@ layout: default
 ---
 
 <header id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>News, features and releases</h1>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>News, features and releases</h1>
+      </div>
+    </div>
+  </div>
 </header>
 <div id="blog" class="container">
-	<article class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<header>
-				<h2>
-					{{ page.title }}
-				</h2>
-				<div class="date">
-					posted {{ page.date | date: "%B %d, %Y" }}
-				</div>
-			</header>
-			<div class="content">
-				<p>{{ content }}</p>
-			</div>
-			<hr />
-			<div class="addthis_jumbo_share"></div>
-			<hr />
-			<div id="disqus_thread"></div>
-			<script>
-			var disqus_shortname = 'jsonresume';
-			var disqus_url = 'http://jsonresume.org{{page.url}}';
-			var disqus_identifier = '{{page.url}}';
-			var disqus_title = '{{page.title}}';
-			(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			})();
-			</script>
-			<noscript>
-				Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-			</noscript>
-		</div>
-	</article>
+  <article class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <header>
+        <h2>
+          {{ page.title }}
+        </h2>
+        <div class="date">
+          posted {{ page.date | date: "%B %d, %Y" }}
+        </div>
+      </header>
+      <div class="content">
+        <p>{{ content }}</p>
+      </div>
+      <hr />
+      <div class="addthis_jumbo_share"></div>
+      <hr />
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_shortname = 'jsonresume';
+      var disqus_url = 'http://jsonresume.org{{page.url}}';
+      var disqus_identifier = '{{page.url}}';
+      var disqus_title = '{{page.title}}';
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>
+        Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </div>
+  </article>
 </div>

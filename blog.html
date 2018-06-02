@@ -4,33 +4,33 @@ title: Blog
 ---
 
 <header id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>News, features and releases</h1>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>News, features and releases</h1>
+      </div>
+    </div>
+  </div>
 </header>
 <div id="blog" class="container">
-	{% for post in site.posts %}
-	<article class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<header>
-				<h2>
-					<a href="{{ post.url }}">
-						{{ post.title }}
-					</a>
-				</h2>
-				<div class="date">
-					posted {{ post.date | date: "%B %d, %Y" }}
-				</div>
-			</header>
-			<div class="content">
-				<p>{{ post.excerpt }}</p>
-				<p><a href="{{ post.url }}">Read more...</a></p>
-			</div>
-		</div>
-	</article>
-	{% endfor %}
+  {% for post in site.posts %}
+  <article class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <header>
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <div class="date">
+          posted {{ post.date | date: "%B %d, %Y" }}
+        </div>
+      </header>
+      <div class="content">
+        <p>{{ post.excerpt }}</p>
+        <p><a href="{{ post.url }}">Read more...</a></p>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
 </div>
