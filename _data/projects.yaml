@@ -17,3 +17,7 @@
 - name: jsonresume (haskell)
   link: http://hackage.haskell.org/package/jsonresume
   description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
+
+- name: jsonresume (php)
+  link: https://github.com/rlweb/jsonresume
+  description: A package for JSON Resume for PHP. It includes the Datatypes and provides a parser using the swaggest/php-code-builder package.
