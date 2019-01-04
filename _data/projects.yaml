@@ -17,3 +17,7 @@
 - name: jsonresume (haskell)
   link: http://hackage.haskell.org/package/jsonresume
   description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
+
+- name: CMD Resume
+  link: https://github.com/bbody/CMD-Resume/
+  description: CMD Resume is a web based command line for your resume using data from JSON Resume format.
