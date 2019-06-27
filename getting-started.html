@@ -28,15 +28,16 @@ title: Getting Started
     <div class="col-sm-6">
       <section>
         <h2>Hosting</h2>
-        <p>JSON Resume offers a hosting service that renders your resume.json to any theme you would like. <br /><br />
+        <p>JSON Resume offers a hosting service that renders your <code>resume.json</code> to any theme you would like. <br /><br />
         e.g. <a href="https://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a></p>
         <p>All you have to do is create a Gist on Github named <codfe>resume.json</code>. <br /> <br />
           e.g. <a href="https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105">https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105</a>
         </p>
         <p>Our hosting service will automatically detect this when you access <code>https://registry.jsonresume.org/{your_github_username}</code>
         </p>
-        <p>To set a theme, just add a description to your Gist in the following format;<br />
-          <code>{ "theme": "elegant"}</code>
+        <p>To set a theme, just add to your <code>resume.json</code>;<br />
+          <code>{ "meta": { "theme": "elegant" } }</code>
+          
         </p>
       </section>
     </div>
