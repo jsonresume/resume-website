@@ -21,7 +21,7 @@ e.g. [https://registry.jsonresume.org/thomasdavis](https://registry.jsonresume.o
 
 by simply creating a Gist on your Github with the filename being `resume.json`
 
-e.g. https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105
+e.g. [https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105](https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105)
 
 That is all you need to do, and you can view your resume at
 
