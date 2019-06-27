@@ -23,56 +23,21 @@ title: Getting Started
         <p>The command line tool uses an ecosystem of modules that we've open sourced to convert your resume to different formats:</p>
         <p><code>resume export resume.pdf</code> (<i>Currently broken, help needed</i>)</p>
         <p><code>resume export resume.html</code></p>
-        <h3>Publishing</h3>
-        <p>We have also built in hosted support into the command line tool. Much like npm's registry, you can register an account and publish to our servers. We also allow you to password protect and/or publish your resume anonymously. To get started, simply type:</p>
-        <p><code>resume publish</code></p>
-        <p>Our hosted solution will have new features and benefits rolled out quite frequently. Make sure you register if you want to save a vanity url:</p>
-        <p><code>resume register</code></p>
-        <p>
-          Great! Your should now have your own url, like this:
-          <br><a href="http://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a>
-        </p>
-        <p>
-          You can also access exported version of your resume:
-          <br><a href="http://registry.jsonresume.org/thomasdavis.txt">http://registry.jsonresume.org/thomasdavis.txt</a>
-        </p>
-        <p>
-          Users may also password protect their resume:
-          <br><a href="http://registry.jsonresume.org/richardhendriks">http://registry.jsonresume.org/richardhendriks</a>
-        </p>
       </section>
     </div>
+    <div class="col-sm-6">
       <section>
-        <h2>Statistics</h2>
-        <p>The statistics for our official hosting service, so far:</p>
-        <div id="stats">
-          <div class="row">
-            <div class="col-xs-6">
-              <h4>Resume views</h4>
-            </div>
-            <div class="col-xs-6">
-              <div id="myTargetElement" class="counter"></div>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-xs-6">
-              <h4>Resumes hosted</h4>
-            </div>
-            <div class="col-xs-6">
-              <div id="myTargetElementh" class="counter"></div>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-xs-6">
-              <h4>Users</h4>
-            </div>
-            <div class="col-xs-6">
-              <div id="myTargetElementu" class="counter"></div>
-            </div>
-          </div>
-        </div>
+        <h2>Hosting</h2>
+        <p>JSON Resume offers a hosting service that renders your resume.json to any theme you would like. <br />
+        e.g. <a href="https://registry.jsonresume.org/thomasdavis">http://registry.jsonresume.org/thomasdavis</a></p>
+        <p>To host yours, all you have to do is create a Gist on Github named `resume.json`. <br />
+          e.g. <a href="https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105">https://gist.github.com/thomasdavis/c9dcfa1b37dec07fb2ee7f36d7278105</a>
+        </p>
+        <p>Our hosting service will automatically detect this when you access https://registry.jsonresume.org/{your_github_username}
+        </p>
+        <p>To set a theme, just add a description to your Gist in the following format;<br />
+          `{ "theme": "elegant"}`
+        </p>
       </section>
     </div>
   </div>
