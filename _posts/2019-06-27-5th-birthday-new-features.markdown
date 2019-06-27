@@ -43,12 +43,12 @@ Gist are great;
 
 A bunch of people have already migrated to the new system and we believe it to be a great step in the right direction.
 
+[https://registry.jsonresume.org/adityatandon007](https://registry.jsonresume.org/adityatandon007)
+
+[https://registry.jsonresume.org/jmondragon](https://registry.jsonresume.org/jmondragon)
+
 [https://registry.jsonresume.org/beeman](https://registry.jsonresume.org/beeman)
 
 [https://registry.jsonresume.org/rolandnsharp](https://registry.jsonresume.org/rolandnsharp)
 
 [https://registry.jsonresume.org/pmrourkie](https://registry.jsonresume.org/pmrourkie)
-
-[https://registry.jsonresume.org/jmondragon](https://registry.jsonresume.org/jmondragon)
-
-[https://registry.jsonresume.org/adityatandon007](https://registry.jsonresume.org/adityatandon007)
