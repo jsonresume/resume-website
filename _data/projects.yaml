@@ -6,6 +6,10 @@
   description: Python tool to validate JSON resumes to ensure that they are according to the defined schema
   link: https://github.com/kelvintaywl/jsonresume-validator
 
+- name: JSON Resume Validator and Parser (Java)
+  description: Java library to validate and parse JSON resumes to Java objects
+  link: https://github.com/eaxdev/Java-JsonResume-Validator
+
 - name: SkillSet
   link: https://github.com/Jac21/SkillSet
   description: Intuitive job-candidate skill visualization, taking advantage of D3.js and JSONResume.
