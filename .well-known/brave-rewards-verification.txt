@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jsonresume.org
+Token: 910e4a62d795eb726d78e54ad07ff3a10574568e43ef9c6fd54eee41f9e78906
