@@ -10,6 +10,10 @@
   description: Java library to validate and parse JSON resumes to Java objects
   link: https://github.com/eaxdev/Java-JsonResume-Validator
 
+- name: JSON Resume Validator (Go)
+  description: Go library to validate JSON resumes
+  link: https://github.com/cinarmert/json-resume-validator
+
 - name: SkillSet
   link: https://github.com/Jac21/SkillSet
   description: Intuitive job-candidate skill visualization, taking advantage of D3.js and JSONResume.
