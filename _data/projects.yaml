@@ -13,6 +13,10 @@
 - name: JSON Resume Validator (Go)
   description: Go library to validate JSON resumes
   link: https://github.com/cinarmert/json-resume-validator
+  
+- name: GitHub Action for exporting JSONResume
+  description: Export your resume to HTML via a GitHub Action. This can be combined with other actions to publish your resume as a Github page.
+  link: https://github.com/marketplace/actions/jsonresume-export
 
 - name: SkillSet
   link: https://github.com/Jac21/SkillSet
