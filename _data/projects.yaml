@@ -1,5 +1,5 @@
 - name: JSON Resume Validator (PHP)
-  description: Tool in PHP who validates if a Resume is according to the defined schema. It also validates if any desired properties are not empty.
+  description: Tool in PHP that validates if a Resume is according to the defined schema. It also validates if any desired properties are not empty.
   link: https://github.com/lfbn/json-resume-validator
 
 - name: JSON Resume Validator (Python)
