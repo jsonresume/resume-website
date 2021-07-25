@@ -8,25 +8,25 @@
   slug: paper
   github: TimDaub
   author: Tim Daubenschütz
-  link: https://twitter.com/TimDaub
+  link: https://github.com/TimDaub
 
 - name: Kendall
   slug: kendall
   github: LinuxBozo
   author: M. Adam Kendall
-  link: http://registry.jsonresume.org/linuxbozo
+  link: https://registry.jsonresume.org/linuxbozo
 
 - name: Flat
   slug: flat
   github: erming
   author: Mattias Erming
-  link: http://github.com/erming
+  link: https://github.com/erming
 
 - name: Modern
   slug: modern
   github: thomasdavis
   author: Thomas Davis
-  link: http://registry.jsonresume.org/thomasdavis
+  link: https://registry.jsonresume.org/thomasdavis
 
 
 - name: Classy
@@ -38,27 +38,27 @@
 
 - name: Class
   slug: class
-  github: Charlotteis
-  author: Charlotte Spencer
-  link: http://www.twitter.com/charlotteis
+  github: varjmes
+  author: James Spencer
+  link: https://www.twitter.com/varjmes
 
 - name: Short
   slug: short
   github: isnotahippy
   author: Graeme Maciver
-  link: http://www.graememaciver.com/
+  link: https://github.com/isnotahippy
 
 - name: Slick
   slug: slick
   github: dfmcphee
   author: Dominic McPhee
-  link: http://dominicmcphee.com
+  link: https://dfmcphee.com/
 
 - name: Kwan
   slug: kwan
   github: icoloma
   author: Nacho Coloma
-  link: http://icoloma.blogspot.com
+  link: https://github.com/icoloma
 
 - name: OnePage
   slug: onepage
@@ -68,12 +68,12 @@
 
 - name: Spartan
   slug: spartan
-  github: francescoes
+  github: Francescoes
   author: Francesco Esposito
   link: https://github.com/francescoes
 
 - name: Stackoverflow
   slug: stackoverflow
-  github: francescoes
+  github: Francescoes
   author: Francesco Esposito
   link: https://github.com/francescoes
