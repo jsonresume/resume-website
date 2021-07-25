@@ -14,3 +14,7 @@ coverage
 .ruby-version
 .sass-cache
 .vagrant/
+
+.vscode/
+*.code-workspace
+.history/
