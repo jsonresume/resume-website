@@ -2,8 +2,16 @@ root = true
 
 [*]
 charset = utf-8
+curly_bracket_next_line = false
 end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = true
+spaces_around_operators = true
 trim_trailing_whitespace = true
+
+[*.{js,ts}]
+quote_type = double
+
+[*.{markdown,md}]
+trim_trailing_whitespace = false
