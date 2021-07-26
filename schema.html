@@ -9,8 +9,7 @@ title: Schema
       <div class="col-sm-4">
         <h1>Schema</h1>
       </div>
-      <div class="col-sm-4">
-      </div>
+      <div class="col-sm-4"></div>
       <div class="col-sm-4">
         <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7DL23L&placement=jsonresumeorg" id="_carbonads_js"></script>
       </div>
@@ -19,36 +18,43 @@ title: Schema
 </header>
 
 <div id="schema" class="container">
-
-<div class="row">
-<div class="col-sm-3">
-  <h4>What is it?</h4>
-  <p>JSON Resume is a community driven open source initiative to create JSON-based standard for resumes.</p>
-  <h4>Why JSON?</h4>
-  <p>We believe that the strengths of the JSON format makes it a good fit for resumes. It's lightweight, easy to use and it's perfect to build tools for!</p>
-  <p>We also feel that the <a href="http://json-schema.org">JSON Schema</a> is mature enough for writing usable semantics.</p>
-  <h4>Open Source</h4>
-  <p>The schema is <a href="https://github.com/jsonresume/resume-schema">open source</a> and community-driven. We release everything we do under the MIT license.</p>
-</div>
-<div class="col-sm-9 col-md-5">
-
-<div class="header">
-  <div class="pull-right version">version 0.0.0</div>
-  resume.json
-</div>
-
-<pre class="top">
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>What is it?</h4>
+      <p>
+        JSON Resume is a community driven open source initiative to create
+        JSON-based standard for resumes.
+      </p>
+      <h4>Why JSON?</h4>
+      <p>
+        We believe that the strengths of the JSON format makes it a good fit
+        for resumes. It's lightweight, easy to use and it's perfect to build
+        tools for!
+      </p>
+      <p>
+        We also feel that the <a href="https://json-schema.org/">JSON Schema</a>
+        is mature enough for writing usable semantics.
+      </p>
+      <h4>Open Source</h4>
+      <p>
+        The schema is <a href="https://github.com/jsonresume/resume-schema">open source</a>
+        and community-driven. We release everything we do under the MIT license.
+      </p>
+    </div>
+    <div class="col-sm-9 col-md-5">
+      <div class="header">
+        <div class="pull-right version">version 1.0.0</div>
+        resume.json
+      </div>
+      <pre class="schema">
 {
-</pre>
-
-<pre>
   "basics": {
     "name": <span>"John Doe",</span>
     "label": <span>"Programmer",</span>
-    "picture": <span>"",</span>
+    "image": <span>"",</span>
     "email": <span>"john@gmail.com",</span>
     "phone": <span>"(912) 555-4321",</span>
-    "website": <span>"http://johndoe.com",</span>
+    "url": <span>"https://johndoe.com",</span>
     "summary": <span>"A summary of John Doe...",</span>
     "location": {
       "address": <span>"2712 Broadway St",</span>
@@ -60,13 +66,13 @@ title: Schema
     "profiles": [{
       "network": <span>"Twitter",</span>
       "username": <span>"john",</span>
-      "url": <span>"http://twitter.com/john"</span>
+      "url": <span>"https://twitter.com/john"</span>
     }]
   },
   "work": [{
-    "company": <span>"Company",</span>
+    "name": <span>"Company",</span>
     "position": <span>"President",</span>
-    "website": <span>"http://company.com",</span>
+    "url": <span>"https://company.com",</span>
     "startDate": <span>"2013-01-01",</span>
     "endDate": <span>"2014-01-01",</span>
     "summary": <span>"Description...",</span>
@@ -77,7 +83,7 @@ title: Schema
   "volunteer": [{
     "organization": <span>"Organization",</span>
     "position": <span>"Volunteer",</span>
-    "website": <span>"http://organization.com/",</span>
+    "url": <span>"https://organization.com/",</span>
     "startDate": <span>"2012-01-01",</span>
     "endDate": <span>"2013-01-01",</span>
     "summary": <span>"Description...",</span>
@@ -87,11 +93,12 @@ title: Schema
   }],
   "education": [{
     "institution": <span>"University",</span>
+    "url": <span>"https://institution.com/",</span>
     "area": <span>"Software Development",</span>
     "studyType": <span>"Bachelor",</span>
     "startDate": <span>"2011-01-01",</span>
     "endDate": <span>"2013-01-01",</span>
-    "gpa": <span>"4.0",</span>
+    "score": <span>"4.0",</span>
     "courses": [
       <span>"DB1101 - Basic SQL"</span>
     ]
@@ -106,7 +113,7 @@ title: Schema
     "name": <span>"Publication",</span>
     "publisher": <span>"Company",</span>
     "releaseDate": <span>"2014-10-01",</span>
-    "website": <span>"http://publication.com",</span>
+    "url": <span>"https://publication.com",</span>
     "summary": <span>"Description..."</span>
   }],
   "skills": [{
@@ -133,48 +140,27 @@ title: Schema
     "name": <span>"Jane Doe",</span>
     "reference": <span>"Reference..."</span>
   }]
-</pre>
-
-<pre class="bottom">
 }
 </pre>
-
-</div>
-<div class="col-sm-4 hidden-sm">
-  <h4>Integrations</h4>
-  <p>Export your profile into the JSON Resume format from the services below:</p>
-  <div class="row integration">
-    <div class="col-xs-2">
-      <img width="35px" src="https://gitconnected.com/public/meta/favicon/favicon-96x96.png">
     </div>
-    <div class="col-xs-10">
-      <p><strong>gitconnected</strong></p>
-      <p><a href="https://gitconnected.com/tools">https://gitconnected.com</a></p>
-      <p>Career tools for developers. Effortlessly manage your portfolio and resume - level up your career.</p>
+    <div class="col-sm-4 hidden-sm">
+      <h4>Integrations</h4>
+      <p>
+        Export your profile into the JSON Resume format from the services
+        below:
+      </p>
+      {% for integration in site.data.integrations %}
+      <div class="row integration">
+        <div class="col-xs-2">
+          <img src="{{integration.image}}" alt="{{integration.name}} Logo" width="35" height="35">
+        </div>
+        <div class="col-xs-10">
+          <p><strong>{{integration.name}}</strong></p>
+          <p><a href="{{integration.url}}">{{integration.display-url}}</a></p>
+          <p>{{integration.description}}</p>
+        </div>
+      </div>
+      {% endfor %}
     </div>
-  </div>
-  <div class="row integration">
-    <div class="col-xs-2">
-      <img src="https://represent.io/assets/logos/logo-yellow.png">
-    </div>
-    <div class="col-xs-10">
-      <p><strong>Represent.io</strong></p>
-      <p><a href="http://represent.io">http://represent.io</a></p>
-      <p>Represent is the best way to create a beautiful and professional resume in minutes.</p>
-    </div>
-  </div>
-  <div class="row integration">
-    <div class="col-xs-2">
-      <img style="width: 35px;" src="https://i.imgur.com/bXti2H5.png">
-    </div>
-    <div class="col-xs-10">
-      <p><strong>DoYouBuzz</strong></p>
-      <p><a href="http://www.doyoubuzz.com/us/">http://doyoubuzz.com/</a></p>
-      <p>Creating a resume has never been easier. In a few minutes, you will have a beautiful resume you can use anywhere.</p>
-    </div>
-  </div>
-</div>
-
-
   </div>
 </div>

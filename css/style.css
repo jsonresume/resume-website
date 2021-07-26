@@ -348,10 +348,8 @@ pre {
 #schema .version {
   color: #ccc;
 }
-#schema .top {
+#schema .schema {
   padding-top: 10px;
-}
-#schema .bottom {
   border-bottom: 1px solid #ddd;
   border-radius: 0 0 2px 2px;
   padding-bottom: 10px;
