@@ -29,3 +29,7 @@
 - name: jsonresume (haskell)
   link: http://hackage.haskell.org/package/jsonresume
   description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
+
+- name: hugo-json-resume
+  link: https://github.com/schnerring/hugo-json-resume
+  description: A Hugo module containing templates to integrate multilingual JSON Resume data into your Hugo website.
