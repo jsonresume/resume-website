@@ -8,10 +8,6 @@ There are two ways to run this website, locally or inside a VM.
 
 ### Locally
 
-Dependencies:
-
-- Git
-
 #### 1. Clone repository
 
 ```
