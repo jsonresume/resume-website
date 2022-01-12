@@ -4,6 +4,18 @@
   author: Mudassir
   link: https://github.com/mudassir0909
 
+- name: Stackoverflow
+  slug: stackoverflow
+  github: phoinixi
+  author: Francesco Esposito
+  link: https://github.com/phoinixi
+
+- name: Actual
+  slug: actual
+  github: davcd
+  author: David Carvajal
+  link: https://github.com/davcd
+
 - name: Paper
   slug: paper
   github: TimDaub
@@ -16,25 +28,29 @@
   author: M. Adam Kendall
   link: https://registry.jsonresume.org/linuxbozo
 
+- name: OnePage
+  slug: onepage
+  github: ainsleyc
+  author: Ainsley Chong
+  link: https://github.com/ainsleyc
+
 - name: Flat
   slug: flat
   github: erming
   author: Mattias Erming
   link: https://github.com/erming
 
-- name: Modern
-  slug: modern
-  github: thomasdavis
-  author: Thomas Davis
-  link: https://registry.jsonresume.org/thomasdavis
+# - name: Modern
+#   slug: modern
+#   github: thomasdavis
+#   author: Thomas Davis
+#   link: https://registry.jsonresume.org/thomasdavis
 
-
-- name: Classy
-  slug: classy
-  github: JaredCubilla
-  author: Jared Cubilla
-  link: https://github.com/JaredCubilla
-
+# - name: Classy
+#   slug: classy
+#   github: JaredCubilla
+#   author: Jared Cubilla
+#   link: https://github.com/JaredCubilla
 
 - name: Class
   slug: class
@@ -48,32 +64,26 @@
   author: Graeme Maciver
   link: https://github.com/isnotahippy
 
-- name: Slick
-  slug: slick
-  github: dfmcphee
-  author: Dominic McPhee
-  link: https://dfmcphee.com/
+# - name: Slick
+#   slug: slick
+#   github: dfmcphee
+#   author: Dominic McPhee
+#   link: https://dfmcphee.com/
 
-- name: Kwan
-  slug: kwan
-  github: icoloma
-  author: Nacho Coloma
-  link: https://github.com/icoloma
-
-- name: OnePage
-  slug: onepage
-  github: ainsleyc
-  author: Ainsley Chong
-  link: https://github.com/ainsleyc
+# - name: Kwan
+#   slug: kwan
+#   github: icoloma
+#   author: Nacho Coloma
+#   link: https://github.com/icoloma
 
 - name: Spartan
   slug: spartan
   github: Francescoes
   author: Francesco Esposito
   link: https://github.com/francescoes
-
-- name: Stackoverflow
-  slug: stackoverflow
-  github: phoinixi
-  author: Francesco Esposito
-  link: https://github.com/phoinixi
+  # https://registry.jsonresume.org/thomasdavis?theme=macchiato
+# https://registry.jsonresume.org/thomasdavis?theme=papirus
+# https://registry.jsonresume.org/thomasdavis?theme=tan-responsive
+# https://registry.jsonresume.org/thomasdavis?theme=verbum
+# ttps://registry.jsonresume.org/thomasdavis?theme=techlead
+# https://registry.jsonresume.org/thomasdavis?theme=wraypro

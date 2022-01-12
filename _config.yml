@@ -3,7 +3,3 @@ description: "JSON Resume is a community driven open source initiative to create
 permalink: pretty
 markdown: kramdown
 include: [/.well-known]
-plugins:
-  - jekyll/web_monetization
-payment_pointer:
-  - $ilp.uphold.com/wR4wXD6jZqJz # Seth Falco
