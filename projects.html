@@ -14,18 +14,61 @@ title: Projects
 </header>
 <div id="team" class="container">
   <div class="row">
-    <div class="col-sm-6 contributing">
-      <p>JSON Resume was built to inspire a new creative movement around resumes. This page will showcase some of those ideas...</p>
+    <div class="col-sm-12 contributing">
+      <p>
+        JSON Resume was built to inspire a new creative movement around resumes.
+        This page will showcase some of those ideas...
+      </p>
+      <h3>Validators</h3>
       <ul>
-          {% for project in site.data.projects %}
-            <li>
-              <a href="{{project.link}}">{{project.name}}</a> - {{project.description}}
-            </li>
-          {% endfor %}
+        {% for project in site.data.projects %} {% if project.category ==
+        'validator' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
       </ul>
-    </div>
-    <div class="col-sm-6 team">
-
+      <h3>Frameworks</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'framework' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <h3>Visualizations</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'visualization' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <h3>Parsers</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'parser' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <h3>Generators</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'generator' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

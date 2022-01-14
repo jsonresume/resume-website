@@ -1,35 +1,49 @@
 - name: JSON Resume Validator (PHP)
   description: Tool in PHP that validates if a Resume is according to the defined schema. It also validates if any desired properties are not empty.
   link: https://github.com/lfbn/json-resume-validator
+  category: validator
 
 - name: JSON Resume Validator (Python)
   description: Python tool to validate JSON resumes to ensure that they are according to the defined schema
   link: https://github.com/kelvintaywl/jsonresume-validator
+  category: validator
 
 - name: JSON Resume Validator and Parser (Java)
   description: Java library to validate and parse JSON resumes to Java objects
   link: https://github.com/eaxdev/Java-JsonResume-Validator
+  category: validator
 
 - name: JSON Resume Validator (Go)
   description: Go library to validate JSON resumes
   link: https://github.com/cinarmert/json-resume-validator
+  category: validator
 
 - name: SkillSet
   link: https://github.com/Jac21/SkillSet
   description: Intuitive job-candidate skill visualization, taking advantage of D3.js and JSONResume.
+  category: visualization
 
 - name: gulp-resume
   link: https://github.com/mattberther/gulp-resume
   description: gulp-resume is a gulp plugin to generate a resume using jsonresume.org.
+  category: generator
 
 - name: ng-jsonresume
   link: https://github.com/marko-knoebl/ng-jsonresume
   description: ng-jsonresume lets you include a resume into a webpage by using an Angular directive and providing data in the standardized jsonresume format.
+  category: framework
 
 - name: jsonresume (haskell)
   link: http://hackage.haskell.org/package/jsonresume
   description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
+  category: parser
 
 - name: hugo-mod-json-resume
   link: https://github.com/schnerring/hugo-mod-json-resume
   description: A Hugo module containing templates to integrate multilingual JSON Resume data into your Hugo website.
+  category: framework
+
+- name: hugo-theme-gruvbox
+  link: https://github.com/schnerring/hugo-theme-gruvbox
+  description: A retro-looking Hugo theme inspired by gruvbox to build secure, fast, and SEO-ready websites.
+  category: framework
