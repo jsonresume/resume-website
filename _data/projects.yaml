@@ -62,3 +62,8 @@
   link: https://github.com/antoniosarosi/jsonresume-manager
   description: A Laravel framework to manage your JSON Resume's
   category: framework
+
+- name: react-ultimate-resume
+  link: https://github.com/welovedevs/react-ultimate-resume
+  description: react-ultimate-resume is an open-source customizable software developer resume to highlight your skills and experiences.
+  category: framework
