@@ -92,3 +92,8 @@
   link: https://github.com/patricioperpetua/resume
   description: This project contains my personal resume or CV. It uses jsonresume hackmyresume format to save and display the resume in PDF and HTML format.
   category: generator
+
+- name: me
+  link: https://github.com/jkga/me
+  description: A next-gen JAMSTACK template for developers that leverage the use of JSON Resume Schema in creating a web based vitae and portfolio.
+  category: framework
