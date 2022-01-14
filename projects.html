@@ -89,6 +89,16 @@ title: Projects
         </li>
         {% endif %} {% endfor %}
       </ul>
+      <h3>Machine Learning</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category == 'ml'
+        %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

@@ -23,6 +23,11 @@
   link: https://github.com/joshuatz/linkedin-to-jsonresume
   category: transfer
 
+- name: LinkedIn to JSON Résumé conversion
+  description: Inspired by https://github.com/mblarsen/resume-linkedin, deprecated primarily due to these changes in the LinkedIn API.
+  link: https://github.com/w0rd-driven/jsonresume-linkedin
+  category: transfer
+
 - name: SkillSet
   link: https://github.com/Jac21/SkillSet
   description: Intuitive job-candidate skill visualization, taking advantage of D3.js and JSONResume.
@@ -96,4 +101,29 @@
 - name: me
   link: https://github.com/jkga/me
   description: A next-gen JAMSTACK template for developers that leverage the use of JSON Resume Schema in creating a web based vitae and portfolio.
+  category: framework
+
+- name: jsonresume-types
+  link: https://github.com/kurone-kito/jsonresume-types
+  description: TypeScript type definition for JSON Resume
+  category: types
+
+- name: jsonresume-gpt3
+  link: https://github.com/jsonresume/jsonresume-gpt3
+  description: This uses GPT-3 API access to generate fake resumes.
+  category: ml
+
+- name: gulp-resume
+  link: https://github.com/mattberther/gulp-resume
+  description: gulp-resume is a gulp plugin to generate a resume using jsonresume.org.
+  category: generator
+
+- name: gulp-resume
+  link: https://github.com/mattberther/gulp-resume
+  description: gulp-resume is a gulp plugin to generate a resume using jsonresume.org.
+  category: generator
+
+- name: netifly-jsonresume
+  link: https://github.com/lowerbarriers/resume
+  description: An online résumé you can fork and host for free on GitHub quickly and without fuss.
   category: framework
