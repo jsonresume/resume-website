@@ -79,6 +79,16 @@ title: Projects
         </li>
         {% endif %} {% endfor %}
       </ul>
+      <h3>Hosting</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'hosting' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

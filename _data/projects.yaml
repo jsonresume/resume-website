@@ -67,3 +67,18 @@
   link: https://github.com/welovedevs/react-ultimate-resume
   description: react-ultimate-resume is an open-source customizable software developer resume to highlight your skills and experiences.
   category: framework
+
+- name: resumed
+  link: https://github.com/rbardini/resumed
+  description: Lightweight JSON Resume builder, no-frills alternative to resume-cli.
+  category: cli
+
+- name: customized-registry-functions
+  link: https://github.com/anthonyjdella/customized-registry-functions
+  description: This is a slightly tweaked version of the JSON Registry. That project is using their own Firebase project and a specific JSON schema.
+  category: hosting
+
+- name: registry-functions
+  link: https://github.com/jsonresume/registry-functions
+  description: This repository is responsible for our free JSON Resume community hosting.
+  category: hosting
