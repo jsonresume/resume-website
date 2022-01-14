@@ -82,3 +82,8 @@
   link: https://github.com/jsonresume/registry-functions
   description: This repository is responsible for our free JSON Resume community hosting.
   category: hosting
+
+- name: resumis
+  link: https://github.com/maxfierke/resumis
+  description: Resumis is Esperanto for "summarized". It's also an API and headless CMS for your personal web presence, a CV generator, and JSON Resume provider.
+  category: framework
