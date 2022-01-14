@@ -39,6 +39,16 @@ title: Projects
         </li>
         {% endif %} {% endfor %}
       </ul>
+      <h3>Import / Export</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'transfer' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
       <h3>Visualizations</h3>
       <ul>
         {% for project in site.data.projects %} {% if project.category ==
