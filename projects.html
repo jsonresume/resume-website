@@ -19,10 +19,53 @@ title: Projects
         JSON Resume was built to inspire a new creative movement around resumes.
         This page will showcase some of those ideas...
       </p>
-      <h3>Validators</h3>
+      <h3>Hosting</h3>
       <ul>
         {% for project in site.data.projects %} {% if project.category ==
-        'validator' %}
+        'hosting' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+
+      <h3>Import / Export</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'transfer' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+
+      <h3>Github</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'github' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+
+      <h3>Editors</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category ==
+        'editor' %}
+        <li>
+          <a href="{{project.link}}">{{project.name}}</a> -
+          {{project.description}}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <h3>CLI</h3>
+      <ul>
+        {% for project in site.data.projects %} {% if project.category == 'cli'
+        %}
         <li>
           <a href="{{project.link}}">{{project.name}}</a> -
           {{project.description}}
@@ -39,20 +82,21 @@ title: Projects
         </li>
         {% endif %} {% endfor %}
       </ul>
-      <h3>Import / Export</h3>
+      <h3>Visualizations</h3>
       <ul>
         {% for project in site.data.projects %} {% if project.category ==
-        'transfer' %}
+        'visualization' %}
         <li>
           <a href="{{project.link}}">{{project.name}}</a> -
           {{project.description}}
         </li>
         {% endif %} {% endfor %}
       </ul>
-      <h3>Visualizations</h3>
+
+      <h3>Generators</h3>
       <ul>
         {% for project in site.data.projects %} {% if project.category ==
-        'visualization' %}
+        'generator' %}
         <li>
           <a href="{{project.link}}">{{project.name}}</a> -
           {{project.description}}
@@ -69,20 +113,10 @@ title: Projects
         </li>
         {% endif %} {% endfor %}
       </ul>
-      <h3>Generators</h3>
+      <h3>Validators</h3>
       <ul>
         {% for project in site.data.projects %} {% if project.category ==
-        'generator' %}
-        <li>
-          <a href="{{project.link}}">{{project.name}}</a> -
-          {{project.description}}
-        </li>
-        {% endif %} {% endfor %}
-      </ul>
-      <h3>Hosting</h3>
-      <ul>
-        {% for project in site.data.projects %} {% if project.category ==
-        'hosting' %}
+        'validator' %}
         <li>
           <a href="{{project.link}}">{{project.name}}</a> -
           {{project.description}}
