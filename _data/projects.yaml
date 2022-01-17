@@ -127,3 +127,8 @@
   link: https://github.com/lowerbarriers/resume
   description: An online résumé you can fork and host for free on GitHub quickly and without fuss.
   category: framework
+
+- name: CMD Resume
+  link: https://github.com/bbody/CMD-Resume/
+  description: CMD Resume is a web based command line for your resume using data from JSON Resume format.
+  category: visualization
