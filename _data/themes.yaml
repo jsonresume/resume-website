@@ -28,6 +28,12 @@
   author: M. Adam Kendall
   link: https://registry.jsonresume.org/linuxbozo
 
+- name: Autumn
+  slug: autumn
+  github: lorenzodalaqua
+  author: Lorenzo Dal'Aqua
+  link: https://github.com/lorenzodalaqua
+
 - name: OnePage
   slug: onepage
   github: ainsleyc
