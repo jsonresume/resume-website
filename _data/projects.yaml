@@ -138,7 +138,13 @@
   description: Lightweight JSON Resume builder, no-frills alternative to resume-cli.
   category: cli
 
-- name: resumecli
+- name: resume-cli
   link: https://github.com/jsonresume/resume-cli
   description: Official CLI tool for JSON Resume
   category: cli
+
+- name: resume-pycli
+  link: https://github.com/nikaro/resume-pycli
+  description: Python CLI tool to build a beautiful resume from a JSON Resume file.
+  category: cli
+# https://github.com/renoirb/jsonresume-from-yaml

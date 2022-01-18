@@ -10,6 +10,12 @@
   author: Francesco Esposito
   link: https://github.com/phoinixi
 
+- name: Caffeine
+  slug: caffeine
+  github: kelyvin
+  author: Kelvin Nguyen
+  link: https://github.com/kelyvin/jsonresume-theme-caffeine
+
 - name: Actual
   slug: actual
   github: davcd
@@ -93,3 +99,9 @@
 # https://registry.jsonresume.org/thomasdavis?theme=verbum
 # ttps://registry.jsonresume.org/thomasdavis?theme=techlead
 # https://registry.jsonresume.org/thomasdavis?theme=wraypro
+# https://github.com/nizarrwk/jsonresume-theme-helloquan-master
+# https://github.com/matheuscal/jsonresume-theme-paperalt
+# https://github.com/aaccurso/jsonresume-theme-aaccurso
+# https://github.com/jkga/json-resume-template
+# https://mathieudutour.github.io/jsonresume-theme-github/
+# https://github.com/adavila0703/jsonresume-theme-slickoverflow
