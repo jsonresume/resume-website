@@ -51,7 +51,7 @@ The initial provision will take some time.
 
 ## Deploying
 
-This repository is auto built using Github/Jekyll and deployed to `gh-pages` automagically.
+This repository is auto built using GitHub/Jekyll and deployed to GitHub Pages automagically.
 
 Pull requests should be made to the `master` branch.
 
