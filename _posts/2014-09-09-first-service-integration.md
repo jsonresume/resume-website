@@ -8,7 +8,7 @@ author: Thomas Davis
 
 Since the inception of JSON Resume in July we have had a vast number of services reach out expressing their interest in supporting JSON Resume.
 
-One of those companies was called [Represent](http://represent.io),  whose lead developer [Jordan Singer](https://twitter.com/jsngr) emailed me earlier this week announcing their integration.
+One of those companies was called [Represent](https://represent.io),  whose lead developer [Jordan Singer](https://twitter.com/jsngr) emailed me earlier this week announcing their integration.
 
 So far they have only added support for exporting to JSON Resume, but we hope that in the future users can simply upload their `resume.json` to the service instead of filling out their profile manually.
 
