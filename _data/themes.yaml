@@ -4,7 +4,7 @@
   author: Mudassir
   link: https://github.com/mudassir0909
 
-- name: Stackoverflow
+- name: Stack Overflow
   slug: stackoverflow
   github: phoinixi
   author: Francesco Esposito
@@ -90,14 +90,15 @@
 
 - name: Spartan
   slug: spartan
-  github: Francescoes
+  github: phoinixi
   author: Francesco Esposito
-  link: https://github.com/francescoes
-  # https://registry.jsonresume.org/thomasdavis?theme=macchiato
+  link: https://github.com/phoinixi
+
+# https://registry.jsonresume.org/thomasdavis?theme=macchiato
 # https://registry.jsonresume.org/thomasdavis?theme=papirus
 # https://registry.jsonresume.org/thomasdavis?theme=tan-responsive
 # https://registry.jsonresume.org/thomasdavis?theme=verbum
-# ttps://registry.jsonresume.org/thomasdavis?theme=techlead
+# https://registry.jsonresume.org/thomasdavis?theme=techlead
 # https://registry.jsonresume.org/thomasdavis?theme=wraypro
 # https://github.com/nizarrwk/jsonresume-theme-helloquan-master
 # https://github.com/matheuscal/jsonresume-theme-paperalt
