@@ -44,7 +44,7 @@
   category: framework
 
 - name: jsonresume (haskell)
-  link: http://hackage.haskell.org/package/jsonresume
+  link: https://hackage.haskell.org/package/jsonresume
   description: This library encodes JSON Resume standard in Haskell datatypes, and provides a parser to read a CV in the JSON Resume format.
   category: parser
 
