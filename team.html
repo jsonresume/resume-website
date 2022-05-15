@@ -6,7 +6,7 @@ title: Team
 <header id="header">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-12">
         <h1>Meet the Team</h1>
       </div>
     </div>
@@ -16,7 +16,7 @@ title: Team
   <div class="row">
     <div class="col-sm-6 contributing">
       <h2>Contributing</h2>
-      <p>The entire project is open sourced and split up amongst a number of modules which are hosted on Github. There are many areas of the project that need work:</p>
+      <p>The entire project is open sourced and split up amongst a number of modules which are hosted on GitHub. There are many areas of the project that need work:</p>
       <ul>
         <li>We need everyone to start making themes</li>
         <li>People who can offer advice on the standard</li>
@@ -38,7 +38,9 @@ title: Team
             <img class="avatar" src="{{member.avatar}}" alt="Avatar of {{member.name}}." width="50" height="50">
             <div class="name">{{member.name}}</div>
             <a class="github" href="https://github.com/{{member.github}}">GitHub</a>
+            {% if member.twitter %}
             <a class="twitter" href="https://twitter.com/{{member.twitter}}">Twitter</a>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
