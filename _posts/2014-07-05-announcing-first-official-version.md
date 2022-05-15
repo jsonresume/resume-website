@@ -6,11 +6,11 @@ permalink: /blog/first-official-release
 author: Thomas Davis
 ---
 
-It has been just over three weeks since JSON resume first went public, and we are proud to announce the first official version of the specification. After much consideration we decided to launch the first version as **0.0.0**, which assumes everything up until this point was conceptual and thus no backwards compatibility has been built out.
+It has been just over three weeks since JSON resume first went public, and we are proud to announce the first official version of the specification. After much consideration we decided to launch the first version as **0.0.0**, which assumes everything up until this point was conceptual, and thus no backwards compatibility has been built out.
 
 Unfortunately this means that if you created a resume before this release, most parts of the ecosystem will not work for you. Though there weren't too many changes so visit the [specification page](/specification) and update your `resume.json` accordingly.
 
-Make sure you reinstall the latest version of the CLI tool by typing `sudo npm install -g resume-cli` into terminal. Once installed, you can also take advantage of the `resume test` command to test if your `resume.json` is compatiable with version **0.0.0**.
+Make sure you reinstall the latest version of the CLI tool by typing `sudo npm install -g resume-cli` into terminal. Once installed, you can also take advantage of the `resume test` command to test if your `resume.json` is compatible with version **0.0.0**.
 
 For a full list of changes, view the [README](https://github.com/jsonresume/resume-schema#change-log) for the resume schema [repo](https://github.com/jsonresume/resume-schema).
 
@@ -26,17 +26,17 @@ Some accomplishments so far
 * 97 issues created for the specification, [52 closed](https://github.com/jsonresume/resume-schema/issues?q=is%3Aissue+is%3Aclosed)
 * Built a [modular theme system](https://github.com/jsonresume/theme-manager) leveraging NPM for version management
 * Active [theme development](http://node-modules.com/search?q=jsonresume-theme-*) underway
-* Progress made on [LinkedIn export](http://jmperezperez.com/linkedin-to-json-resume/)
-* Build your `resume.json` with a GUI, coming in the next few days([screenshot](http://i.imgur.com/RYqIdUp.png))
+* Progress made on [LinkedIn export](https://jmperezperez.com/linkedin-to-json-resume/)
+* Build your `resume.json` with a GUI, coming in the next few days([screenshot](https://i.imgur.com/RYqIdUp.png))
 * Organized a [standards committee](/team)
 * Multiple HR related services are looking at supporting and potentially sponsoring the JSON resume project
-* Officially listed JSON schema on [schemastore.org](http://schemastore.org/)
+* Officially listed JSON schema on [JSON Schema Store](https://schemastore.org/)
 
-An obligitory thank you to everybody who has participated up to this point. And a very special thanks to [Mattias Erming](https://github.com/erming) who has put a lot of hard work into developing and brain storming the future of JSON resume.
+An obligatory thank you to everybody who has participated up to this point. And a very special thanks to [Mattias Erming](https://github.com/erming) who has put a lot of hard work into developing and brainstorming the future of JSON resume.
 
 ### Where are we heading?
 
-After long discussions about the specification in the Github issues, we have come to settle on a few points.
+After long discussions about the specification in the GitHub issues, we have come to settle on a few points.
 
 * JSON resume exist to empower individuals to manage their job seeking profiles and this is our highest priority.
 * Because there is no easily accessible alternative, we are going to maintain a casual approach to the project.
@@ -46,5 +46,5 @@ To guarantee the **success** of JSON resume, we will be aiming to integrate as a
 
 Please leave your feedback and ideas below! Also, please join the movement!
 
-By <a href="http://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
-and <a href="http://registry.jsonresume.org/rolandsharp">Roland Sharp</a>
+By <a href="https://registry.jsonresume.org/thomasdavis">{{page.author}}</a>
+and <a href="https://github.com/rolandnsharp">Roland Sharp</a>
