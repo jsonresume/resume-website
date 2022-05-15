@@ -134,8 +134,6 @@ pre {
   transition: all .4s;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  -webkit-perspective: 1000;
-          perspective: 1000;
 }
 #sidebar {
   background: #f2f2f2;
