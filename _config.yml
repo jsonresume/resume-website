@@ -2,4 +2,11 @@ title: JSON Resume
 description: "JSON Resume is a community driven open source initiative to create a JSON based standard for resumes."
 permalink: pretty
 markdown: kramdown
-include: [/.well-known]
+include:
+  - /.well-known
+exclude:
+  - provision/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Vagrantfile
