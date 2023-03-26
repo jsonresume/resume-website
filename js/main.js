@@ -2,6 +2,7 @@ jQuery(() => {
   highlight();
   equalizeFeatureHeight();
   enableSidebar();
+  getResumeSchema();
 });
 
 /**
@@ -57,3 +58,22 @@ function enableSidebar() {
     }
   });
 }
+
+function getResumeSchema() {
+  var url = 'https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json';
+  var schemaContainer = $('#resume-schema-template');
+  var schemaVersion = $('#resume-schema-version');
+  
+  if(schemaContainer.length){
+    $.getJSON(url, function(data) {
+      var version = data.meta.version.replace("v", "Version");
+      delete data['$schema'];
+      delete data['meta'];
+      var jsonString = JSON.stringify(data, null, 2);
+      schemaContainer[0].textContent = jsonString;
+      schemaVersion[0].textContent = version;
+    });
+  }
+  
+}
+
